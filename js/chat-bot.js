@@ -3053,33 +3053,57 @@ document.addEventListener('submit', e => {
 });
 
 //start chat button
-const startChatBtn = document.querySelector('.chat-btn');
+// const startChatBtn = document.querySelector('.chat-btn');
+const startChatBtns = document.querySelectorAll('.chat-btn');
 
-startChatBtn?.addEventListener('click', () => {
-    chatBot.classList.remove('hidden');
-    setBodyScrollLock(true);
+startChatBtns.forEach((startChatBtn) => {
+    startChatBtn.addEventListener('click', () => {
+        chatBot.classList.remove('hidden');
+        setBodyScrollLock(true);
 
-    // 👉 Відправляємо інформацію про натискання кнопки старту чату
-    const bot = window.chatBotInstance;
-    const progress = window.chatProgressInstance;
+        const bot = window.chatBotInstance;
+        const progress = window.chatProgressInstance;
 
-    if (bot) {
-        // 👉 Встановлюємо прапорець
-        bot.state.answers.clicked_start_chat = true;
+        if (bot) {
+            bot.state.answers.clicked_start_chat = true;
+            bot.start();
+            if (progress) progress.reset();
 
-        bot.start();
-
-        // 👉 Скидаємо прогрес при новому старті
-        if (progress) progress.reset();
-
-        bot._sendDataToSheet({
-            userID: bot.userID,
-            LastAction: bot._formatKyivDate(),
-            clicked_start_chat: true,
-        }).catch(() => {
-        });
-    }
+            bot._sendDataToSheet({
+                userID: bot.userID,
+                LastAction: bot._formatKyivDate(),
+                clicked_start_chat: true,
+            }).catch(() => {});
+        }
+    });
 });
+
+
+// startChatBtn?.addEventListener('click', () => {
+//     chatBot.classList.remove('hidden');
+//     setBodyScrollLock(true);
+//
+//     // 👉 Відправляємо інформацію про натискання кнопки старту чату
+//     const bot = window.chatBotInstance;
+//     const progress = window.chatProgressInstance;
+//
+//     if (bot) {
+//         // 👉 Встановлюємо прапорець
+//         bot.state.answers.clicked_start_chat = true;
+//
+//         bot.start();
+//
+//         // 👉 Скидаємо прогрес при новому старті
+//         if (progress) progress.reset();
+//
+//         bot._sendDataToSheet({
+//             userID: bot.userID,
+//             LastAction: bot._formatKyivDate(),
+//             clicked_start_chat: true,
+//         }).catch(() => {
+//         });
+//     }
+// });
 
 // modal close
 const chatBot = document.querySelector('.chat-bot');

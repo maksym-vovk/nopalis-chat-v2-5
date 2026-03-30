@@ -50,7 +50,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // scroll
 var linkNav = document.querySelectorAll('[href^="#"]'),
-V = 0.2;
+    V = 0.2;
+
 for (var i = 0; i < linkNav.length; i++) {
     linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
         e.preventDefault(); //отменяем стандартное поведение
