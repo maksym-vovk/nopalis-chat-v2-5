@@ -2659,13 +2659,13 @@ document.addEventListener('DOMContentLoaded', () => {
         messagesContainer: '#chatMessages',
         root: '.chat-bot',
         steps: chatSteps,
-        typingDelayPerChar: 50,  // ms per character (default: 15) human style: 100-250
-        typingDelayMin: 2000,     // minimum delay in ms (default: 600-1500)
-        typingDelayMax: 4000,    // maximum delay in ms (default: 3000-5000)
+        typingDelayPerChar: 50,  // ms per character (default: 15) human style: 50
+        typingDelayMin: 500,     // minimum delay in ms (default: 2000)
+        typingDelayMax: 500,    // maximum delay in ms (default: 4000)
         startQueue: {
             enabled: true,
-            delay: () => 10000 + Math.floor(Math.random() * 5001), // 10–15 sec
-            // delay: () => 1000,
+            // delay: () => 10000 + Math.floor(Math.random() * 5001), // 10–15 sec
+            delay: () => 1000,
             text: `
                 <h3 class="chat-queue-card__title">Eres el primero en la lista 🥇</h3>
                 <p class="chat-queue-card__text">El médico se conectará enseguida al chat. Por favor, espera un momento.</p>
