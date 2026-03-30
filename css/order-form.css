@@ -64,7 +64,7 @@
 }
 
 .choise__top input:checked {
-    background: url('../images/check.svg') center/80% no-repeat, #fff;
+    background: url('../images/chat/check.svg') center/80% no-repeat, #fff;
     border-color: transparent;
 }
 
@@ -193,15 +193,15 @@
     transform: translateY(-50%);
     width: 12px;
     height: 14px;
-    background: url(../images/marker.svg) center/contain no-repeat;
+    background: url(../images/chat/marker.svg) center/contain no-repeat;
 }
 
 .form__label--name::before {
-    background: url(../images/name.svg) center/contain no-repeat;
+    background: url(../images/chat/name.svg) center/contain no-repeat;
 }
 
 .form__label--phone::before {
-    background: url(../images/phone.svg) center/contain no-repeat;
+    background: url(../images/chat/phone.svg) center/contain no-repeat;
 }
 
 .form__select-wrapper {
@@ -217,7 +217,7 @@
     transform: translateY(-50%);
     width: 12px;
     height: 14px;
-    background: url(../images/city.svg) center/contain no-repeat;
+    background: url(../images/chat/city.svg) center/contain no-repeat;
 }
 
 .form__select-wrapper::after {
@@ -228,15 +228,15 @@
     transform: translateY(-50%);
     width: 10px;
     height: 10px;
-    background: url(../images/arrow.svg) center/contain no-repeat;
+    background: url(../images/chat/arrow.svg) center/contain no-repeat;
 }
 
 .form__select--colony::before {
-    background: url(../images/house.svg) center/contain no-repeat;
+    background: url(../images/chat/house.svg) center/contain no-repeat;
 }
 
 .form____select--type::before {
-    background: url(../images/marker.svg) center/contain no-repeat;
+    background: url(../images/chat/marker.svg) center/contain no-repeat;
 }
 
 .form__wrapper {
