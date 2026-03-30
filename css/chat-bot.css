@@ -1704,8 +1704,8 @@ line-height: 1.5;
 }
 
 .product-item {
-    width: 100px;
-    height: 100px;
+    aspect-ratio: 758/693;
+    width: 80px;
     background: url('../images/chat/cb-Nopalis.png') no-repeat center;
     background-size: contain;
     transition: all 0.5s ease;
@@ -2285,6 +2285,11 @@ b {
     color: #374151;
 }
 
+.chat-review__live {
+    width: 240px;
+    margin-top: 8px;
+}
+
 @media (max-width: 639px) {
     .chat-review__header {
         flex-wrap: wrap;
@@ -2292,6 +2297,10 @@ b {
 
     .chat-review__stars {
         flex-basis: 100%;
+    }
+
+    .chat-review__live {
+        width: 180px;
     }
 }
 

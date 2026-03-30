@@ -2018,15 +2018,15 @@ const chatSteps = [
         id: 'comments_1',
         messages: [
             {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-1.jpg" alt="" class="chat-review__avatar"><b>María, 44 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Para ser sincera, al principio tenía mis dudas. Pedí cuatro frascos a la vez y me alegro de haberlo hecho. Después del primer mes, ya veía resultados; empecé a bajar de peso poco a poco.</p></div></div>`,
+                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-1.jpg" alt="" class="chat-review__avatar"><b>Maria C.</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Întotdeauna am fost sceptică în privința "vindecărilor miraculoase." Injecțiile hormonale nu au fost nici măcar luate în considerare din cauza posibilelor efecte secundare. Dar Ozenmic Soft m-a surprins! Principalul lucru este că nu există greață, spre deosebire de ceea ce am auzit despre alte metode. Apetitul meu a devenit mult mai controlat, iar într-o lună am slăbit 6 kg fără niciun disconfort. A fost mai ușor decât mă așteptam!</p></div></div>`,
                 typingDelay: 1500
             },
             {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-2.jpg" alt="" class="chat-review__avatar"><b>Carmen, 52 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Muchas gracias por todo. No podía encontrar nada durante mucho tiempo, pero ahora realmente noté la diferencia después de solo unas semanas.</p></div></div>`,
+                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-2.jpg" alt="" class="chat-review__avatar"><b>Petru U.</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Soția mea se plângea constant de creșterea în greutate după mai multe încercări de a pierde în greutate, în special după injecții, când greutatea a revenit din nou. Căutam ceva pentru mine care să dea un rezultat durabil. Am luat Ozenmic Soft timp de 2 luni, iar greutatea se menține cu adevărat. A dispărut dorință constantă de a lua o gustare, iar energie a apărut și mai mult. Și fără injecții!</p></div></div>`,
                 typingDelay: 500
             },
             {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-3.jpg" alt="" class="chat-review__avatar"><b>Lucía, 39 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Al principio pedí dos frascos, pero luego me di cuenta de que necesitaba seguir usándolos. Después de un mes, empecé a notar que la ropa me quedaba más holgada.</p></div></div>`,
+                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-3.jpg" alt="" class="chat-review__avatar"><b>Lucia V.</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Am 62 de ani. La vârsta mea, este greu să slăbesc și mi-a fost frică de orice experiment, în special de cele hormonale. Ozenmic Soft m-a atras pentru că este natural și nu are efecte secundare. Ceea ce m-a surprins cel mai mult a fost că umflarea a dispărut și am început să mă simt mult mai ușor după câteva săptămâni. Nu doare și este foarte convenabil de luat. Sunt foarte multumit!</p></div></div>`,
                 typingDelay: 500
             }
         ],
@@ -2045,15 +2045,15 @@ const chatSteps = [
         id: 'comments_2',
         messages: [
             {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-4.jpg" alt="" class="chat-review__avatar"><b>Ana, 47 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">No creí al principio que me ayudaría, pero decidí probarlo. Ya estoy terminando mi segundo frasco y estoy pensando en pedir más.</p></div></div>`,
+                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-4.jpg" alt="" class="chat-review__avatar"><b>Sofia L.</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">După ce s-a născut copilul, mi-a fost greu să revin în formă. Am auzit o mulțime de povești înfricoșătoare despre medicamentele hormonale, așa că căutam o alternativă sigură. Ozenmic Soft s-a dovedit a fi anume ceea ce căutam. Am fost impresionată că livrarea a fost foarte rapidă, iar în câteva zile am început să iau deja capsulele. Mă simt mult mai bine, apetitul meu este sub control, iar greutatea dispare treptat. Fără stres!</p></div></div>`,
                 typingDelay: 1500
             },
             {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-5.jpg" alt="" class="chat-review__avatar"><b>Rosa, 55 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Gracias. Bajar de peso después de los 50 es muy difícil, pero con este producto, es un poco más fácil de controlar.</p></div></div>`,
+                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-5.jpg" alt="" class="chat-review__avatar"><b>Lucrețiu R.</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Ozenmic Soft mi-a dat speranță pentru o pierdere reală în greutate. Senzația de plenitudine vine repede și nu mai sufăr de atacuri nocturne de foame. Am slăbit deja 7 kg, am de gând să continui!</p></div></div>`,
                 typingDelay: 500
             },
             {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-6.jpg" alt="" class="chat-review__avatar"><b>José, 41 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Al principio pedí dos frascos para probar. Después entendí que mejor tomar un curso. Ahora ya es tercer bote y hay resultado.</p></div></div>`,
+                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-6.jpg" alt="" class="chat-review__avatar"><b>Ana G.</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Este important pentru mine ca produsul de slăbit să nu afecteze pielea și starea generală. Am citit despre probleme ale pielii de la unele injecții. Cu Ozenmic Soft nu numai că slăbesc, dar am observat și că pielea mea a devenit mai curată și mai proaspătă. Este un bonus plăcut, iar eu mă simt mai energică pe tot parcursul zilei. Fără efecte secundare!</p></div></div>`,
                 typingDelay: 500
             },
         ],
@@ -2072,69 +2072,15 @@ const chatSteps = [
         id: 'comments_3',
         messages: [
             {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-7.jpg" alt="" class="chat-review__avatar"><b>Teresa, 49 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Me alegro mucho de haber pedido cuatro frascos a la vez. Solo empiezas a ver cambios después del primero, y luego los resultados se hacen más notorios.</p></div></div>`,
+                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-7.jpg" alt="" class="chat-review__avatar"><b>Iulia O.</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Este foarte convenabil: iau capsulele acasă, fără injecții, fără cozi la clinică. Și livrarea a fost rapidă - am primit coletul în 3 zile. Îl recomand oricui dorește să slăbească fără fanatism.</p><img class="chat-review__live" src="${basePath}images/com_1.jpg" alt="live-photo"></div></div>`,
                 typingDelay: 1500
             },
             {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-8.jpg" alt="" class="chat-review__avatar"><b>Patricia, 37 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Gracias por el producto. Mi pérdida de peso no es drástica, sino gradual y constante, y me gusta.</p></div></div>`,
+                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-8.jpg" alt="" class="chat-review__avatar"><b>Cristina</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Mi-a fost teamă să iau medicamente hormonale. E bine că l-am găsit pe Ozenmic. Efectul este foarte gradual, dar constant și mi se potrivește. Am slăbit deja 6 kg în 2 luni.</p><img class="chat-review__live" src="${basePath}images/Eliana.jpg" alt="live-photo"></div></div>`,
                 typingDelay: 500
             },
             {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-9.jpg" alt="" class="chat-review__avatar"><b>Elena, 60 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Estaba leyendo las reseñas durante mucho tiempo antes de comprar. Ahora yo entiendo que ha valido la pena pedirlo, me siento mucho mejor.</p></div></div>`,
-                typingDelay: 500
-            },
-        ],
-        options: [
-            { label: 'Más comentarios', value: 'more_comments' },
-            { label: 'Pasar a elegir el curso', value: 'course_selection' },
-        ],
-        nextStep: ({ option, state, bot }) => {
-            if (option.value === 'more_comments') {
-                return bot._getStepIndex('comments_4');
-            }
-            return bot._getStepIndex('course_choice');
-        },
-    },
-    {
-        id: 'comments_4',
-        messages: [
-            {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-10.jpg" alt="" class="chat-review__avatar"><b>Miguel, 53 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Lo compré para probarlo. Después de unas semanas, noté cambios, así que pedí más frascos para continuar.</p></div></div>`,
-                typingDelay: 1500
-            },
-            {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-11.jpg" alt="" class="chat-review__avatar"><b>Guadalupe, 45 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Estoy muy agradecida. Noté que empecé a bajar de peso después del primer mes. Menos mal que compré varios botes enseguida.</p></div></div>`,
-                typingDelay: 500
-            },
-            {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-12.jpg" alt="" class="chat-review__avatar"><b>Sofía, 38 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Pensaba comprar un frasco, pero pedí tres. Ahora entiendo que hice lo correcto, porque los resultados no aparecieron de inmediato.</p></div></div>`,
-                typingDelay: 500
-            },
-        ],
-        options: [
-            { label: 'Más comentarios', value: 'more_comments' },
-            { label: 'Pasar a elegir el curso', value: 'course_selection' },
-        ],
-        nextStep: ({ option, state, bot }) => {
-            if (option.value === 'more_comments') {
-                return bot._getStepIndex('comments_5');
-            }
-            return bot._getStepIndex('course_choice');
-        },
-    },
-    {
-        id: 'comments_5',
-        messages: [
-            {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-13.jpg" alt="" class="chat-review__avatar"><b>Raúla, 58 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Gracias por este producto. Los resultados son excelentes para mi edad y me siento mucho mejor.</p></div></div>`,
-                typingDelay: 1500
-            },
-            {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-14.jpg" alt="" class="chat-review__avatar"><b>Daniel, 46 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Leía las reseñas y decidí probarlo. Ya noté cambios después de la primera lata y sigo con el tratamiento.</p></div></div>`,
-                typingDelay: 500
-            },
-            {
-                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-15.jpg" alt="" class="chat-review__avatar"><b>Alejandro, 62 años</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Al principio dudaba en comprarlo. Pero vi resultados, así que pedí más para consolidar el efecto.</p></div></div>`,
+                text: `<div class="chat-review"><span class="chat-review__label">Reenviado</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/chat/comm-ava-9.jpg" alt="" class="chat-review__avatar"><b>Elena</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Estaba leyendo las reseñas durante mucho tiempo antes de comprar. Ahora yo entiendo que ha valido la pena pedirlo, me siento mucho mejor.</p></div></div>`,
                 typingDelay: 500
             },
         ],
