@@ -1331,6 +1331,7 @@ p {
     text-transform: inherit;
     /*text-transform: math-auto;*/
     letter-spacing:normal;
+    white-space: normal;
 }
 
 .info-btn,
