@@ -231,7 +231,8 @@ line-height: 1.5;
     border: none;
     color: white;
     width: 36px;
-    height: 36px;
+    height: 36px!important;
+    padding: 8px 16px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -249,7 +250,7 @@ line-height: 1.5;
     border: none;
     color: white;
     width: 36px;
-    height: 36px;
+    height: 36px!important;
     /*border-radius: 50%;*/
     display: flex;
     align-items: center;
@@ -1326,7 +1327,8 @@ line-height: 1.5;
 .chat-bot button {
     margin-bottom: 0;
     height: auto;
-    text-transform: capitalize;
+    text-transform: inherit;
+    /*text-transform: math-auto;*/
     letter-spacing:normal;
 }
 
@@ -3018,6 +3020,7 @@ button.action-popup__btn--send:hover {
 
 .inline-products {
     display: inline-flex;
+    display: contents;
     justify-content: flex-end;
     /*gap: 4px;*/
     /*margin-left: 8px;*/
