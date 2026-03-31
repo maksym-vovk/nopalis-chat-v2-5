@@ -53,9 +53,10 @@ p {
 
 .chat-btn {
     width: 100% ;
+    text-align: center;
 }
 .chat-bot button, .chat-bot input, .chat-bot select, .chat-bot textarea {
-line-height: 1.5;
+    line-height: 1.5;
 }
 
 
@@ -3076,15 +3077,24 @@ button.action-popup__btn--send:hover {
 }
 
 @media (max-width: 639px) {
-    .inline-product-item {
-        width: 19px;
-        height: 36px;
+
+    .course-title {
+        flex-direction: column;
     }
+
+    .inline-products {
+        display: flex;
+        justify-content: center;
+    }
+    /*.inline-product-item {*/
+    /*    width: 19px;*/
+    /*    height: 36px;*/
+    /*}*/
 }
 
 @media (max-width: 479px) {
     .course-title {
-        flex-direction: column;
+        /*flex-direction: column;*/
         text-align: center;
     }
 
