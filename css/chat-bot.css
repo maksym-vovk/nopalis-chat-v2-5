@@ -2889,7 +2889,7 @@ b {
     opacity: 1;
 }
 
-.action-popup__title {
+h2.action-popup__title {
     margin: 0;
     font-size: 20px;
     font-weight: 700;
@@ -2938,7 +2938,7 @@ b {
 .action-popup__buttons {
     display: flex;
     gap: 10px;
-    margin-top: 4px;
+    /*margin-top: 4px;*/
 }
 
 .action-popup__btn {
@@ -3090,6 +3090,7 @@ button.action-popup__btn--send:hover {
     /*    width: 19px;*/
     /*    height: 36px;*/
     /*}*/
+
 }
 
 @media (max-width: 479px) {
@@ -3100,6 +3101,10 @@ button.action-popup__btn--send:hover {
 
     .inline-products {
         justify-content: center;
+    }
+
+    .action-popup__buttons {
+        flex-direction: column;
     }
 }
 
