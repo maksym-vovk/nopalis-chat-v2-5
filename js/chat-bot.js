@@ -982,7 +982,7 @@ class ChatBot {
 
         // Заголовок
         const title = document.createElement('h4');
-        title.textContent = `Tu curso: ${quantity} paquetes`;
+        title.textContent = `Programul dvs.: ${quantity} pachete`;
         title.style.cssText =
             'margin-top: 0; margin-bottom: 16px; color: #1f2937; font-size: 16px; font-weight: 600;';
 
@@ -1837,15 +1837,15 @@ const chatSteps = [
             // {text: "Test mic indicator and flexible typing delay: 5 sec", typingIndicator: 'mic', typingDelay: 5000},
             (state) => {
                 if (state.answers.clicked_start_chat) {
-                    return '👋 ¡Hola! Bienvenido a <b>Nopalis</b>.\n' +
-                        'Te ayudaré a elegir el curso ideal para una <b>pérdida de peso cómoda y segura</b>, además de aprovechar <b>descuentos adicionales</b>.\n\n' +
-                        'Al realizar tu pedido aquí, en el chat, <b>no tendrás que esperar la llamada de un operador</b>: todo se hace de forma rápida y cómoda.\n\n' +
-                        'Para que pueda elegir el curso perfecto para ti y fijar el descuento, por favor, <b>déjame tus datos de contacto</b>.';
+                    return '👋 ¡Hola! Bine ați venit la <b>Nopalis</b>.\n' +
+                        'Vă voi ajuta să alegeți programul optim pentru <b>o slăbire confortabilă și sigură</b>, precum și să beneficiați de <b>reduceri suplimentare</b>.\n\n' +
+                        'Plasând comanda aici, în chat, <b>nu este nevoie să așteptați apelul operatorului</b> — totul se face rapid și simplu.\n\n' +
+                        'Pentru a vă recomanda programul potrivit și a vă rezerva reducerea, vă rugăm să <b>lăsați datele dvs. de contact</b>.';
                 }
-                return '👋 ¡Hola! Gracias por tu pedido de Nopalis.\n\n' +
-                    'Ya tienes un <b>35% de descuento</b>.\n' +
-                    'Al hacer tu pedido aquí, en el chat, <b>¡recibirás descuentos adicionales en el producto seleccionado</b>! Y <b>no tendrás que esperar la llamada de un operador</b>.\n\n' +
-                    '¿Quieres completar tu <b>pedido rápidamente y aprovechar el descuento adicional</b>?';
+                return '👋 ¡Hola! Vă mulțumim pentru comanda Nopalis.\n\n' +
+                    'Aveți deja o <b>reducere de 35%</b>.\n' +
+                    'Plasând comanda aici, în chat, veți <b>primi reduceri suplimentare pentru produsul ales</b> și <b> nu va mai fi nevoie să așteptați apelul operatorului</b>.\n\n' +
+                    'Doriți să finalizați rapid comanda și să beneficiați de <b>o reducere suplimentară</b>?';
             }
         ],
         options: (state) => {
@@ -1853,8 +1853,8 @@ const chatSteps = [
                 return []; // Не показувати кнопки, якщо чат почато через кнопку
             }
             return [
-                {label: 'Sí, quiero', value: 'yes'},
-                {label: 'No', value: 'back'},
+                {label: 'Da, vreau', value: 'yes'},
+                {label: 'Nu', value: 'back'},
             ];
         },
         nextStep: ({option, state, bot}) => {
@@ -1869,9 +1869,9 @@ const chatSteps = [
     },
     {
         id: 'main_form_name',
-        messages: ['Por favor indica tu nombre y apellido.'],
+        messages: ['Vă rugăm să introduceți numele și prenumele.'],
         expectFreeInput: true,
-        inputPlaceholder: 'Nombre y apellido',
+        inputPlaceholder: 'Nume și prenume',
         shouldSkip: ({state}) => {
             // Показуємо тільки якщо натиснули кнопку старту чату
             return !state.answers.clicked_start_chat;
@@ -1879,9 +1879,9 @@ const chatSteps = [
     },
     {
         id: 'main_form_phone',
-        messages: ['Proporciona tu número de teléfono de contacto.'],
+        messages: ['Vă rugăm să introduceți numărul dvs. de telefon.'],
         expectFreeInput: true,
-        inputPlaceholder: 'Número de teléfono de contacto',
+        inputPlaceholder: 'Număr de telefon',
         shouldSkip: ({state}) => {
             // Показуємо тільки якщо натиснули кнопку старту чату
             return !state.answers.clicked_start_chat;
@@ -1894,10 +1894,10 @@ const chatSteps = [
     },
     {
         id: 'intro_after_data',
-        messages: ['Hemos registrado tus datos, continuemos con el descuento 👇'],
+        messages: ['Am înregistrat datele dvs., haideți să continuăm comanda cu reducere 👇'],
         options: [
-            {label: 'Sí, quiero', value: 'yes'},
-            {label: 'No', value: 'back'},
+            {label: 'Da, vreau', value: 'yes'},
+            {label: 'Nu', value: 'back'},
         ],
         nextStep: ({option, state, bot}) => {
             // якщо користувач хоче "назад" — збережемо в відповіді
@@ -1917,11 +1917,11 @@ const chatSteps = [
     },
     {
         id: 'goal',
-        messages: ['¿Qué cambio quieres lograr?'],
+        messages: ['Ce rezultat doriți să obțineți?'],
         options: [
-            {label: 'Adelgazar 5–7 kg', value: '5_7', name: '5-7 kg'},
-            {label: 'Adelgazar 8–12 kg', value: '8_12', name: '8-12 kg'},
-            {label: 'Más de 12 kg / quitar barriga', value: '12_plus', name: '12+ kg'},
+            {label: 'Să slăbesc 5–7 kg', value: '5_7', name: '5-7 kg'},
+            {label: 'Să slăbesc 8–12 kg', value: '8_12', name: '8-12 kg'},
+            {label: 'Peste 12 kg / reducerea abdomenului', value: '12_plus', name: '12+ kg'},
         ],
     },
     {
@@ -1969,51 +1969,6 @@ const chatSteps = [
             return bot._getStepIndex('course_choice');
         }
     },
-    // {
-    //     id: 'effect',
-    //     messages: [
-    //         'Nopalis está diseñado para <b>una pérdida de peso gradual y segura</b>.\nEl resultado no se observa <b>de inmediato<b>, sino gradualmente. Así es como sucede:',
-    //         '<b>✔ Después de 5–7 días de uso</b>\nLa digestión se normaliza, la hinchazón y la pesadez en el abdomen disminuyen.\nEl cuerpo comienza a limpiarse y prepararse para la pérdida de peso.',
-    //         '<b>✔ Después de 10 a 14 días</b>\nEl apetito y los antojos de dulces disminuyen.\nResulta más fácil controlar las porciones y evitar comer en exceso.',
-    //         '<b>✔ Después de 3-4 semanas</b>\nEl cuerpo comienza a utilizar más activamente las reservas de grasa como fuente de energía.\nAparecen los primeros cambios notables en el peso y el volumen.',
-    //         '<b>✔ Después de 1–2 meses de uso regular</b>\nEl peso disminuye de manera constante, el resultado es fijo.\nEl cuerpo se adapta al nuevo régimen sin estrés.',
-    //     ],
-    //     options: [
-    //         {label: 'Mirar las reseñas de los clientes', value: 'show_comments'},
-    //         {label: 'Pasar a elegir el curso', value: 'course_selection'},
-    //     ],
-    //     onEnter: (bot, state) => {
-    //         // onEnter migration from id: 'goal_reco'
-    //         const goal = state.answers.goal;
-    //         let recommendedPacks = 3;
-    //
-    //         if (goal === '5_7') {
-    //             recommendedPacks = 3;
-    //         } else if (goal === '8_12') {
-    //             recommendedPacks = 5;
-    //         } else {
-    //             recommendedPacks = 6;
-    //         }
-    //
-    //         // 👉 Зберігаємо в state
-    //         state.answers.recommended_packs = recommendedPacks;
-    //
-    //         // 👉 Відправляємо одним запитом разом з goal (якщо він є)
-    //         const data = {
-    //             userID: bot.userID,
-    //             LastAction: bot._formatKyivDate(),
-    //             recommended_packs: recommendedPacks,
-    //         };
-    //
-    //         bot._sendDataToSheet(data).catch(() => {});
-    //     },
-    //     nextStep: ({option, state, bot}) => {
-    //         if (option.value === 'show_comments') {
-    //             return bot._getStepIndex('comments_1');
-    //         }
-    //         return bot._getStepIndex('course_choice');
-    //     }
-    // },
     {
         id: 'comments_1',
         messages: [
@@ -2098,32 +2053,32 @@ const chatSteps = [
                 const packs = state.answers.recommended_packs;
 
                 const courseInitiation = '<div class="course">' +
-                    '<b class="course-title">Curso de iniciación (2&nbsp;paquetes)' +
+                    '<b class="course-title">Program de start (2&nbsp;pachete)' +
                     '<span class="inline-products">' +
                     '<span class="inline-product-item"></span>' +
                     '<span class="inline-product-item"></span>' +
                     '</span>' +
                     '</b>' +
-                    '<p class="course-text">• Iniciar la operación de limpieza y digestión.\n• Reducción de la hinchazón y pesadez.\n• Adaptación corporal\n</p>' +
+                    '<p class="course-text">• Activarea digestiei\n• Reducerea balonării\n• Adaptarea organismului\n</p>' +
                     '<span class="course-separator"></span>' +
-                    '<p class="course-text"><b>Los cambios de peso visibles suelen ser mínimos</b></p>' +
+                    '<p class="course-text"><b>Rezultatele vizibile sunt minime</b></p>' +
                     '</div>';
 
                 const courseMinimum = '<div class="course">' +
-                    '<b class="course-title">Curso mínimo efectivo (3&nbsp;paquetes)' +
+                    '<b class="course-title">Program minim eficient (3&nbsp;pachete)' +
                     '<span class="inline-products">' +
                     '<span class="inline-product-item"></span>' +
                     '<span class="inline-product-item"></span>' +
                     '<span class="inline-product-item"></span>' +
                     '</span>' +
                     '</b>' +
-                    '<p class="course-text">• Una duración de más de 3 a 4&nbsp;semanas es el período óptimo para reducir las células grasas.\n• Lanzamiento de una quema de grasa estable\n• Primeros cambios notables en peso y volumen</p>' +
+                    '<p class="course-text">• 3–4 săptămâni — perioada optimă\n• Începutul arderii grăsimilor\n• Primele rezultate vizibile</p>' +
                     '<span class="course-separator"></span>' +
-                    '<p class="course-text">✅&nbsp;<b>Inicio recomendado para obtener resultados reales</b></p>' +
+                    '<p class="course-text">✅&nbsp;<b>Recomandat pentru rezultate reale</b></p>' +
                     '</div>';
 
                 const courseComplete = '<div class="course">' +
-                    '<b class="course-title">Curso completo (5&nbsp;paquetes)' +
+                    '<b class="course-title">Program complet (5&nbsp;pachete)' +
                     '<span class="inline-products">' +
                     '<span class="inline-product-item"></span>' +
                     '<span class="inline-product-item"></span>' +
@@ -2132,13 +2087,13 @@ const chatSteps = [
                     '<span class="inline-product-item"></span>' +
                     '</span>' +
                     '</b>' +
-                    '<p class="course-text">• Ciclo completo de pérdida de peso\n• Quema de grasa activa y estable\n• Pérdida de peso sin fluctuaciones repentinas\n• Consolidación del resultado</p>' +
+                    '<p class="course-text">• Ciclu complet de slăbire\n• Ardere activă a grăsimilor\n• Stabilizarea rezultatului\n• Cea mai populară alegere</p>' +
                     '<span class="course-separator"></span>' +
-                    '<p class="course-text">💚&nbsp;<b>La opción más popular entre los clientes</b></p>' +
+                    '<p class="course-text">💚&nbsp;<b>Cea mai populară alegere în rândul clienților</b></p>' +
                     '</div>';
 
                 const courseMaximum = '<div class="course">' +
-                    '<b class="course-title">Curso máximo (6&nbsp;paquetes)' +
+                    '<b class="course-title">Program maxim (6&nbsp;pachete)' +
                     '<span class="inline-products">' +
                     '<span class="inline-product-item"></span>' +
                     '<span class="inline-product-item"></span>' +
@@ -2148,9 +2103,9 @@ const chatSteps = [
                     '<span class="inline-product-item"></span>' +
                     '</span>' +
                     '</b>' +
-                    '<p class="course-text">• Máxima quema de grasa\n• Notable reducción de peso y volumen\n• Limpieza profunda del organismo\n• El resultado más estable y duradero.</p>' +
+                    '<p class="course-text">• Ardere maximă a grăsimilor\n• Reducere vizibilă a greutății și a volumelor\n• Curățare profundă a organismului\n• Cel mai stabil și de lungă durată rezultat</p>' +
                     '<span class="course-separator"></span>' +
-                    '<p class="course-text">🔥&nbsp;<b>Para quienes desean el máximo efecto y una transformación completa</b></p>' +
+                    '<p class="course-text">🔥&nbsp;<b>Pentru efect maxim și transformare completă</b></p>' +
                     '</div>';
 
                 const allCourses = [
@@ -2174,10 +2129,9 @@ const chatSteps = [
                 })
 
                 // separated text and cards
-                // return 'Cada opción posterior <b>refuerza el efecto de la anterior</b>.' + coursesHTML
                 return [
                     {
-                        text: 'Cada opción posterior <b>refuerza el efecto de la anterior</b>.',
+                        text: 'Fiecare opțiune următoare <b>intensifică efectul celei anterioare</b>.',
                         typingDelay: 2500
                     },
                     ...coursesHTML.map((course) => ({text: course, typingDelay: 1000}))
@@ -2185,10 +2139,10 @@ const chatSteps = [
             },
         ],
         options: [
-            {label: '6 paquetes', value: 6},
-            {label: '5 paquetes', value: 5},
-            {label: '3 paquetes', value: 3},
-            {label: '2 paquetes', value: 2, color: '#9ca3af'},
+            {label: '6 pachete', value: 6},
+            {label: '5 pachete', value: 5},
+            {label: '3 pachete', value: 3},
+            {label: '2 pachete', value: 2, color: '#9ca3af'},
         ],
         nextStep: ({option, state, bot}) => {
             state.answers.course_packs = option.value;
@@ -2203,16 +2157,16 @@ const chatSteps = [
         messages: [
             state => {
                 const packs = state.answers.course_packs;
-                let courseName = 'Mínimo efectivo';
+                let courseName = 'Minim eficient';
 
                 if (packs === 5) {
-                    courseName = 'Completo';
+                    courseName = 'Complet';
                 } else if (packs === 6) {
-                    courseName = 'Máximo';
+                    courseName = 'Maxim';
                 }
 
                 return {
-                    text: `Gracias&nbsp;💚 Has elegido un curso «${courseName}» — ${packs} paquetes Nopalis.\nActualmente hay una oferta especial en este curso, que proporciona un beneficio mucho mayor que el descuento estándar para 1 paquete.`,
+                    text: `Mulțumim&nbsp;💚 Ați ales programul «${courseName}» — ${packs} pachete Nopalis.\nÎn prezent, acest program beneficiază de o ofertă specială, mai avantajoasă decât reducerea standard pentru un singur pachet.`,
                     typingDelay: 2000
                 }
             },
@@ -2222,10 +2176,10 @@ const chatSteps = [
                     <div class="pricing-card">
                         <div class="header">
                             <span class="star">⭐</span>
-                            <h2>3&nbsp;paquetes:<br> Curso mínimo efectivo</h2>
+                            <h2>3&nbsp;pachete:<br> Program minim eficient</h2>
                         </div>
                         <div class="calculation-header">
-                            <h3>Cálculo:</h3>
+                            <h3>Calcul:</h3>
                         </div>
                         <div class="pricing-row">
                             <span class="package">1&nbsp;paq.</span>
@@ -2246,17 +2200,17 @@ const chatSteps = [
                             <span class="new-price green">300&nbsp;MXN</span>
                         </div>
                         <div class="savings-section">
-                            <span class="savings-text">Ahorro: <span class=""><span class="">3540</span> - 1480 =</span> <span class="">2060&nbsp;MXN</span></span>
+                            <span class="savings-text">Economii: <span class=""><span class="">3540</span> - 1480 =</span> <span class="">2060&nbsp;MXN</span></span>
                         </div>
                         <div class="total-section">
-                            <span class="total-label green-text">EN TOTAL:</span>
+                            <span class="total-label green-text">TOTAL:</span>
                             <span class="total-price green-text">1480&nbsp;MXN</span>
                         </div>
                         <div class="delivery-section">
-                            <span class="savings-text">¡Envío gratis!</span>
+                            <span class="savings-text">Livrare gratuită!</span>
                         </div>
                         <div class="promo-banner">
-                            <span class="promo-text">Obtendrás el curso mínimo completo para obtener resultados notables.</span>
+                            <span class="promo-text">Veți primi programul minim complet pentru rezultate vizibile.</span>
                         </div>
                     </div>
                 `
@@ -2264,10 +2218,10 @@ const chatSteps = [
                     <div class="pricing-card">
                         <div class="header">
                             <span class="star">⭐</span>
-                            <h2>5&nbsp;paquetes:<br> Curso completo</h2>
+                            <h2>5&nbsp;pachete:<br> Program complet</h2>
                         </div>
                         <div class="calculation-header">
-                            <h3>Cálculo:</h3>
+                            <h3>Calcul:</h3>
                         </div>
                         <div class="pricing-row">
                             <span class="package">1&nbsp;paq.</span>
@@ -2300,17 +2254,17 @@ const chatSteps = [
                             <span class="new-price green">200&nbsp;MXN</span>
                         </div>
                         <div class="savings-section">
-                            <span class="savings-text">Ahorro: <span class=""><span class="">5900</span> - 1880 =</span> <span class="">4020&nbsp;MXN</span></span>
+                            <span class="savings-text">Economii: <span class=""><span class="">5900</span> - 1880 =</span> <span class="">4020&nbsp;MXN</span></span>
                         </div>
                         <div class="total-section">
-                            <span class="total-label green-text">EN TOTAL:</span>
+                            <span class="total-label green-text">TOTAL:</span>
                             <span class="total-price green-text">1880&nbsp;MXN</span>
                         </div>
                         <div class="delivery-section">
-                            <span class="savings-text">¡Envío gratis!</span>
+                            <span class="savings-text">Livrare gratuită!</span>
                         </div>
                         <div class="promo-banner">
-                            <span class="promo-text">De hecho: pagas por 2&nbsp;paquetes al precio estándar, ¡pero obtienes <strong class="yellow-text">5&nbsp;paquetes</strong>!</span>
+                            <span class="promo-text">De fapt, plătiți cât pentru 2&nbsp;pachete la preț standard și primiți <strong class="yellow-text">5 pachete</strong>!</span>
                         </div>
                     </div>
                 `
@@ -2318,10 +2272,10 @@ const chatSteps = [
                     <div class="pricing-card">
                         <div class="header">
                             <span class="star">⭐</span>
-                            <h2>6&nbsp;paquetes:<br> Curso máximo</h2>
+                            <h2>6&nbsp;pachete:<br> Program maxim</h2>
                         </div>
                         <div class="calculation-header">
-                            <h3>Cálculo:</h3>
+                            <h3>Calcul:</h3>
                         </div>
                         <div class="pricing-row">
                             <span class="package">1&nbsp;paq.</span>
@@ -2360,17 +2314,17 @@ const chatSteps = [
                             <span class="new-price green">80&nbsp;MXN</span>
                         </div>
                         <div class="savings-section">
-                            <span class="savings-text">Ahorro: <span class=""><span class="">7080</span> - 2450 =</span> <span class="">4630&nbsp;MXN</span></span>
+                            <span class="savings-text">Economii: <span class=""><span class="">7080</span> - 2450 =</span> <span class="">4630&nbsp;MXN</span></span>
                         </div>
                         <div class="total-section">
-                            <span class="total-label green-text">EN TOTAL:</span>
+                            <span class="total-label green-text">TOTAL:</span>
                             <span class="total-price green-text">2450&nbsp;MXN</span>
                         </div>
                         <div class="delivery-section">
-                            <span class="savings-text">¡Envío gratis!</span>
+                            <span class="savings-text">Livrare gratuită!</span>
                         </div>
                         <div class="promo-banner">
-                            <span class="promo-text">De hecho, este es el precio por solo 2&nbsp;paquetes al precio estándar y solo +90&nbsp;MXN adicionales, ¡y recibirás <strong class="yellow-text">6&nbsp;paquetes</strong>!</span>
+                            <span class="promo-text">Sau: plătiți cât pentru 2&nbsp;pachete + doar&nbsp;MXN suplimentar, iar dvs. primiți <strong class="yellow-text">6&nbsp;pachete</strong>!</span>
                         </div>
                     </div>
                 `
@@ -2395,9 +2349,9 @@ const chatSteps = [
             },
         ],
         options: [
-            {label: 'Confirmar el pedido', value: 'confirm', color: 'green'},
-            {label: 'No estoy seguro(a)', value: 'not_sure'},
-            {label: 'Volver', value: 'back'},
+            {label: 'Confirmați comanda', value: 'confirm', color: 'green'},
+            {label: 'Nu sunt sigur(ă)', value: 'not_sure'},
+            {label: 'Înapoi', value: 'back'},
         ],
         shouldSkip: ({state}) => state.answers.course_packs === 2,
         nextStep: ({option, state, bot}) => {
@@ -2419,24 +2373,24 @@ const chatSteps = [
     {
         id: 'two_packs_price',
         messages: [
-            '¡Gracias! Has elegido el "Curso Inicial": 2&nbsp;paquetes de Nopales.',
-            'Después de los 55&nbsp;años, el metabolismo cambia. Dos paquetes solo pueden iniciar los procesos internos del cuerpo. Por lo general, el peso aún no empieza a bajar de forma notable, ya que Nopalis actúa de forma gradual y segura.',
-            'Hay una muy buena oferta ahora para la <b>tarifa mínima efectiva - 3&nbsp;paquetes</b>' +
-            '\n<b>El tercer paquete cuesta solo 300&nbsp;MXN.</b>',
-            '2 paquetes:\n' +
-            '590&nbsp;MXN (−50% de descuento 1180)\n' +
-            '590&nbsp;MXN (−50% de descuento 1180)\n' +
-            '+ Envío 200&nbsp;MXN.\n' +
+            'Mulțumim! Ați ales „Programul de start” – 2 pachete Nopalis.',
+            'După 55 de ani, metabolismul se schimbă. Două pachete pot doar să inițieze procesele din organism. De regulă, greutatea nu începe încă să scadă vizibil, deoarece Nopalis acționează treptat și în siguranță.',
+            'În prezent este disponibilă o ofertă foarte avantajoasă pentru <b>programul minim eficient – 3&nbsp;pachete</b>' +
+            '\<b>Al 3-lea pachet costă doar 300&nbsp;MXN.</b>',
+            '2 pachete:\n' +
+            '590&nbsp;MXN (−50% din 1180)\n' +
+            '590&nbsp;MXN (−50% din 1180)\n' +
+            '+ Livrare 200&nbsp;MXN\n' +
             'Total: 1380&nbsp;MXN',
             {
                 text: `
                           <div class="pricing-card">
                             <div class="header">
                                 <span class="star">⭐</span>
-                                <h2>3&nbsp;paquetes:<br> Curso mínimo efectivo</h2>
+                                <h2>3&nbsp;pachete:<br> Program minim eficient</h2>
                             </div>
                             <div class="calculation-header">
-                                <h3>Cálculo:</h3>
+                                <h3>Calcul:</h3>
                             </div>
                             <div class="pricing-row">
                                 <span class="package">1&nbsp;paq.</span>
@@ -2457,17 +2411,17 @@ const chatSteps = [
                                 <span class="new-price green">300&nbsp;MXN</span>
                             </div>
                             <div class="savings-section">
-                                <span class="savings-text">Ahorro: <span class=""><span class="">3540</span> - 1480 =</span> <span class="">2060&nbsp;MXN</span></span>
+                                <span class="savings-text">Economii: <span class=""><span class="">3540</span> - 1480 =</span> <span class="">2060&nbsp;MXN</span></span>
                             </div>
                             <div class="total-section">
-                                <span class="total-label green-text">EN TOTAL:</span>
+                                <span class="total-label green-text">TOTAL:</span>
                                 <span class="total-price green-text">1480&nbsp;MXN</span>
                             </div>
                             <div class="delivery-section">
-                                <span class="savings-text">¡Envío gratis!</span>
+                                <span class="savings-text">Livrare gratuită!</span>
                             </div>
                             <div class="promo-banner">
-                                <span class="promo-text">¡La diferencia es de solo <strong class="yellow-text">+100&nbsp;MXN</strong>! Pero obtienes la tarifa mínima completa para un resultado notable.</span>
+                                <span class="promo-text">Diferența este de doar <strong class="yellow-text">+100 MXN</strong>, dar primiți un program complet pentru rezultate vizibile!</span>
                             </div>
                         </div>
                         `.trim().replace(/\s+/g, ' '),
@@ -2475,8 +2429,8 @@ const chatSteps = [
             }
         ],
         options: [
-            {label: 'Pedir 3 paquetes', value: 3, color: 'green'},
-            {label: 'Pedir 2 paquetes', value: 2},
+            {label: 'Comandă 3 pachete', value: 3, color: 'green'},
+            {label: 'Comandă 2 pachete', value: 2},
         ],
         shouldSkip: ({state}) => state.answers.course_packs !== 2,
         nextStep: ({option, state, bot}) => {
@@ -2497,7 +2451,7 @@ const chatSteps = [
                 };
                 const price = priceMap[packs];
                 return {
-                    text: `¡Gracias por tu pedido! Tu elección: <b>${packs} paquetes Nopalis</b>. Precio: <b>${price}&nbsp;MXN</b>\nAhora vamos a organizar la entrega.`,
+                    text: `Mulțumim pentru comandă! Alegerea dvs.: <b>${packs} pachete Nopalis</b>. Preț: <b>${price}&nbsp;MXN</b>\nAcum vom organiza livrarea.`,
                     typingDelay: 1000
                 };
             },
@@ -2521,33 +2475,33 @@ const chatSteps = [
         id: 'full_name',
         messages: [
             {
-                text: 'Por favor indica tu nombre y el nombre de la persona que recibirá el paquete.',
+                text: 'Vă rugăm să introduceți numele și prenumele destinatarului.',
                 typingDelay: 2000
             }
         ],
         expectFreeInput: true,
-        inputPlaceholder: 'Nombre y apellido',
+        inputPlaceholder: 'Nume și prenume',
     },
 
     {
         id: 'contact_phone',
-        messages: ['Proporciona tu número de teléfono de contacto.'],
+        messages: ['Vă rugăm să introduceți numărul dvs. de telefon.'],
         expectFreeInput: true,
-        inputPlaceholder: 'Número de teléfono de contacto',
+        inputPlaceholder: 'Număr de telefon',
     },
     {
         id: 'delivery_phone_type',
-        messages: ['Confirma tu número de teléfono para la entrega:'],
+        messages: ['Confirmați numărul pentru livrare:'],
         options: [
-            {label: 'Especificado previamente al realizar el pedido', value: 'from_form', name: 'From form'},
-            {label: 'Número de WhatsApp', value: 'whatsapp', name: 'WhatsApp'},
+            {label: 'Numărul indicat la comandă', value: 'from_form', name: 'From form'},
+            {label: 'Număr WhatsApp', value: 'whatsapp', name: 'WhatsApp'},
         ],
     },
     {
         id: 'whatsapp_phone',
-        messages: ['Introduce tu número de teléfono para WhatsApp:'],
+        messages: ['Introduceți numărul pentru WhatsApp:'],
         expectFreeInput: true,
-        inputPlaceholder: 'Número de teléfono para WhatsApp',
+        inputPlaceholder: 'Număr de telefon',
         shouldSkip: ({state}) => {
             // Пропускаємо цей крок, якщо обрано "Вказаний раніше"
             return state.answers.delivery_phone_type !== 'whatsapp';
@@ -2556,8 +2510,8 @@ const chatSteps = [
     {
         id: 'delivery_form',
         messages: [
-            'A continuación aparecerá un formulario para completar los detalles de entrega.',
-            'Por favor, rellena todos los campos del formulario.',
+            'Mai jos va apărea formularul pentru livrare.',
+            'Vă rugăm să completați toate câmpurile.',
         ],
         showForm: true, // 👉 прапорець для показу форми
     },
@@ -2565,7 +2519,7 @@ const chatSteps = [
         id: 'final',
         messages: [
             {
-                text: '🎉 ¡Gracias! El pedido ha sido aceptado y enviado para su procesamiento.\nEspera un mensaje del servicio de mensajería por <b>WhatsApp o SMS<b> con los detalles de la entrega.',
+                text: '🎉 Mulțumim! Comanda a fost înregistrată și este în curs de procesare.\nVeți primi un mesaj prin <b>WhatsApp sau SMS</b> cu detaliile livrării.',
                 typingDelay: 2000
             }
         ],
