@@ -739,18 +739,18 @@
 
                         <div class="info-item">
                             <div>
-                                <h4>Descripción:</h4>
+                                <h4>Descriere:</h4>
                                 <p>Nutriționist senior Nopalis</p>
                                 <ul>
                                     <li>25 de ani de experiență ca nutriționist</li>
                                     <li>8 ani de colaborare cu Nopalis</li>
-                                    <li>Especialista del control de peso y de la pérdida de peso</li>
+                                    <li>Specialist în controlul greutății și slăbire</li>
                                 </ul>
                             </div>
                         </div>
 
 
-                        <button id="detailsBtn" type="button" class="info-btn">Volver al chat</button>
+                        <button id="detailsBtn" type="button" class="info-btn">Înapoi în chat</button>
 
                     </div>
                     <div class="info-footer">
@@ -853,14 +853,14 @@
     <!-- Call Time Modal -->
     <div class="modal-overlay-call-time" id="callTimeModal">
         <div class="modal-content-call">
-            <h3 class="modal-call-title">¿Cuando sería un buen momento para recibir una llamada?</h3>
+            <h3 class="modal-call-title">Când vă convine să primiți apelul?</h3>
             <p class="modal-call-text">
-                Si le quedan preguntas sobre el pedido, podemos contactar con usted.<br>
-                Elija la hora cómoda para la llamada.<br><br>
-                <span class="modal-call-note">Atención: El horario seleccionado es una recomendación. Intentaremos tenerlo en cuenta, pero no podemos garantizar la llamada durante este periodo.</span>
+                Dacă aveți întrebări legate de comandă, putem să vă contactăm.<br>
+                Alegeți un interval convenabil pentru apel.<br><br>
+                <span class="modal-call-note">Atenție: timpul selectat este doar o recomandare. Vom încerca să ținem cont, dar nu putem garanta apelul exact în acel interval.</span>
             </p>
             <div class="time-selector">
-                <label for="callTimeSelect">Horario preferido:</label>
+                <label for="callTimeSelect">Interval preferat:</label>
                 <select id="callTimeSelect" class="call-time-select">
                     <option value="08:00 AM">08:00 AM</option>
                     <option value="09:00 AM">09:00 AM</option>
@@ -881,22 +881,22 @@
             </div>
 
             <div class="modal-content-call__controls">
-                <button id="submitCallTime" class="submit-call-time-btn" data-text="Trimite" data-process="Enviando...">
+                <button id="submitCallTime" class="submit-call-time-btn" data-text="Trimite" data-process="Se trimite...">
                     Trimite
                 </button>
-                <button id="backFromCallTime" type="button" class="back-from-call-time-btn">Atrás</button>
-                <button id="closeCallTime" type="button" class="close-call-time-btn">No estor preparado para hablar por teléfono</button>
+                <button id="backFromCallTime" type="button" class="back-from-call-time-btn">Înapoi</button>
+                <button id="closeCallTime" type="button" class="close-call-time-btn">Nu sunt pregătit(ă) să vorbesc la telefon</button>
             </div>
 
             <div id="thankYouMessage" class="thank-you-message hidden">
-                ¡Gracias! Intentaremos contactarle lo antes posible.
+                Mulțumim! Vom încerca să vă contactăm cât mai curând.
             </div>
         </div>
     </div>
     <div class="modal-overlay-close" id="endConsultationModal">
         <div class="modal-content-close">
             <div class="modal-body">
-                <h3>¿Estás seguro que deseas finalizar la consulta?</h3>
+                <h3>Sunteți sigur(ă) că doriți să încheiați consultarea?</h3>
                 <div class="modal-buttons">
                     <button class="confirm-btn" type="submit" id="confirmEnd">
                         Da
@@ -910,8 +910,8 @@
     <div id="actionPopup" class="action-popup" aria-hidden="true">
         <div class="action-popup__overlay"></div>
         <div class="action-popup__dialog" role="dialog" aria-modal="true" aria-labelledby="actionPopupTitle">
-            <h2 class="action-popup__title" id="actionPopupTitle">Deja tus datos</h2>
-            <p class="action-popup__text">Inserta tu nombre y número de teléfono para seguir.</p>
+            <h2 class="action-popup__title" id="actionPopupTitle">Lăsați datele dvs.</h2>
+            <p class="action-popup__text">Introduceți numele și numărul de telefon pentru a continua.</p>
             <div class="action-popup__fields">
                 <input
                         id="actionPopupName"
@@ -927,11 +927,11 @@
                         type="tel"
                         name="phone"
                         inputmode="numeric"
-                        placeholder="Număr de telefon "
+                        placeholder="Număr de telefon"
                         autocomplete="tel"
                 />
             </div>
-            <p class="action-popup__success" id="actionPopupSuccess" hidden>¡Tus datos se han enviado correctamente!</p>
+            <p class="action-popup__success" id="actionPopupSuccess" hidden>Datele dvs. au fost trimise cu succes!</p>
             <div class="action-popup__buttons">
                 <button type="button" class="action-popup__btn action-popup__btn--send" id="actionPopupSend"
                         data-text="Trimite" data-process="Enviando...">Trimite
