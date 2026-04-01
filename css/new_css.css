@@ -1229,6 +1229,7 @@ body {
     /* Фіксована кнопка WhatsApp */
     .whatsapp-float {
 
+        margin-bottom: 0;
         position: fixed;
         bottom: 25px;
         right: 25px;
