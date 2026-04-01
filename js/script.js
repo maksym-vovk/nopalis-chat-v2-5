@@ -79,21 +79,72 @@ const months=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
 
 
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     const stickyBlock = document.querySelector('.doc-b');
+//     const stickyParent = stickyBlock.parentElement;
+//     const bottomEdge = document.querySelector(".stop-side");
+//     const offset = 20; // відступ від верху екрану
+//
+//     // Створюємо обгортку
+//     const stickyWrap = document.createElement("div");
+//     stickyWrap.classList.add("sticky-wrap");
+//     stickyWrap.style.position = "relative"; // ключово для absolute-зупинки
+//     stickyParent.appendChild(stickyWrap);
+//     stickyWrap.appendChild(stickyBlock);
+//
+//     // Встановлюємо висоту обгортки = висота батьківської колонки
+//     // щоб блок мав "простір" для подорожі вниз
+//     function syncWrapHeight() {
+//         stickyWrap.style.height = stickyParent.offsetHeight + "px";
+//     }
+//     syncWrapHeight();
+//     window.addEventListener("resize", syncWrapHeight);
+//
+//     function setPositionSticky() {
+//         const wrapTop    = stickyWrap.getBoundingClientRect().top;
+//         const wrapHeight = stickyWrap.offsetHeight;
+//         const blockHeight = stickyBlock.offsetHeight;
+//         const stopY      = bottomEdge.getBoundingClientRect().top;
+//
+//         if (wrapTop >= offset) {
+//             // Ще не доскролили — блок на місці
+//             stickyBlock.style.position = "static";
+//             stickyBlock.style.top = "";
+//
+//         } else if (stopY >= blockHeight + offset) {
+//             // Скролимо в зоні — фіксуємо
+//             stickyBlock.style.position = "fixed";
+//             stickyBlock.style.top = offset + "px";
+//             stickyBlock.style.opacity = "1";
+//
+//         } else {
+//             // Досягли зупинки — прибиваємо до дна обгортки
+//             stickyBlock.style.opacity = "0";
+//             stickyBlock.style.position = "fixed";
+//             stickyBlock.style.top = offset + "px";
+//         }
+//     }
+//
+//     setPositionSticky();
+//     window.addEventListener("scroll", setPositionSticky);
+// });
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const stickyBlock = document.querySelector('.doc-b');
     const stickyParent = stickyBlock.parentElement;
-    const bottomEdge = document.querySelector(".stop-side");
-    const offset = 20; // відступ від верху екрану
+    const stopElement = document.querySelector(".stop-side");
+
+    const offset = 20; // відступ від нижнього краю екрану
 
     // Створюємо обгортку
     const stickyWrap = document.createElement("div");
     stickyWrap.classList.add("sticky-wrap");
-    stickyWrap.style.position = "relative"; // ключово для absolute-зупинки
+    stickyWrap.style.position = "relative";
     stickyParent.appendChild(stickyWrap);
     stickyWrap.appendChild(stickyBlock);
 
-    // Встановлюємо висоту обгортки = висота батьківської колонки
-    // щоб блок мав "простір" для подорожі вниз
+    // Синхронізуємо висоту обгортки
     function syncWrapHeight() {
         stickyWrap.style.height = stickyParent.offsetHeight + "px";
     }
@@ -101,34 +152,38 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", syncWrapHeight);
 
     function setPositionSticky() {
-        const wrapTop    = stickyWrap.getBoundingClientRect().top;
-        const wrapHeight = stickyWrap.offsetHeight;
+        const wrapRect = stickyWrap.getBoundingClientRect();
         const blockHeight = stickyBlock.offsetHeight;
-        const stopY      = bottomEdge.getBoundingClientRect().top;
+        const stopRect = stopElement ? stopElement.getBoundingClientRect() : null;
 
-        if (wrapTop >= offset) {
-            // Ще не доскролили — блок на місці
-            stickyBlock.style.position = "static";
-            stickyBlock.style.top = "";
-
-        } else if (stopY >= blockHeight + offset) {
-            // Скролимо в зоні — фіксуємо
+        if (wrapRect.top > offset) {
+            // Ще не почали прилипати — звичайне положення
             stickyBlock.style.position = "fixed";
-            stickyBlock.style.top = offset + "px";
+            stickyBlock.style.bottom = "20px";
+            stickyBlock.style.top = "";
+            stickyBlock.style.opacity = "1";
+
+        } else if (!stopRect || stopRect.top > window.innerHeight - blockHeight - offset) {
+            // Зона прилипання — фіксуємо знизу
+            stickyBlock.style.position = "fixed";
+            stickyBlock.style.bottom = offset + "px";
+            stickyBlock.style.top = "auto";
             stickyBlock.style.opacity = "1";
 
         } else {
-            // Досягли зупинки — прибиваємо до дна обгортки
-            stickyBlock.style.opacity = "0";
+            // Досягли стоп-елемента — плавно зникаємо
             stickyBlock.style.position = "fixed";
-            stickyBlock.style.top = offset + "px";
+            stickyBlock.style.bottom = offset + "px";
+            stickyBlock.style.top = "auto";
+            stickyBlock.style.opacity = "0";        // ← плавне зникнення
         }
     }
 
+    // Ініціалізація
     setPositionSticky();
     window.addEventListener("scroll", setPositionSticky);
+    window.addEventListener("resize", setPositionSticky);
 });
-
 
 // promo js
 

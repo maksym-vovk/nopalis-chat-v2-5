@@ -52,10 +52,10 @@ p {
 }
 
 
-.chat-btn {
-    width: 100% ;
-    text-align: center;
-}
+/*.chat-btn {*/
+/*    width: 100% ;*/
+/*    text-align: center;*/
+/*}*/
 .chat-bot button, .chat-bot input, .chat-bot select, .chat-bot textarea {
     line-height: 1.5;
 }

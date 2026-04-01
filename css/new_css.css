@@ -1221,7 +1221,86 @@ body {
     transition: all 700ms ease;
 }
 
+.whatsapp-float {
+    display: none;
+}
+
 @media screen and (max-width: 1023px) {
+    /* Фіксована кнопка WhatsApp */
+    .whatsapp-float {
+
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+        text-decoration: none;
+        z-index: 9;
+        transition: all 0.3s ease;
+        padding: 6px;
+        border: none;
+    }
+
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+        background-color: #20c65b;
+    }
+
+    .whatsapp-float img {
+        width: 35px;
+        height: 35px;
+        filter: brightness(0) invert(1); /* робить іконку білою */
+    }
+
+    /* Текст поруч з кнопкою (з'являється при наведенні) */
+    .whatsapp-text {
+        position: absolute;
+        right: 70px;
+        background-color: #333;
+        color: white;
+        padding: 8px 14px;
+        border-radius: 20px;
+        white-space: nowrap;
+        font-size: 14px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        pointer-events: none;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .whatsapp-float:hover .whatsapp-text {
+        opacity: 1;
+        visibility: visible;
+        right: 75px;
+    }
+
+    /* Адаптивність */
+    @media (max-width: 768px) {
+        .whatsapp-float {
+            bottom: 20px;
+            right: 20px;
+            width: 55px;
+            height: 55px;
+        }
+
+        .whatsapp-float img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .whatsapp-text {
+            display: none; /* на мобільних текст приховуємо */
+        }
+    }
     .adaptation-timeline {
         justify-content: center!important;
     }
@@ -2034,12 +2113,12 @@ footer a:hover {
 
 @media screen and (min-width: 640px) {
     .order {
-        max-width: 650px;
+        max-width: 595px;
         gap: 20px;
     }
 
     .order-info {
-        flex-basis: 55%;
+        flex-basis: 50%;
     }
 }
 
@@ -2050,7 +2129,7 @@ footer a:hover {
 .discount-banner {
     position: absolute;
     top: -15px;
-    right: -25px;
+    right: -15px;
     display: inline-block;
     background: linear-gradient(135deg, #ff5252, #ff1744);
     color: #fff;
@@ -2407,6 +2486,7 @@ ol.colored-list li:nth-child(4) .icon {
 .doc-b {
     width: 100%;
     max-width: 300px;
+    /*margin-top: 205px;*/
 }
 .logo {
     max-width: 60px;
@@ -2441,4 +2521,50 @@ ol.colored-list li:nth-child(4) .icon {
     background-position: center;
     background-size: contain;
     vertical-align: bottom;
+}
+
+.order-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 30px;
+}
+
+.order-doc {
+    max-width: 310px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.order-expert .chat-btn{
+    text-align: center;
+    width: 100%;
+}
+.order-expert {
+    max-width: 305px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-shrink: 2;
+    gap: 15px;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .order-doc {
+        max-width: 260px;
+    }
+    .order-expert {
+        width: 100%;
+        max-width: 100% ;
+        align-content: center;
+        justify-content: center;
+    }
+    .order-wrapper {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
