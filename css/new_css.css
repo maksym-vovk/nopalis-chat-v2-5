@@ -2152,7 +2152,7 @@ footer a:hover {
 .list-danger {
     list-style: none;
     /*padding-left: 0;*/
-    font-family: Arial, sans-serif;
+    /*font-family: Arial, sans-serif;*/
 }
 
 .list-danger li:not(:last-of-type) {
@@ -2259,7 +2259,7 @@ ol.colored-list {
     list-style: none;
     padding-left: 0;
     max-width: 100%;
-    font-family: Arial, sans-serif;
+    /*font-family: Arial, sans-serif;*/
 }
 
 ol.colored-list li {
@@ -2342,7 +2342,7 @@ ol.colored-list li:nth-child(4) .icon {
     padding: 16px;
     border-radius: 8px;
     /*max-width: 700px;*/
-    font-family: 'Segoe UI', sans-serif;
+    /*font-family: 'Segoe UI', sans-serif;*/
 }
 
 .quote-block .avatar {
