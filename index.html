@@ -71,13 +71,17 @@
 
                                     <!-- Facade: только превью и кнопка play -->
                                     <div id="yt-facade" data-video-id="dffIzGTbf-I">
-                                        <img id="yt-thumb"
-                                             src="images/maxresdefault.jpg"
-                                             width="660"
-                                             height="371"
-                                             alt="Ozenmic Soft română"
-                                             decoding="async"
-                                             style="width:100%; height:100%; object-fit:cover; display:block;">
+
+                                        <picture>
+                                            <source srcset="images/maxresdefault.webp" type="image/webp">
+                                            <img id="yt-thumb"
+                                                 src="images/maxresdefault.jpg"
+                                                 width="660"
+                                                 height="371"
+                                                 alt="Ozenmic Soft română"
+                                                 decoding="async"
+                                                 style="width:100%; height:100%; object-fit:cover; display:block;">                                        </picture>
+
 
                                         <!-- Кнопка Play (inline SVG, никаких шрифтов/иконок) -->
                                         <button id="yt-play-btn"
