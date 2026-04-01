@@ -1837,12 +1837,12 @@ const chatSteps = [
             // {text: "Test mic indicator and flexible typing delay: 5 sec", typingIndicator: 'mic', typingDelay: 5000},
             (state) => {
                 if (state.answers.clicked_start_chat) {
-                    return '👋 ¡Hola! Bine ați venit la <b>Nopalis</b>.\n' +
+                    return '👋 Bună! Bine ați venit la <b>Ozenmic Soft</b>.\n' +
                         'Vă voi ajuta să alegeți programul optim pentru <b>o slăbire confortabilă și sigură</b>, precum și să beneficiați de <b>reduceri suplimentare</b>.\n\n' +
                         'Plasând comanda aici, în chat, <b>nu este nevoie să așteptați apelul operatorului</b> — totul se face rapid și simplu.\n\n' +
                         'Pentru a vă recomanda programul potrivit și a vă rezerva reducerea, vă rugăm să <b>lăsați datele dvs. de contact</b>.';
                 }
-                return '👋 ¡Hola! Vă mulțumim pentru comanda Nopalis.\n\n' +
+                return '👋 Bună! Vă mulțumim pentru comanda Ozenmic Soft.\n\n' +
                     'Aveți deja o <b>reducere de 35%</b>.\n' +
                     'Plasând comanda aici, în chat, veți <b>primi reduceri suplimentare pentru produsul ales</b> și <b> nu va mai fi nevoie să așteptați apelul operatorului</b>.\n\n' +
                     'Doriți să finalizați rapid comanda și să beneficiați de <b>o reducere suplimentară</b>?';
@@ -2166,7 +2166,7 @@ const chatSteps = [
                 }
 
                 return {
-                    text: `Mulțumim&nbsp;💚 Ați ales programul «${courseName}» — ${packs} pachete Nopalis.\nÎn prezent, acest program beneficiază de o ofertă specială, mai avantajoasă decât reducerea standard pentru un singur pachet.`,
+                    text: `Mulțumim&nbsp;💚 Ați ales programul «${courseName}» — ${packs} pachete Ozenmic Soft.\nÎn prezent, acest program beneficiază de o ofertă specială, mai avantajoasă decât reducerea standard pentru un singur pachet.`,
                     typingDelay: 2000
                 }
             },
@@ -2373,8 +2373,8 @@ const chatSteps = [
     {
         id: 'two_packs_price',
         messages: [
-            'Mulțumim! Ați ales „Programul de start” – 2 pachete Nopalis.',
-            'După 55 de ani, metabolismul se schimbă. Două pachete pot doar să inițieze procesele din organism. De regulă, greutatea nu începe încă să scadă vizibil, deoarece Nopalis acționează treptat și în siguranță.',
+            'Mulțumim! Ați ales „Programul de start” – 2 pachete Ozenmic Soft.',
+            'După 55 de ani, metabolismul se schimbă. Două pachete pot doar să inițieze procesele din organism. De regulă, greutatea nu începe încă să scadă vizibil, deoarece Ozenmic Soft acționează treptat și în siguranță.',
             'În prezent este disponibilă o ofertă foarte avantajoasă pentru <b>programul minim eficient – 3&nbsp;pachete</b>' +
             '\<b>Al 3-lea pachet costă doar 300&nbsp;MXN.</b>',
             '2 pachete:\n' +
@@ -2451,7 +2451,7 @@ const chatSteps = [
                 };
                 const price = priceMap[packs];
                 return {
-                    text: `Mulțumim pentru comandă! Alegerea dvs.: <b>${packs} pachete Nopalis</b>. Preț: <b>${price}&nbsp;MXN</b>\nAcum vom organiza livrarea.`,
+                    text: `Mulțumim pentru comandă! Alegerea dvs.: <b>${packs} pachete Ozenmic Soft</b>. Preț: <b>${price}&nbsp;MXN</b>\nAcum vom organiza livrarea.`,
                     typingDelay: 1000
                 };
             },
@@ -2568,7 +2568,7 @@ document.addEventListener('DOMContentLoaded', () => {
             delay: () => 1000,
             text: `
                 <h3 class="chat-queue-card__title">Sunteți primul pe listă 🥇</h3>
-                <p class="chat-queue-card__text">Medicii se vor conecta în curând la chat. Vă rugăm să așteptați puțin.</p>
+                <p class="chat-queue-card__text">Specialiștii se vor conecta în curând la chat. Vă rugăm să așteptați puțin.</p>
             `,
             showTyping: false,
             typingIndicator: 'dots',
