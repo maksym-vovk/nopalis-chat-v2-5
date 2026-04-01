@@ -51,73 +51,101 @@
         </a></div>
     </div>
 </div>
-<main class="banner-area-vsl section-padding"
-      style=" background: #f7f7f7; padding-top: 5px; padding-bottom: 20px; padding-right: 10px; padding-left: 10px; ">
-    <!-- 1 screen -->
+<main class="banner-area-vsl section-padding" style=" background: #f7f7f7; padding-top: 5px; padding-bottom: 20px; padding-right: 10px; padding-left: 10px; ">
     <div class="container m-container" style="">
         <h2 id="title-of-sound" class="" style="width: 100%;">
             <span class="sound-icon sound-icon--left"></span>
-<!--            <img class="sound-icon" src="images/sound-icon2.png" width="250" height="250" alt="img">-->
             Pierdere în greutate sigură. Fără injecții.
             <span class="nowrap"> Fără riscuri.
                     <span class="sound-icon sound-icon--right"></span>
-<!--                <img class="sound-icon" src="images/sound-icon11.png" width="250" height="250" alt="img">-->
             </span>
         </h2>
         <div class="wrapper">
             <div class="content">
                 <div class="row m-row" style="">
-                    <div class=" mx-auto t-mx" style="background: inherit; color: rgb(45, 50, 144);">
+                    <div class=" mx-auto t-mx" style="background: inherit; color: rgb(45, 50, 144);"></div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 yt-mob">
+                        <div class="row" id="yt-container">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="hauto">
+                                <div id="video-container">
 
-                        <!-- <h3 class="first__title" style="font-weight: 100; text-align: center; font-size: 17px;">-->
-                        <!-- Альтернатива гормональним ін’єкціям — тепер у форматі зручних капсул--> <!-- </h3>-->
-                        <!-- <h1 style="">-->
-                        <!-- Подивіться відео: як <a href="#order_form" class="link nowrap" style="">Ozenmic Soft</a> - працює-->
-                        <!-- зсередини<br></h1>--> </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 yt-mob" style="">
-                        <div class="row" id="yt-container" style="background: inherit; height: auto;">
-                            <div class="col-xs-12 col-sm-12 col-md-12 video col-lg-12" id="hauto" style="">
-                                <div id="video-container" style="margin: 20px 20px 20px 0px;">
-                                    <iframe class="playerwrap" id="player" allowfullscreen=""
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            title="Ozenmic Soft română" width="380" height="680"
-                                            src="https://www.youtube.com/embed/dffIzGTbf-I?si=lkstQfRQIDgPCAc0&autoplay=0&controls=0&modestbranding=0&rel=0&showinfo=0&playsinline=1&fs=0&disablekb=1&enablejsapi=1&widgetid=1"></iframe>
-<!--START: Check youtube logic-->
-                                    <div class="player-overlay2"
-                                         style="position: absolute; bottom: 0px; border: 0px; right: 0px; height: 100px; z-index: 300000000; width: 200px;"></div>
-                                    <div style="position: absolute; top: 0px; border: 0px; left: 0px; height: 70px; z-index: 300000000; max-width: 700px;"></div>
-                                    <div class="player-overlay3"
-                                         style="position: absolute; top: 0px; border: 0px; right: 0px; height: 70px; z-index: 3; width: 30%;"></div>
-                                    <div class="player-overlay"
-                                         style="box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 150px 50px inset; display: none; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;"></div>
-                                    <div id="main-player-overlay"
-                                         style="box-shadow: rgba(0, 0, 0, 0) 0px 0px 150px 50px inset; display: block; position: absolute; width: 100%; height: 100%; top: 0px; pointer-events: none; left: 0px;"></div>
-                                    <div class="player-block" style="display: none;"></div>
-                                    <div class="d-none" id="controls" style="">
-                                        <button class="on controls-btt" id="volume" type="button" style=""></button>
-                                        <button class="controls-btt" id="backward" type="button" style=""></button>
-                                        <button class="controls-btt" id="forward" type="button" style=""></button>
+                                    <!-- Facade: только превью и кнопка play -->
+                                    <div id="yt-facade" data-video-id="dffIzGTbf-I">
+                                        <img id="yt-thumb"
+                                             src="images/maxresdefault.jpg"
+                                             width="1280"
+                                             height="720"
+                                             alt="Ozenmic Soft română"
+                                             decoding="async"
+                                             style="width:100%; height:100%; object-fit:cover; display:block;">
+
+                                        <!-- Кнопка Play (inline SVG, никаких шрифтов/иконок) -->
+                                        <button id="yt-play-btn"
+                                                type="button"
+                                                aria-label="Play video"
+                                                style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+                                                 background:rgba(0,0,0,0.7); border:none; border-radius:50%;
+                                                 width:68px; height:68px; cursor:pointer; padding:0; display:flex;
+                                                 align-items:center; justify-content:center;">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                                                <path d="M8 5v14l11-7z"/>
+                                            </svg>
+                                        </button>
+
+                                        <!-- Оверлей тени (box-shadow без JS) -->
+                                        <div style="position:absolute; inset:0; pointer-events:none;
+                      box-shadow:inset 0 0 80px 20px rgba(0,0,0,0.5);"></div>
                                     </div>
-<!--END: Check youtube logic-->
-                                </div>
-                                <button class="pause-video" style="display: none;" aria-label="button video"
-                                        type="button"></button>
-<!--                                <div class="d-lg-none d-md-none d-sm-block d-xs-block" style="">-->
-<!--                                    <div class="next-step-container" style=""><a href="#order_form" target="_blank"-->
-<!--                                                                                 style="">-->
-<!--&lt;!&ndash;                                        <picture>&ndash;&gt;-->
-<!--&lt;!&ndash;                                            <source srcset="images/nsb_BE.webp" type="image/webp">&ndash;&gt;-->
-<!--&lt;!&ndash;                                            <img alt="img" src="images/nsb_BE.png">       &ndash;&gt;-->
-<!--&lt;!&ndash;                                        </picture>&ndash;&gt;-->
 
-<!--                                    </a></div>-->
-<!--                                </div>-->
+                                    <!-- Кнопка паузы (скрыта до запуска) -->
+                                    <!-- Кастомная кнопка паузы/плея — поверх видео -->
+                                    <button class="pause-video"
+                                            type="button"
+                                            aria-label="Play video"
+                                            style="display:none;">
+                                        <!-- твой кастомный контент кнопки -->
+                                    </button>
+                                    <!-- Кастомные контролы (скрыты по умолчанию) -->
+                                    <div id="controls" class="d-none">
+                                        <button class="on controls-btt" id="volume"   type="button"></button>
+                                        <button class="controls-btt"    id="backward" type="button"></button>
+                                        <button class="controls-btt"    id="forward"  type="button"></button>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div> <!-- <div class="container-btn" style="">-->
-                <!-- <a href="#order_form" class="submit-roulette submit-roulette-bottom to_form f__btn" style="">-->
-                <!-- orden--> <!-- </a>--> <!-- </div>--> <!-- 2 screen -->
+<!--                    <div class="col-xs-12 col-sm-12 col-md-12 yt-mob" style="">-->
+<!--                        <div class="row" id="yt-container" style="background: inherit; height: auto;">-->
+<!--                            <div class="col-xs-12 col-sm-12 col-md-12 video col-lg-12" id="hauto" style="">-->
+<!--                                <div id="video-container" style="margin: 20px 20px 20px 0px;">-->
+<!--                                    <iframe class="playerwrap" id="player" allowfullscreen=""-->
+<!--                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
+<!--                                            title="Ozenmic Soft română" width="380" height="680"-->
+<!--                                            src="https://www.youtube.com/embed/dffIzGTbf-I?si=lkstQfRQIDgPCAc0&autoplay=0&controls=0&modestbranding=0&rel=0&showinfo=0&playsinline=1&fs=0&disablekb=1&enablejsapi=1&widgetid=1"></iframe>-->
+<!--                                    <div class="player-overlay2"-->
+<!--                                         style="position: absolute; bottom: 0px; border: 0px; right: 0px; height: 100px; z-index: 300000000; width: 200px;"></div>-->
+<!--                                    <div style="position: absolute; top: 0px; border: 0px; left: 0px; height: 70px; z-index: 300000000; max-width: 700px;"></div>-->
+<!--                                    <div class="player-overlay3"-->
+<!--                                         style="position: absolute; top: 0px; border: 0px; right: 0px; height: 70px; z-index: 3; width: 30%;"></div>-->
+<!--                                    <div class="player-overlay"-->
+<!--                                         style="box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 150px 50px inset; display: none; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;"></div>-->
+<!--                                    <div id="main-player-overlay"-->
+<!--                                         style="box-shadow: rgba(0, 0, 0, 0) 0px 0px 150px 50px inset; display: block; position: absolute; width: 100%; height: 100%; top: 0px; pointer-events: none; left: 0px;"></div>-->
+<!--                                    <div class="player-block" style="display: none;"></div>-->
+<!--                                    <div class="d-none" id="controls" style="">-->
+<!--                                        <button class="on controls-btt" id="volume" type="button" style=""></button>-->
+<!--                                        <button class="controls-btt" id="backward" type="button" style=""></button>-->
+<!--                                        <button class="controls-btt" id="forward" type="button" style=""></button>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <button class="pause-video" style="display: none;" aria-label="button video"-->
+<!--                                        type="button"></button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
                 <hr>
                 <h2 class="main__title form__main-title">Cum funcționează
                     <a href="#order_form">
@@ -335,7 +363,7 @@
                         <p class="form-descr">Pentru a comanda
                             <span class="nowrap">Ozenmic Soft</span>
                             cu o ofertă specială!
-                        </p> <!-- <p class="form-descr">Настав час подбати про себе</p> -->
+                        </p>
                     </div>
                     <div class="form-product-wrapper">
                         <div class="img-wrap form-pack">
@@ -693,7 +721,6 @@
                     </p>
                     <div class="chat-progress-bar__line" id="chatProgressBar">
                         <div class="chat-progress-fill" id="chatProgressFill"></div>
-                        <!--                        <span class="chat-progress-label" id="chatProgressLabel">0%</span>-->
                     </div>
                 </div>
             </div>
@@ -731,7 +758,6 @@
                             </svg>
                         </h2>
                         <p class="info-title">
-                            <!--                            Nutriționist senior Nopalis-->
                         </p>
                     </div>
                     <div class="info-details">
@@ -747,10 +773,7 @@
                                 </ul>
                             </div>
                         </div>
-
-
                         <button id="detailsBtn" type="button" class="info-btn">Înapoi în chat</button>
-
                     </div>
                     <div class="info-footer">
                         <p class="info-panel-close"></p>
@@ -937,12 +960,6 @@
             </div>
         </div>
     </div>
-    <!--    <div class="close">-->
-    <!--        <button id="closeBtn" class="close-btn">-->
-    <!--            <span class="cross-line line1"></span>-->
-    <!--            <span class="cross-line line2"></span>-->
-    <!--        </button>-->
-    <!--    </div>-->
 </div>
 
 <script defer src="js/meta-pixel.js"></script>

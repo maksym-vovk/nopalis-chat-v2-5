@@ -902,6 +902,7 @@ a:hover {
 }
 
 #video-container {
+    position: relative;
     width: 100%;
     height: 0;
     display: inline-block;
@@ -935,6 +936,34 @@ a:hover {
     left: 0 !important;
     width: 100% !important;
     height: 100%;
+}
+
+/* Facade растягивается на весь контейнер */
+#yt-facade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #000;
+    overflow: hidden;
+}
+
+/* Картинка превью заполняет facade */
+#yt-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Кнопка play по центру */
+#yt-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #next-step-container {
@@ -1057,6 +1086,26 @@ body {
     -ms-transform: translate(-18%, -50%);
 }
 
+.pause-video {
+    position: absolute;
+    /* подставь свои значения позиции */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: none;
+    /* fade через transition вместо jQuery fadeIn/fadeOut */
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+
+.pause-video.visible {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
 #timer .value {
     display: inline-block;
     text-align: center;
@@ -1174,6 +1223,8 @@ body {
 
 #hauto {
     height: 100%;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .pause-video {
@@ -1293,6 +1344,7 @@ body {
 
 #video-container {
     display: inline-block;
+    background: black;
 }
 
 #backward {
