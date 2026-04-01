@@ -85,7 +85,7 @@ class CustomSelect {
 
                 this.filterItems();
                 this.validate();
-            }, 140);
+            }, 80);
         });
 
         document.querySelectorAll('input:not([name="landmark"])').forEach(input => {
@@ -93,9 +93,15 @@ class CustomSelect {
         });
     }
 
+    // openSelect() {
+    //     this.selectWrapper.classList.add('open');
+    // }
+
     openSelect() {
         this.selectWrapper.classList.add('open');
+        this.filterItems();
     }
+
 
     closeSelect(e) {
         if (!this.selectWrapper.contains(e.target)) {
@@ -106,13 +112,15 @@ class CustomSelect {
     filterItems() {
         const filter = this.input.value.trim().toLowerCase();
 
-        // Optimize only city (largest dataset)
         if (this.type === 'city') {
-            if (filter.length < 2) {
-                this.renderItems([]);
+            // Порожній ввід — показуємо перші 200 міст
+            if (filter.length === 0) {
+                // this.renderItems(this.sourceItems.slice(0, 200));
+                this.renderItems(this.sourceItems);
                 return;
             }
 
+            // 1+ символ — фільтруємо
             const matches = this.sourceItems
                 .filter(item => item._search.includes(filter))
                 .slice(0, 100);
@@ -121,7 +129,7 @@ class CustomSelect {
             return;
         }
 
-        // Fallback for small lists
+        // Fallback for small lists (zipcode etc.)
         const items = this.list.querySelectorAll('.custom-select-item');
         items.forEach((item) => {
             item.style.display = item.textContent.toLowerCase().includes(filter) ? 'block' : 'none';
