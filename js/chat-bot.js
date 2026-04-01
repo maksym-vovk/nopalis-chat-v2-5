@@ -2031,7 +2031,7 @@ const chatSteps = [
                 typingDelay: 1500
             },
             {
-                text: `<div class="chat-review"><span class="chat-review__label">Redirecționat</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/comm-ava-8.jpg" alt="" class="chat-review__avatar"><b>Cristina</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Mi-a fost teamă să iau medicamente hormonale. E bine că l-am găsit pe Ozenmic. Efectul este foarte gradual, dar constant și mi se potrivește. Am slăbit deja 6 kg în 2 luni.</p><img class="chat-review__live" src="${basePath}images/Eliana.jpg" alt="live-photo"></div></div>`,
+                text: `<div class="chat-review"><span class="chat-review__label">Redirecționat</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/comm-ava-8.jpg" alt="" class="chat-review__avatar"><b>Cristina</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Mi-a fost teamă să iau medicamente hormonale. E bine că l-am găsit pe Ozenmic Soft. Efectul este foarte gradual, dar constant și mi se potrivește. Am slăbit deja 6 kg în 2 luni.</p><img class="chat-review__live" src="${basePath}images/Eliana.jpg" alt="live-photo"></div></div>`,
                 typingDelay: 500
             },
             {
