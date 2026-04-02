@@ -27,20 +27,19 @@
 <!--    <noscript>-->
 <!--        <link rel="stylesheet" href="css/css.css">-->
 <!--    </noscript>-->
-    <link rel="stylesheet" href="css/chat-bot.css">
-<!--    <noscript>-->
-<!--        <link rel="stylesheet" href="css/chat-bot.css">-->
-<!--    </noscript>-->
-    <link rel="stylesheet" href="css/chat-form.css">
-<!--    <noscript>-->
-<!--        <link rel="stylesheet" href="css/chat-form.css">-->
-<!--    </noscript>-->
-    <link rel="stylesheet" href="css/order-form.css">
-<!--    <noscript>-->
-<!--        <link rel="stylesheet" href="css/order-form.css">-->
-<!--    </noscript>-->
+    <link rel="stylesheet" href="css/chat-bot.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="css/chat-bot.css">
+    </noscript>
+    <link rel="stylesheet" href="css/chat-form.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="css/chat-form.css">
+    </noscript>
+    <link rel="stylesheet" href="css/order-form.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="css/order-form.css">
+    </noscript>
 </head>
-
 
 <body class="liver-theme ev-date">
 
@@ -431,7 +430,12 @@
 
                     <div class="order-expert">
                         <h2 class="form-descr">Vrei să faci o comandă acum? Scrie-ne și primești o reducere suplimentară 💸</h2>
-                        <img class="order-doc" src="images/order-doc.jpg" alt="expert">
+
+                        <picture>
+                            <source srcset="images/order-doc.webp" type="image/webp">
+                            <img class="order-doc" src="images/order-doc.jpg" alt="expert">
+                        </picture>
+
                         <div class="chat-btn" id="chat-btn">
                             <button type="button" class="chat-btn submit-roulette">Chat</button>
                         </div>
