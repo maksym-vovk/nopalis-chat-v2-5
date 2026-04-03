@@ -1,31 +1,31 @@
 // открывем чат после перехода с subscribe123.html
 window.addEventListener('DOMContentLoaded', () => {
-  try {
-    const openChat = localStorage.getItem('openChat');
+    try {
+        const openChat = localStorage.getItem('openChat');
 
-    if (openChat === 'true') {
-      const chatBot = document.querySelector('.chat-bot');
-      if (chatBot) {
-        chatBot.classList.remove('hidden');
+        if (openChat === 'true') {
+            const chatBot = document.querySelector('.chat-bot');
+            if (chatBot) {
+                chatBot.classList.remove('hidden');
 
-          if (typeof setBodyScrollLock === 'function') {
-              setBodyScrollLock(true);
-          }
-      }
+                if (typeof setBodyScrollLock === 'function') {
+                    setBodyScrollLock(true);
+                }
+            }
 
-      // сбросить, чтобы сработало только один раз
-      localStorage.removeItem('openChat');
+            // сбросить, чтобы сработало только один раз
+            localStorage.removeItem('openChat');
 
-      document.querySelectorAll('.x_order_form').forEach(form => {
-        form.classList.remove('x_order_form');
-        form.classList.add('x_resubmit_form');
-        form.removeAttribute('action');
-        form.removeAttribute('method');
-      });
+            document.querySelectorAll('.x_order_form').forEach(form => {
+                form.classList.remove('x_order_form');
+                form.classList.add('x_resubmit_form');
+                form.removeAttribute('action');
+                form.removeAttribute('method');
+            });
+        }
+    } catch (e) {
+        console.warn('localStorage недоступен', e);
     }
-  } catch (e) {
-    console.warn('localStorage недоступен', e);
-  }
 });
 
 // progress-bar animation
@@ -56,14 +56,14 @@ for (var i = 0; i < linkNav.length; i++) {
     linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
         e.preventDefault(); //отменяем стандартное поведение
         var w = window.pageYOffset,  // производим прокрутка прокрутка
-        hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
+            hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
         t = document.querySelector(hash).getBoundingClientRect().top + 3,  // отступ от окна браузера до id
-        start = null;
+            start = null;
         requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
         function step(time) {
             if (start === null) start = time;
             var progress = time - start,
-            r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
             window.scrollTo(0,r);
             if (r != w + t) {
                 requestAnimationFrame(step)
@@ -484,12 +484,18 @@ function initExpertPopup(options = {}, widgetControls) {
         }
     }
 
+    let prevTriggerTop = null;
+
     function onScroll() {
         if (window.innerWidth > maxWidth || shown) return;
         const triggerTop = trigger.getBoundingClientRect().top;
-        if (triggerTop <= 0) {
+
+        // показываем только в момент когда верх формы пересекает верх экрана
+        if (prevTriggerTop !== null && prevTriggerTop > 0 && triggerTop <= 0) {
             setTimeout(showPopup, delay);
         }
+
+        prevTriggerTop = triggerTop;
     }
 
     if (closeBtn) closeBtn.addEventListener('click', hidePopup);
