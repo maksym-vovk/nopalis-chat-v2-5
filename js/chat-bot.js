@@ -136,8 +136,8 @@ class ChatBot {
         this.userID = localStorage.getItem('userID') || this._generateUserId();
         localStorage.setItem('userID', this.userID);
 
-        this.accessKey = '1ce1a4041466d1775c7b6c04bbe90cae';
-        this.secretKey = 'b29cf96857345234354b8c78476bf636';
+        this.accessKey = '1ce1a4041466d1775c7b6c04bbe90cae-test';
+        this.secretKey = 'b29cf96857345234354b8c78476bf636-test';
 
         this.messagesContainer = this._resolveElement(
             this.config.messagesContainer,
@@ -166,7 +166,7 @@ class ChatBot {
             const now = new Date();
             this._sendDataToSheet({
                 userID: this.userID,
-                'chat_version': '2.0',
+                'chat_version': '2.5',
                 FirstVisitUA: this._formatKyivDate(now),
                 FirstVisitMX: this._formatLocalDate(now),
                 LastAction: this._formatKyivDate(now),
@@ -1326,14 +1326,21 @@ class ChatBot {
             let price = null;
             let chose2Packs = null;
 
-            if (step.id === 'course_choice') {
+            if (step.id === 'course_choice' ||
+                step.id === 'two_packs_price' ||
+                step.id === 'two_packs_upsell') {
                 const packs = option.value;
-                // Приклад цін (замініть на ваші реальні)
+                console.log(packs);
+                // const priceMap = {
+                //     2: 1380,
+                //     3: 1480,
+                //     5: 1880,
+                //     6: 2450,
+                // };
                 const priceMap = {
-                    2: 1380,
-                    3: 1480,
-                    5: 1880,
-                    6: 2450,
+                    2: 368,
+                    4: 646,
+                    5: 558
                 };
                 price = priceMap[packs] || null;
 
@@ -1349,6 +1356,8 @@ class ChatBot {
             // 👉 Відправляємо важливі кроки в Google Sheets ***
             // const importantSteps = ['age', 'weight', 'goal', 'course_choice', 'involvement', 'delivery_phone_type'];
             const importantSteps = ['age', 'weight', 'goal', 'course_choice', 'delivery_phone_type'];
+            const updatePriceSteps = ['two_packs_price', 'two_packs_upsell']
+
             if (importantSteps.includes(step.id)) {
                 const data = {
                     userID: this.userID,
@@ -1369,6 +1378,21 @@ class ChatBot {
 
                 this._sendDataToSheet(data).catch(() => {
                 });
+            }
+            // 👉 Для upsell-кроків — оновлюємо тільки ціну, без зайвих колонок
+            if (updatePriceSteps.includes(step.id)) {
+                if (price !== null) {
+                    const data = {
+                        userID: this.userID,
+                        LastAction: this._formatKyivDate(),
+                        price: price,
+                        course_choice: option.value,
+                    };
+                    if (chose2Packs !== null) {
+                        data.chose_2_packs = chose2Packs;
+                    }
+                    this._sendDataToSheet(data).catch(() => {});
+                }
             }
         }
         this._saveState();
@@ -1940,15 +1964,15 @@ const chatSteps = [
         onEnter: (bot, state) => {
             // onEnter migration from id: 'goal_reco'
             const goal = state.answers.goal;
-            let recommendedPacks = 3;
+            let recommendedPacks = 4;
 
-            if (goal === '5_7') {
-                recommendedPacks = 3;
-            } else if (goal === '8_12') {
-                recommendedPacks = 5;
-            } else {
-                recommendedPacks = 6;
-            }
+            // if (goal === '5_7') {
+            //     recommendedPacks = 3;
+            // } else if (goal === '8_12') {
+            //     recommendedPacks = 5;
+            // } else {
+            //     recommendedPacks = 6;
+            // }
 
             // 👉 Зберігаємо в state
             state.answers.recommended_packs = recommendedPacks;
@@ -2064,9 +2088,10 @@ const chatSteps = [
                     '<p class="course-text"><b>Rezultatele vizibile sunt minime</b></p>' +
                     '</div>';
 
-                const courseMinimum = '<div class="course">' +
-                    '<b class="course-title">Program minim eficient (3&nbsp;pachete)' +
+                const courseMedium = '<div class="course">' +
+                    '<b class="course-title">Program minim eficient (4&nbsp;pachete)' +
                     '<span class="inline-products">' +
+                    '<span class="inline-product-item"></span>' +
                     '<span class="inline-product-item"></span>' +
                     '<span class="inline-product-item"></span>' +
                     '<span class="inline-product-item"></span>' +
@@ -2077,42 +2102,55 @@ const chatSteps = [
                     '<p class="course-text">✅&nbsp;<b>Recomandat pentru rezultate reale</b></p>' +
                     '</div>';
 
-                const courseComplete = '<div class="course">' +
-                    '<b class="course-title">Program complet (5&nbsp;pachete)' +
-                    '<span class="inline-products">' +
-                    '<span class="inline-product-item"></span>' +
-                    '<span class="inline-product-item"></span>' +
-                    '<span class="inline-product-item"></span>' +
-                    '<span class="inline-product-item"></span>' +
-                    '<span class="inline-product-item"></span>' +
-                    '</span>' +
-                    '</b>' +
-                    '<p class="course-text">• Ciclu complet de slăbire\n• Ardere activă a grăsimilor\n• Stabilizarea rezultatului\n• Cea mai populară alegere</p>' +
-                    '<span class="course-separator"></span>' +
-                    '<p class="course-text">💚&nbsp;<b>Cea mai populară alegere în rândul clienților</b></p>' +
-                    '</div>';
+                // const courseMinimum = '<div class="course">' +
+                //     '<b class="course-title">Program minim eficient (3&nbsp;pachete)' +
+                //     '<span class="inline-products">' +
+                //     '<span class="inline-product-item"></span>' +
+                //     '<span class="inline-product-item"></span>' +
+                //     '<span class="inline-product-item"></span>' +
+                //     '</span>' +
+                //     '</b>' +
+                //     '<p class="course-text">• 3–4 săptămâni — perioada optimă\n• Începutul arderii grăsimilor\n• Primele rezultate vizibile</p>' +
+                //     '<span class="course-separator"></span>' +
+                //     '<p class="course-text">✅&nbsp;<b>Recomandat pentru rezultate reale</b></p>' +
+                //     '</div>';
 
-                const courseMaximum = '<div class="course">' +
-                    '<b class="course-title">Program maxim (6&nbsp;pachete)' +
-                    '<span class="inline-products">' +
-                    '<span class="inline-product-item"></span>' +
-                    '<span class="inline-product-item"></span>' +
-                    '<span class="inline-product-item"></span>' +
-                    '<span class="inline-product-item"></span>' +
-                    '<span class="inline-product-item"></span>' +
-                    '<span class="inline-product-item"></span>' +
-                    '</span>' +
-                    '</b>' +
-                    '<p class="course-text">• Ardere maximă a grăsimilor\n• Reducere vizibilă a greutății și a volumelor\n• Curățare profundă a organismului\n• Cel mai stabil și de lungă durată rezultat</p>' +
-                    '<span class="course-separator"></span>' +
-                    '<p class="course-text">🔥&nbsp;<b>Pentru efect maxim și transformare completă</b></p>' +
-                    '</div>';
+                // const courseComplete = '<div class="course">' +
+                //     '<b class="course-title">Program complet (5&nbsp;pachete)' +
+                //     '<span class="inline-products">' +
+                //     '<span class="inline-product-item"></span>' +
+                //     '<span class="inline-product-item"></span>' +
+                //     '<span class="inline-product-item"></span>' +
+                //     '<span class="inline-product-item"></span>' +
+                //     '<span class="inline-product-item"></span>' +
+                //     '</span>' +
+                //     '</b>' +
+                //     '<p class="course-text">• Ciclu complet de slăbire\n• Ardere activă a grăsimilor\n• Stabilizarea rezultatului\n• Cea mai populară alegere</p>' +
+                //     '<span class="course-separator"></span>' +
+                //     '<p class="course-text">💚&nbsp;<b>Cea mai populară alegere în rândul clienților</b></p>' +
+                //     '</div>';
+
+                // const courseMaximum = '<div class="course">' +
+                //     '<b class="course-title">Program maxim (6&nbsp;pachete)' +
+                //     '<span class="inline-products">' +
+                //     '<span class="inline-product-item"></span>' +
+                //     '<span class="inline-product-item"></span>' +
+                //     '<span class="inline-product-item"></span>' +
+                //     '<span class="inline-product-item"></span>' +
+                //     '<span class="inline-product-item"></span>' +
+                //     '<span class="inline-product-item"></span>' +
+                //     '</span>' +
+                //     '</b>' +
+                //     '<p class="course-text">• Ardere maximă a grăsimilor\n• Reducere vizibilă a greutății și a volumelor\n• Curățare profundă a organismului\n• Cel mai stabil și de lungă durată rezultat</p>' +
+                //     '<span class="course-separator"></span>' +
+                //     '<p class="course-text">🔥&nbsp;<b>Pentru efect maxim și transformare completă</b></p>' +
+                //     '</div>';
 
                 const allCourses = [
                     { packs: 2, html: courseInitiation },
-                    { packs: 3, html: courseMinimum },
-                    { packs: 5, html: courseComplete },
-                    { packs: 6, html: courseMaximum }
+                    { packs: 4, html: courseMedium },
+                    // { packs: 5, html: courseComplete },
+                    // { packs: 6, html: courseMaximum }
                 ];
 
                 const sortedCourses = allCourses.sort((a, b) => {
@@ -2139,11 +2177,15 @@ const chatSteps = [
             },
         ],
         options: [
-            {label: '6 pachete', value: 6},
-            {label: '5 pachete', value: 5},
-            {label: '3 pachete', value: 3},
+            {label: '4 pachete', value: 4},
             {label: '2 pachete', value: 2, color: '#9ca3af'},
         ],
+        // options: [
+        //     {label: '6 pachete', value: 6},
+        //     {label: '5 pachete', value: 5},
+        //     {label: '3 pachete', value: 3},
+        //     {label: '2 pachete', value: 2, color: '#9ca3af'},
+        // ],
         nextStep: ({option, state, bot}) => {
             state.answers.course_packs = option.value;
             if (option.value === 2) {
@@ -2157,13 +2199,14 @@ const chatSteps = [
         messages: [
             state => {
                 const packs = state.answers.course_packs;
-                let courseName = 'Minim eficient';
+                // let courseName = 'Minim eficient';
+                let courseName = '{{ Название курса на 4 }}';
 
-                if (packs === 5) {
-                    courseName = 'Complet';
-                } else if (packs === 6) {
-                    courseName = 'Maxim';
-                }
+                // if (packs === 5) {
+                //     courseName = 'Complet';
+                // } else if (packs === 6) {
+                //     courseName = 'Maxim';
+                // }
 
                 return {
                     text: `Mulțumim&nbsp;💚 Ați ales programul «${courseName}» — ${packs} pachete Ozenmic Soft.\nÎn prezent, acest program beneficiază de o ofertă specială, mai avantajoasă decât reducerea standard pentru un singur pachet.`,
@@ -2172,176 +2215,232 @@ const chatSteps = [
             },
             state => {
                 const packs = state.answers.course_packs;
-                const threePacks = `
+                // const threePacks = `
+                //     <div class="pricing-card">
+                //         <div class="header">
+                //             <span class="star">⭐</span>
+                //             <h2>3&nbsp;pachete:<br> Program minim eficient</h2>
+                //         </div>
+                //         <div class="calculation-header">
+                //             <h3>Calcul:</h3>
+                //         </div>
+                //         <div class="pricing-row">
+                //             <span class="package">1&nbsp;pach.</span>
+                //             <span class="old-price">1180</span>
+                //             <span class="arrow blue">➜</span>
+                //             <span class="new-price sale blue">590&nbsp;лей</span>
+                //         </div>
+                //         <div class="pricing-row">
+                //             <span class="package">2&nbsp;pach.</span>
+                //             <span class="old-price">1180</span>
+                //             <span class="arrow blue">➜</span>
+                //             <span class="new-price sale blue">590&nbsp;лей</span>
+                //         </div>
+                //         <div class="pricing-row">
+                //             <span class="package">3&nbsp;pach.</span>
+                //             <span class="old-price">1180</span>
+                //             <span class="arrow green">➜</span>
+                //             <span class="new-price green">300&nbsp;лей</span>
+                //         </div>
+                //         <div class="savings-section">
+                //             <span class="savings-text">Economii: <span class=""><span class="">3540</span> - 1480 =</span> <span class="">2060&nbsp;лей</span></span>
+                //         </div>
+                //         <div class="total-section">
+                //             <span class="total-label green-text">TOTAL:</span>
+                //             <span class="total-price green-text">1480&nbsp;лей</span>
+                //         </div>
+                //         <div class="delivery-section">
+                //             <span class="savings-text">Livrare gratuită!</span>
+                //         </div>
+                //         <div class="promo-banner">
+                //             <span class="promo-text">Veți primi programul minim complet pentru rezultate vizibile.</span>
+                //         </div>
+                //     </div>
+                // `
+                // const fivePacks = `
+                //     <div class="pricing-card">
+                //         <div class="header">
+                //             <span class="star">⭐</span>
+                //             <h2>5&nbsp;pachete:<br> Program complet</h2>
+                //         </div>
+                //         <div class="calculation-header">
+                //             <h3>Calcul:</h3>
+                //         </div>
+                //         <div class="pricing-row">
+                //             <span class="package">1&nbsp;pach.</span>
+                //             <span class="old-price">1180</span>
+                //             <span class="arrow blue">➜</span>
+                //             <span class="new-price sale blue">590&nbsp;лей</span>
+                //         </div>
+                //         <div class="pricing-row">
+                //             <span class="package">2&nbsp;pach.</span>
+                //             <span class="old-price">1180</span>
+                //             <span class="arrow blue">➜</span>
+                //             <span class="new-price sale blue">590&nbsp;лей</span>
+                //         </div>
+                //         <div class="pricing-row">
+                //             <span class="package">3&nbsp;pach.</span>
+                //             <span class="old-price">1180</span>
+                //             <span class="arrow green">➜</span>
+                //             <span class="new-price green">300&nbsp;лей</span>
+                //         </div>
+                //         <div class="pricing-row">
+                //             <span class="package">4&nbsp;pach.</span>
+                //             <span class="old-price">1180</span>
+                //             <span class="arrow green">➜</span>
+                //             <span class="new-price green">200&nbsp;лей</span>
+                //         </div>
+                //         <div class="pricing-row">
+                //             <span class="package">5&nbsp;pach.</span>
+                //             <span class="old-price">1180</span>
+                //             <span class="arrow green">➜</span>
+                //             <span class="new-price green">200&nbsp;лей</span>
+                //         </div>
+                //         <div class="savings-section">
+                //             <span class="savings-text">Economii: <span class=""><span class="">5900</span> - 1880 =</span> <span class="">4020&nbsp;лей</span></span>
+                //         </div>
+                //         <div class="total-section">
+                //             <span class="total-label green-text">TOTAL:</span>
+                //             <span class="total-price green-text">1880&nbsp;лей</span>
+                //         </div>
+                //         <div class="delivery-section">
+                //             <span class="savings-text">Livrare gratuită!</span>
+                //         </div>
+                //         <div class="promo-banner">
+                //             <span class="promo-text">De fapt, plătiți cât pentru 2&nbsp;pachete la preț standard și primiți <strong class="yellow-text">5 pachete</strong>!</span>
+                //         </div>
+                //     </div>
+                // `
+                // const sixPacks = `
+                //     <div class="pricing-card">
+                //         <div class="header">
+                //             <span class="star">⭐</span>
+                //             <h2>6&nbsp;pachete:<br> Program maxim</h2>
+                //         </div>
+                //         <div class="calculation-header">
+                //             <h3>Calcul:</h3>
+                //         </div>
+                //         <div class="pricing-row">
+                //             <span class="package">1&nbsp;pach.</span>
+                //             <span class="old-price">1180</span>
+                //             <span class="arrow blue">➜</span>
+                //             <span class="new-price sale blue">590&nbsp;лей</span>
+                //         </div>
+                //         <div class="pricing-row">
+                //             <span class="package">2&nbsp;pach.</span>
+                //             <span class="old-price">1180</span>
+                //             <span class="arrow blue">➜</span>
+                //             <span class="new-price sale blue">590&nbsp;лей</span>
+                //         </div>
+                //         <div class="pricing-row">
+                //             <span class="package">3&nbsp;pach.</span>
+                //             <span class="old-price">1180</span>
+                //             <span class="arrow blue">➜</span>
+                //             <span class="new-price sale blue">590&nbsp;лей</span>
+                //         </div>
+                //         <div class="pricing-row">
+                //             <span class="package">4&nbsp;pach.</span>
+                //             <span class="old-price">1180</span>
+                //             <span class="arrow green">➜</span>
+                //             <span class="new-price green">300&nbsp;лей</span>
+                //         </div>
+                //         <div class="pricing-row">
+                //             <span class="package">5&nbsp;pach.</span>
+                //             <span class="old-price">1180</span>
+                //             <span class="arrow green">➜</span>
+                //             <span class="new-price green">200&nbsp;лей</span>
+                //         </div>
+                //         <div class="pricing-row">
+                //             <span class="package">6&nbsp;pach.</span>
+                //             <span class="old-price">1180</span>
+                //             <span class="arrow green">➜</span>
+                //             <span class="new-price green">80&nbsp;лей</span>
+                //         </div>
+                //         <div class="savings-section">
+                //             <span class="savings-text">Economii: <span class=""><span class="">7080</span> - 2450 =</span> <span class="">4630&nbsp;лей</span></span>
+                //         </div>
+                //         <div class="total-section">
+                //             <span class="total-label green-text">TOTAL:</span>
+                //             <span class="total-price green-text">2450&nbsp;лей</span>
+                //         </div>
+                //         <div class="delivery-section">
+                //             <span class="savings-text">Livrare gratuită!</span>
+                //         </div>
+                //         <div class="promo-banner">
+                //             <span class="promo-text">Sau: plătiți cât pentru 2&nbsp;pachete + doar&nbsp;лей suplimentar, iar dvs. primiți <strong class="yellow-text">6&nbsp;pachete</strong>!</span>
+                //         </div>
+                //     </div>
+                // `
+                const fourPacks = `
                     <div class="pricing-card">
                         <div class="header">
                             <span class="star">⭐</span>
-                            <h2>3&nbsp;pachete:<br> Program minim eficient</h2>
+                            <h2>4&nbsp;pachete:<br> Program {{ Название курса на 4 }}</h2>
                         </div>
                         <div class="calculation-header">
                             <h3>Calcul:</h3>
                         </div>
                         <div class="pricing-row">
-                            <span class="package">1&nbsp;paq.</span>
-                            <span class="old-price">1180</span>
+                            <span class="package">1&nbsp;pach.</span>
+                            <span class="old-price">{{ old }}</span>
                             <span class="arrow blue">➜</span>
-                            <span class="new-price sale blue">590&nbsp;MXN</span>
+                            <span class="new-price sale blue">149&nbsp;лей</span>
                         </div>
                         <div class="pricing-row">
-                            <span class="package">2&nbsp;paq.</span>
-                            <span class="old-price">1180</span>
+                            <span class="package">2&nbsp;pach.</span>
+                            <span class="old-price">{{ old }}</span>
                             <span class="arrow blue">➜</span>
-                            <span class="new-price sale blue">590&nbsp;MXN</span>
+                            <span class="new-price sale blue">149&nbsp;лей</span>
                         </div>
                         <div class="pricing-row">
-                            <span class="package">3&nbsp;paq.</span>
-                            <span class="old-price">1180</span>
+                            <span class="package">3&nbsp;pach.</span>
+                            <span class="old-price">{{ old }}</span>
                             <span class="arrow green">➜</span>
-                            <span class="new-price green">300&nbsp;MXN</span>
+                            <span class="new-price green">149&nbsp;лей</span>
                         </div>
+                        <div class="pricing-row">
+                            <span class="package">4&nbsp;pach.</span>
+                            <span class="old-price">{{ old }}</span>
+                            <span class="arrow green">➜</span>
+                            <span class="new-price green">149&nbsp;лей</span>
+                        </div>
+                      
                         <div class="savings-section">
-                            <span class="savings-text">Economii: <span class=""><span class="">3540</span> - 1480 =</span> <span class="">2060&nbsp;MXN</span></span>
+                            <span class="savings-text">Economii: <span class=""><span class="">{{ old }}</span> - 646 =</span> <span class="">{{ result }}&nbsp;лей</span></span>
                         </div>
                         <div class="total-section">
                             <span class="total-label green-text">TOTAL:</span>
-                            <span class="total-price green-text">1480&nbsp;MXN</span>
+                            <span class="total-price green-text">646&nbsp;лей</span>
                         </div>
                         <div class="delivery-section">
-                            <span class="savings-text">Livrare gratuită!</span>
-                        </div>
-                        <div class="promo-banner">
-                            <span class="promo-text">Veți primi programul minim complet pentru rezultate vizibile.</span>
-                        </div>
-                    </div>
-                `
-                const fivePacks = `
-                    <div class="pricing-card">
-                        <div class="header">
-                            <span class="star">⭐</span>
-                            <h2>5&nbsp;pachete:<br> Program complet</h2>
-                        </div>
-                        <div class="calculation-header">
-                            <h3>Calcul:</h3>
-                        </div>
-                        <div class="pricing-row">
-                            <span class="package">1&nbsp;paq.</span>
-                            <span class="old-price">1180</span>
-                            <span class="arrow blue">➜</span>
-                            <span class="new-price sale blue">590&nbsp;MXN</span>
-                        </div>
-                        <div class="pricing-row">
-                            <span class="package">2&nbsp;paq.</span>
-                            <span class="old-price">1180</span>
-                            <span class="arrow blue">➜</span>
-                            <span class="new-price sale blue">590&nbsp;MXN</span>
-                        </div>
-                        <div class="pricing-row">
-                            <span class="package">3&nbsp;paq.</span>
-                            <span class="old-price">1180</span>
-                            <span class="arrow green">➜</span>
-                            <span class="new-price green">300&nbsp;MXN</span>
-                        </div>
-                        <div class="pricing-row">
-                            <span class="package">4&nbsp;paq.</span>
-                            <span class="old-price">1180</span>
-                            <span class="arrow green">➜</span>
-                            <span class="new-price green">200&nbsp;MXN</span>
-                        </div>
-                        <div class="pricing-row">
-                            <span class="package">5&nbsp;paq.</span>
-                            <span class="old-price">1180</span>
-                            <span class="arrow green">➜</span>
-                            <span class="new-price green">200&nbsp;MXN</span>
-                        </div>
-                        <div class="savings-section">
-                            <span class="savings-text">Economii: <span class=""><span class="">5900</span> - 1880 =</span> <span class="">4020&nbsp;MXN</span></span>
-                        </div>
-                        <div class="total-section">
-                            <span class="total-label green-text">TOTAL:</span>
-                            <span class="total-price green-text">1880&nbsp;MXN</span>
-                        </div>
-                        <div class="delivery-section">
-                            <span class="savings-text">Livrare gratuită!</span>
+                            <span class="savings-text">Доставка 50 лей</span>
+<!--                            <span class="savings-text">Livrare gratuită!</span>-->
                         </div>
                         <div class="promo-banner">
                             <span class="promo-text">De fapt, plătiți cât pentru 2&nbsp;pachete la preț standard și primiți <strong class="yellow-text">5 pachete</strong>!</span>
                         </div>
                     </div>
                 `
-                const sixPacks = `
-                    <div class="pricing-card">
-                        <div class="header">
-                            <span class="star">⭐</span>
-                            <h2>6&nbsp;pachete:<br> Program maxim</h2>
-                        </div>
-                        <div class="calculation-header">
-                            <h3>Calcul:</h3>
-                        </div>
-                        <div class="pricing-row">
-                            <span class="package">1&nbsp;paq.</span>
-                            <span class="old-price">1180</span>
-                            <span class="arrow blue">➜</span>
-                            <span class="new-price sale blue">590&nbsp;MXN</span>
-                        </div>
-                        <div class="pricing-row">
-                            <span class="package">2&nbsp;paq.</span>
-                            <span class="old-price">1180</span>
-                            <span class="arrow blue">➜</span>
-                            <span class="new-price sale blue">590&nbsp;MXN</span>
-                        </div>
-                        <div class="pricing-row">
-                            <span class="package">3&nbsp;paq.</span>
-                            <span class="old-price">1180</span>
-                            <span class="arrow blue">➜</span>
-                            <span class="new-price sale blue">590&nbsp;MXN</span>
-                        </div>
-                        <div class="pricing-row">
-                            <span class="package">4&nbsp;paq.</span>
-                            <span class="old-price">1180</span>
-                            <span class="arrow green">➜</span>
-                            <span class="new-price green">300&nbsp;MXN</span>
-                        </div>
-                        <div class="pricing-row">
-                            <span class="package">5&nbsp;paq.</span>
-                            <span class="old-price">1180</span>
-                            <span class="arrow green">➜</span>
-                            <span class="new-price green">200&nbsp;MXN</span>
-                        </div>
-                        <div class="pricing-row">
-                            <span class="package">6&nbsp;paq.</span>
-                            <span class="old-price">1180</span>
-                            <span class="arrow green">➜</span>
-                            <span class="new-price green">80&nbsp;MXN</span>
-                        </div>
-                        <div class="savings-section">
-                            <span class="savings-text">Economii: <span class=""><span class="">7080</span> - 2450 =</span> <span class="">4630&nbsp;MXN</span></span>
-                        </div>
-                        <div class="total-section">
-                            <span class="total-label green-text">TOTAL:</span>
-                            <span class="total-price green-text">2450&nbsp;MXN</span>
-                        </div>
-                        <div class="delivery-section">
-                            <span class="savings-text">Livrare gratuită!</span>
-                        </div>
-                        <div class="promo-banner">
-                            <span class="promo-text">Sau: plătiți cât pentru 2&nbsp;pachete + doar&nbsp;MXN suplimentar, iar dvs. primiți <strong class="yellow-text">6&nbsp;pachete</strong>!</span>
-                        </div>
-                    </div>
-                `
 
-                if (packs === 3) {
+                // if (packs === 3) {
+                //     return {
+                //         text: threePacks.trim().replace(/\s+/g, ' '),
+                //         typingDelay: 1000
+                //     };
+                // } else if (packs === 5) {
+                //     return {
+                //         text: fivePacks.trim().replace(/\s+/g, ' '),
+                //         typingDelay: 1000
+                //     };
+                // } else if (packs === 6) {
+                //     return {
+                //         text: sixPacks.trim().replace(/\s+/g, ' '),
+                //         typingDelay: 1000
+                //     };
+                // }
+                if (packs === 4) {
                     return {
-                        text: threePacks.trim().replace(/\s+/g, ' '),
-                        typingDelay: 1000
-                    };
-                } else if (packs === 5) {
-                    return {
-                        text: fivePacks.trim().replace(/\s+/g, ' '),
-                        typingDelay: 1000
-                    };
-                } else if (packs === 6) {
-                    return {
-                        text: sixPacks.trim().replace(/\s+/g, ' '),
+                        text: fourPacks.trim().replace(/\s+/g, ' '),
                         typingDelay: 1000
                     };
                 }
@@ -2362,77 +2461,104 @@ const chatSteps = [
             }
             if (option.value === 'not_sure') {
                 state.answers.returnedToCourseChoice = true;
-
-                // return 6;
                 return bot._getStepIndex('course_choice')
             }
-
             return bot._getStepIndex('course_confirm');
         },
     },
     {
         id: 'two_packs_price',
         messages: [
-            'Mulțumim! Ați ales „Programul de start” – 2 pachete Ozenmic Soft.',
-            'După 55 de ani, metabolismul se schimbă. Două pachete pot doar să inițieze procesele din organism. De regulă, greutatea nu începe încă să scadă vizibil, deoarece Ozenmic Soft acționează treptat și în siguranță.',
-            'În prezent este disponibilă o ofertă foarte avantajoasă pentru <b>programul minim eficient – 3&nbsp;pachete</b>' +
-            '\<b>Al 3-lea pachet costă doar 300&nbsp;MXN.</b>',
-            '2 pachete:\n' +
-            '590&nbsp;MXN (−50% din 1180)\n' +
-            '590&nbsp;MXN (−50% din 1180)\n' +
-            '+ Livrare 200&nbsp;MXN\n' +
-            'Total: 1380&nbsp;MXN',
-            {
-                text: `
-                          <div class="pricing-card">
-                            <div class="header">
-                                <span class="star">⭐</span>
-                                <h2>3&nbsp;pachete:<br> Program minim eficient</h2>
-                            </div>
-                            <div class="calculation-header">
-                                <h3>Calcul:</h3>
-                            </div>
-                            <div class="pricing-row">
-                                <span class="package">1&nbsp;paq.</span>
-                                <span class="old-price">1180</span>
-                                <span class="arrow blue">➜</span>
-                                <span class="new-price sale blue">590&nbsp;MXN</span>
-                            </div>
-                            <div class="pricing-row">
-                                <span class="package">2&nbsp;paq.</span>
-                                <span class="old-price">1180</span>
-                                <span class="arrow blue">➜</span>
-                                <span class="new-price sale blue">590&nbsp;MXN</span>
-                            </div>
-                            <div class="pricing-row">
-                                <span class="package">3&nbsp;paq.</span>
-                                <span class="old-price">1180</span>
-                                <span class="arrow green">➜</span>
-                                <span class="new-price green">300&nbsp;MXN</span>
-                            </div>
-                            <div class="savings-section">
-                                <span class="savings-text">Economii: <span class=""><span class="">3540</span> - 1480 =</span> <span class="">2060&nbsp;MXN</span></span>
-                            </div>
-                            <div class="total-section">
-                                <span class="total-label green-text">TOTAL:</span>
-                                <span class="total-price green-text">1480&nbsp;MXN</span>
-                            </div>
-                            <div class="delivery-section">
-                                <span class="savings-text">Livrare gratuită!</span>
-                            </div>
-                            <div class="promo-banner">
-                                <span class="promo-text">Diferența este de doar <strong class="yellow-text">+100 MXN</strong>, dar primiți un program complet pentru rezultate vizibile!</span>
-                            </div>
-                        </div>
-                        `.trim().replace(/\s+/g, ' '),
-                typingDelay: 1000
-            }
+            'Спасибо! Вы выбрали «Стартовую программу» — 2 пакета Ozenmic Soft.',
+            'Две упаковки могут лишь запустить процессы в организме.\n\nКак правило, вес еще не начинает заметно снижаться, поскольку продукт действует постепенно и безопасно.',
+            'Именно поэтому многие клиенты на этом этапе не видят видимого результата и продолжают курс.',
+            'В настоящее время для достижения видимых результатов чаще всего выбирают 4 пакета.'
         ],
+        // messages: [
+        //     'Mulțumim! Ați ales „Programul de start” – 2 pachete Ozenmic Soft.',
+        //     'După 55 de ani, metabolismul se schimbă. Două pachete pot doar să inițieze procesele din organism. De regulă, greutatea nu începe încă să scadă vizibil, deoarece Ozenmic Soft acționează treptat și în siguranță.',
+        //     'În prezent este disponibilă o ofertă foarte avantajoasă pentru <b>programul minim eficient – 3&nbsp;pachete</b>' +
+        //     '\<b>Al 3-lea pachet costă doar 300&nbsp;лей.</b>',
+        //     '2 pachete:\n' +
+        //     '590&nbsp;лей (−50% din 1180)\n' +
+        //     '590&nbsp;лей (−50% din 1180)\n' +
+        //     '+ Livrare 200&nbsp;лей\n' +
+        //     'Total: 1380&nbsp;лей',
+        //     {
+        //         text: `
+        //                   <div class="pricing-card">
+        //                     <div class="header">
+        //                         <span class="star">⭐</span>
+        //                         <h2>3&nbsp;pachete:<br> Program minim eficient</h2>
+        //                     </div>
+        //                     <div class="calculation-header">
+        //                         <h3>Calcul:</h3>
+        //                     </div>
+        //                     <div class="pricing-row">
+        //                         <span class="package">1&nbsp;pach.</span>
+        //                         <span class="old-price">1180</span>
+        //                         <span class="arrow blue">➜</span>
+        //                         <span class="new-price sale blue">590&nbsp;лей</span>
+        //                     </div>
+        //                     <div class="pricing-row">
+        //                         <span class="package">2&nbsp;pach.</span>
+        //                         <span class="old-price">1180</span>
+        //                         <span class="arrow blue">➜</span>
+        //                         <span class="new-price sale blue">590&nbsp;лей</span>
+        //                     </div>
+        //                     <div class="pricing-row">
+        //                         <span class="package">3&nbsp;pach.</span>
+        //                         <span class="old-price">1180</span>
+        //                         <span class="arrow green">➜</span>
+        //                         <span class="new-price green">300&nbsp;лей</span>
+        //                     </div>
+        //                     <div class="savings-section">
+        //                         <span class="savings-text">Economii: <span class=""><span class="">3540</span> - 1480 =</span> <span class="">2060&nbsp;лей</span></span>
+        //                     </div>
+        //                     <div class="total-section">
+        //                         <span class="total-label green-text">TOTAL:</span>
+        //                         <span class="total-price green-text">1480&nbsp;лей</span>
+        //                     </div>
+        //                     <div class="delivery-section">
+        //                         <span class="savings-text">Livrare gratuită!</span>
+        //                     </div>
+        //                     <div class="promo-banner">
+        //                         <span class="promo-text">Diferența este de doar <strong class="yellow-text">+100 лей</strong>, dar primiți un program complet pentru rezultate vizibile!</span>
+        //                     </div>
+        //                 </div>
+        //                 `.trim().replace(/\s+/g, ' '),
+        //         typingDelay: 1000
+        //     }
+        // ],
+        // options: [
+        //     {label: 'Comandă 3 pachete', value: 3, color: 'green'},
+        //     {label: 'Comandă 2 pachete', value: 2},
+        // ],
         options: [
-            {label: 'Comandă 3 pachete', value: 3, color: 'green'},
-            {label: 'Comandă 2 pachete', value: 2},
+            {label: 'Перейти на 4 упаковки', value: 4, color: 'green'},
+            {label: 'Оставить 2 упаковки', value: 2},
         ],
         shouldSkip: ({state}) => state.answers.course_packs !== 2,
+        nextStep: ({option, state, bot}) => {
+            state.answers.course_packs = option.value;
+            if (option.value === 2) {
+                return bot._getStepIndex('two_packs_upsell');
+            }
+            return bot._getStepIndex('course_confirm');
+        },
+    },
+    {
+        id: 'two_packs_upsell',
+        messages: [
+            'Хорошо, фиксирую 2 упаковки',
+            'Есть более выгодный вариант.',
+            '4 упаковки = 646 лей\n5 упаковок = 558 лей',
+            'Вы платите меньше, но получаете полный курс.'
+        ],
+        options: [
+            {label: 'Взять 5 упаковок', value: 5, color: 'green'},
+            {label: 'Оставить 2 упаковки', value: 2},
+        ],
         nextStep: ({option, state, bot}) => {
             state.answers.course_packs = option.value;
             return bot._getStepIndex('course_confirm');
@@ -2443,21 +2569,26 @@ const chatSteps = [
         messages: [
             state => {
                 const packs = state.answers.course_packs || 3;
+                // const priceMap = {
+                //     2: 1380,
+                //     3: 1480,
+                //     5: 1880,
+                //     6: 2450,
+                // };
                 const priceMap = {
-                    2: 1380,
-                    3: 1480,
-                    5: 1880,
-                    6: 2450,
+                    2: 368,
+                    4: 646,
+                    5: 558
                 };
                 const price = priceMap[packs];
                 return {
-                    text: `Mulțumim pentru comandă! Alegerea dvs.: <b>${packs} pachete Ozenmic Soft</b>. Preț: <b>${price}&nbsp;MXN</b>\nAcum vom organiza livrarea.`,
+                    text: `Mulțumim pentru comandă! Alegerea dvs.: <b>${packs} pachete Ozenmic Soft</b>. Preț: <b>${price}&nbsp;лей</b>\nAcum vom organiza livrarea.`,
                     typingDelay: 1000
                 };
             },
         ],
         onEnter: (bot, state) => {
-            const packs = parseInt(state.answers.course_packs) || 3;
+            const packs = parseInt(state.answers.course_packs) || 4;
             bot._showProductAnimation(packs);
 
             // 👉 Відправляємо course_choice в таблицю

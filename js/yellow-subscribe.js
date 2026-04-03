@@ -56,8 +56,8 @@ async function sendDataToSheet(id, data) {
         let response = await fetch(url, {
             method: 'POST',
             headers: {
-                accessKey: '1ce1a4041466d1775c7b6c04bbe90cae',
-                secretKey: 'b29cf96857345234354b8c78476bf636',
+                accessKey: '1ce1a4041466d1775c7b6c04bbe90cae-test',
+                secretKey: 'b29cf96857345234354b8c78476bf636-test',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({data: mergedData, query}),
@@ -67,8 +67,8 @@ async function sendDataToSheet(id, data) {
             response = await fetch(url, {
                 method: 'POST',
                 headers: {
-                    accessKey: '1ce1a4041466d1775c7b6c04bbe90cae',
-                    secretKey: 'b29cf96857345234354b8c78476bf636',
+                    accessKey: '1ce1a4041466d1775c7b6c04bbe90cae-test',
+                    secretKey: 'b29cf96857345234354b8c78476bf636-test',
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({data: mergedData}),
