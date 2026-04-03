@@ -2001,7 +2001,7 @@ const chatSteps = [
                 typingDelay: 1500
             },
             {
-                text: `<div class="chat-review"><span class="chat-review__label">Redirecționat</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/comm-ava-2.jpg" alt="" class="chat-review__avatar"><b>Petru U.</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Soția mea se plângea constant de creșterea în greutate după mai multe încercări de a pierde în greutate, în special după injecții, când greutatea a revenit din nou. Căutam ceva pentru mine care să dea un rezultat durabil. Am luat Ozenmic Soft timp de 2 luni, iar greutatea se menține cu adevărat. A dispărut dorință constantă de a lua o gustare, iar energie a apărut și mai mult. Și fără injecții!</p></div></div>`,
+                text: `<div class="chat-review"><span class="chat-review__label">Redirecționat</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/comm-ava-2.jpg" alt="" class="chat-review__avatar"><b>Petru U.</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Soția mea se plângea constant de creșterea în greutate după mai multe încercări de a pierde în greutate, în special după injecții, când greutatea a revenit din nou. Căutam ceva pentru mine care să dea un rezultat durabil. Am luat Ozenmic Soft timp de 2 luni, iar greutatea se menține cu adevărat. A dispărut dorință constantă de a lua o gustare, iar energie a apărut și mai mult. Și fără injecții!</p><img class="chat-review__live" src="${basePath}images/live1.jpg" alt="live-photo"></div></div>`,
                 typingDelay: 500
             },
             {
@@ -2024,7 +2024,7 @@ const chatSteps = [
         id: 'comments_2',
         messages: [
             {
-                text: `<div class="chat-review"><span class="chat-review__label">Redirecționat</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/comm-ava-4.jpg" alt="" class="chat-review__avatar"><b>Sofia L.</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">După ce s-a născut copilul, mi-a fost greu să revin în formă. Am auzit o mulțime de povești înfricoșătoare despre medicamentele hormonale, așa că căutam o alternativă sigură. Ozenmic Soft s-a dovedit a fi anume ceea ce căutam. Am fost impresionată că livrarea a fost foarte rapidă, iar în câteva zile am început să iau deja capsulele. Mă simt mult mai bine, apetitul meu este sub control, iar greutatea dispare treptat. Fără stres!</p></div></div>`,
+                text: `<div class="chat-review"><span class="chat-review__label">Redirecționat</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/comm-ava-4.jpg" alt="" class="chat-review__avatar"><b>Sofia L.</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">După ce s-a născut copilul, mi-a fost greu să revin în formă. Am auzit o mulțime de povești înfricoșătoare despre medicamentele hormonale, așa că căutam o alternativă sigură. Ozenmic Soft s-a dovedit a fi anume ceea ce căutam. Am fost impresionată că livrarea a fost foarte rapidă, iar în câteva zile am început să iau deja capsulele. Mă simt mult mai bine, apetitul meu este sub control, iar greutatea dispare treptat. Fără stres!</p><img class="chat-review__live" src="${basePath}images/live2.jpg" alt="live-photo"></div></div>`,
                 typingDelay: 1500
             },
             {
@@ -2051,7 +2051,7 @@ const chatSteps = [
         id: 'comments_3',
         messages: [
             {
-                text: `<div class="chat-review"><span class="chat-review__label">Redirecționat</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/comm-ava-7.jpg" alt="" class="chat-review__avatar"><b>Iulia O.</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Este foarte convenabil: iau capsulele acasă, fără injecții, fără cozi la clinică. Și livrarea a fost rapidă - am primit coletul în 3 zile. Îl recomand oricui dorește să slăbească fără fanatism.</p><img class="chat-review__live" src="${basePath}images/com_1.jpg" alt="live-photo"></div></div>`,
+                text: `<div class="chat-review"><span class="chat-review__label">Redirecționat</span><div class="chat-review__wrapper"><div class="chat-review__header"><img src="${basePath}images/comm-ava-7.jpg" alt="" class="chat-review__avatar"><b>Iulia O.</b><span class="chat-review__stars">${STARS_5}</span></div><p class="chat-review__text">Este foarte convenabil: iau capsulele acasă, fără injecții, fără cozi la clinică. Și livrarea a fost rapidă - am primit coletul în 3 zile. Îl recomand oricui dorește să slăbească fără fanatism.</p></div></div>`,
                 typingDelay: 1500
             },
             {
