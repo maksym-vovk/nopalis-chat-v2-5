@@ -412,16 +412,18 @@ function initExpertWidget(options = {}) {
     function start() {
         if (active) return;
         active = true;
-        timeout = setTimeout(() => {
+        timeout = setTimeout(function showAndSchedule() {
             showBubble();
-            interval = setInterval(showBubble, intervalTime);
+            if (active) {
+                interval = setTimeout(showAndSchedule, intervalTime + showTime);
+            }
         }, delay);
     }
 
     function stop() {
         active = false;
         clearTimeout(timeout);
-        clearInterval(interval);
+        clearTimeout(interval);
         bubble.classList.remove('show');
     }
 
