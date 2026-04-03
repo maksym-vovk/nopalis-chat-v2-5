@@ -2077,19 +2077,22 @@ const chatSteps = [
                 const packs = state.answers.recommended_packs;
 
                 const courseInitiation = '<div class="course">' +
-                    '<b class="course-title">Program de start (2&nbsp;pachete)' +
+                    '<b class="course-title">Стартовый курс (2&nbsp;pachete)' +
+                    // '<b class="course-title">Program de start (2&nbsp;pachete)' +
                     '<span class="inline-products">' +
                     '<span class="inline-product-item"></span>' +
                     '<span class="inline-product-item"></span>' +
                     '</span>' +
                     '</b>' +
-                    '<p class="course-text">• Activarea digestiei\n• Reducerea balonării\n• Adaptarea organismului\n</p>' +
+                    '<p class="course-text">• Запуск процессов очищения и пищеварения\n• Снижение вздутия и тяжести\n • Адаптация организма\n</p>' +
                     '<span class="course-separator"></span>' +
-                    '<p class="course-text"><b>Rezultatele vizibile sunt minime</b></p>' +
+                    '<p class="course-text"><b>Изменения веса на этом этапе минимальны</b></p>' +
+                    '<p class="course-text">368 лей</p>' +
                     '</div>';
 
                 const courseMedium = '<div class="course">' +
-                    '<b class="course-title">Program minim eficient (4&nbsp;pachete)' +
+                    '<b class="course-title">⭐ Курс минимального результата (4&nbsp;pachete)' +
+                    // '<b class="course-title">Program minim eficient (4&nbsp;pachete)' +
                     '<span class="inline-products">' +
                     '<span class="inline-product-item"></span>' +
                     '<span class="inline-product-item"></span>' +
@@ -2097,9 +2100,10 @@ const chatSteps = [
                     '<span class="inline-product-item"></span>' +
                     '</span>' +
                     '</b>' +
-                    '<p class="course-text">• 3–4 săptămâni — perioada optimă\n• Începutul arderii grăsimilor\n• Primele rezultate vizibile</p>' +
+                    '<p class="course-text">• Длительность 6–8 недель — оптимальный период для запуска жиросжигания\n• Стабильный запуск сжигания жира\n• Первые заметные изменения в весе и объёмах</p>' +
                     '<span class="course-separator"></span>' +
-                    '<p class="course-text">✅&nbsp;<b>Recomandat pentru rezultate reale</b></p>' +
+                    '<p class="course-text">✅&nbsp;<b>Рекомендованный старт для реального результата</b></p>' +
+                    '<p class="course-text">646 лей</p>' +
                     '</div>';
 
                 // const courseMinimum = '<div class="course">' +
@@ -2169,7 +2173,7 @@ const chatSteps = [
                 // separated text and cards
                 return [
                     {
-                        text: 'Fiecare opțiune următoare <b>intensifică efectul celei anterioare</b>.',
+                        text: 'Короткий курс запускает процесс. Полный - даёт результат, который остаётся.',
                         typingDelay: 2500
                     },
                     ...coursesHTML.map((course) => ({text: course, typingDelay: 1000}))
@@ -2469,10 +2473,11 @@ const chatSteps = [
     {
         id: 'two_packs_price',
         messages: [
-            'Спасибо! Вы выбрали «Стартовую программу» — 2 пакета Ozenmic Soft.',
-            'Две упаковки могут лишь запустить процессы в организме.\n\nКак правило, вес еще не начинает заметно снижаться, поскольку продукт действует постепенно и безопасно.',
-            'Именно поэтому многие клиенты на этом этапе не видят видимого результата и продолжают курс.',
-            'В настоящее время для достижения видимых результатов чаще всего выбирают 4 пакета.'
+            'Хорошо, зафиксировала 2 упаковки',
+            'Вижу, что ты у нас впервые — хочу чтобы ты сразу почувствовала результат, поэтому скажу честно',
+            '2 упаковки только запускают процессы в организме. Вес на этом этапе ещё практически не уходит — продукт работает мягко и постепенно.',
+            'Именно поэтому большинство клиентов берут сразу 4 — и видят результат уже в первый месяц. За это время запустится процесс жиросжигания и организм перестроится для закрепление результатов.',
+            'Советую не рисковать и взять полный курс с первого раза'
         ],
         // messages: [
         //     'Mulțumim! Ați ales „Programul de start” – 2 pachete Ozenmic Soft.',
@@ -2550,10 +2555,10 @@ const chatSteps = [
     {
         id: 'two_packs_upsell',
         messages: [
-            'Хорошо, фиксирую 2 упаковки',
-            'Есть более выгодный вариант.',
-            '4 упаковки = 646 лей\n5 упаковок = 558 лей',
-            'Вы платите меньше, но получаете полный курс.'
+            'Хорошо, зафиксировала',
+            'Так как ты у нас впервые — мы подготовили для тебя специальное предложение, чтобы ты почувствовала максимальный результат. Это VIP пакет, для одного из 100 наших первых клиентов.',
+            '4 упаковки = 646 лей\n<b>5 упаковок = 558 лей (VIP пакет)</b>',
+            'За 5 платишь меньше чем за 4 — и получаешь полный курс с результатом который остаётся.'
         ],
         options: [
             {label: 'Взять 5 упаковок', value: 5, color: 'green'},
