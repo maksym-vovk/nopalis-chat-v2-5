@@ -1228,7 +1228,6 @@ body {
 @media screen and (max-width: 1023px) {
     /* Фіксована кнопка WhatsApp */
     .whatsapp-float {
-
         margin-bottom: 0;
         position: fixed;
         bottom: 25px;
@@ -1243,9 +1242,9 @@ body {
         justify-content: center;
         box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
         text-decoration: none;
-        z-index: 9;
+        z-index: 8;
         transition: all 0.3s ease;
-        padding: 6px;
+        padding: 0;
         border: none;
     }
 
@@ -1255,37 +1254,84 @@ body {
         background-color: #20c65b;
     }
 
+    /* контейнер */
+    .expert-widget {
+        /*display: flex;*/
+        /*flex-direction: row-reverse;*/
+        /*gap: 10px;*/
+        /*align-items: flex-end;*/
+        /*width: 100%;*/
+        /*position: relative;*/
+        /*right: 16px;*/
+        /*bottom: 16px;*/
+        /*z-index: 9;*/
+    }
+
+    /* кнопка */
+    .whatsapp-float {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
     .whatsapp-float img {
-        width: 35px;
-        height: 35px;
-        filter: brightness(0) invert(1); /* робить іконку білою */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
-    /* Текст поруч з кнопкою (з'являється при наведенні) */
-    .whatsapp-text {
-        position: absolute;
-        right: 70px;
-        background-color: #333;
-        color: white;
-        padding: 8px 14px;
-        border-radius: 20px;
-        white-space: nowrap;
+    /* bubble */
+    .expert-bubble {
+        position: fixed;
+
+        bottom: 25px;
+        right: 100px;
+
+        background: #f6f6f6;
+        color: #000;
+        padding: 9px;
+        border-radius: 12px;
         font-size: 14px;
+        max-width: 185px;
+        width: 100%;
+        min-height: 55px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
+        transform: translateY(10px) scale(0.95);
         pointer-events: none;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
     }
 
-    .whatsapp-float:hover .whatsapp-text {
-        opacity: 1;
-        visibility: visible;
-        right: 75px;
+    .expert-bubble::before {
+        transform: scaleX(-1);
+        content: "";
+        position: absolute;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMS4xMjkiIGhlaWdodD0iMTQuMTczIiBmaWxsPSJub25lIj48cGF0aCBmaWxsPSIjZmFmYWZhIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMC4yNTQgMi4zMTJDOS40ODggNS4wMzggNy42MSA3LjkxIDEuOTIxIDkuODc0bC0uOTQ2LjMxMWMtLjYyNC4xOTEtLjg5Mi43NjctLjY2IDEuMjg1LjA4Ni4xOTQuMjQzLjM2MS40NDguNDc4IDEuODI2IDEuMDE2IDUuMjk0IDEuOTUzIDEwLjAxNyAyLjAwNSAwIDAgLjE1Ni0xNS4xMzItLjAzLTEzLjU1OHoiIGNsaXAtcnVsZT0iZXZlbm9kZCIgc3R5bGU9ImZpbGw6I0ZBRkFGQSIvPjwvc3ZnPg==);
+        width: 11px;
+        height: 14px;
+        background-repeat: no-repeat;
+        right: -9px;
+        bottom: 6px;
     }
+
+
+    /* показ */
+    .expert-bubble.show {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
 
     /* Адаптивність */
     @media (max-width: 768px) {
+        .expert-bubble {
+            bottom: 20px;
+            right: 88px;
+        }
         .whatsapp-float {
             bottom: 20px;
             right: 20px;
@@ -1293,14 +1339,11 @@ body {
             height: 55px;
         }
 
-        .whatsapp-float img {
-            width: 32px;
-            height: 32px;
-        }
+        /*.whatsapp-float img {*/
+        /*    width: 32px;*/
+        /*    height: 32px;*/
+        /*}*/
 
-        .whatsapp-text {
-            display: none; /* на мобільних текст приховуємо */
-        }
     }
     .adaptation-timeline {
         justify-content: center!important;
@@ -1368,10 +1411,13 @@ body {
     background-color: #84c5dc;
     color: #fff;
     font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
+
+
 
 .submit-roulette:hover {
 
@@ -1380,6 +1426,10 @@ body {
     text-decoration: none;
 }
 
+
+.aside .submit-roulette {
+    font-size: 14px;
+}
 /*.submit-roulette:hover {*/
 /*    background: #5d5dc2;*/
 /*    color: #fff;*/
@@ -1953,6 +2003,16 @@ body {
 }
 
 @media screen and (max-width: 479px) {
+    .order-doc {
+        max-width: 200px!important;
+        width: 100%;
+    }
+    .submit-roulette {
+        font-size: 15px;
+    }
+    .order-expert .submit-roulette {
+        font-size: 13px;
+    }
     .discount-banner {
         padding: 10px 15px !important;
         top: -20px !important;
@@ -2130,7 +2190,7 @@ footer a:hover {
 .discount-banner {
     position: absolute;
     top: -15px;
-    right: -15px;
+    right: -10px;
     display: inline-block;
     background: linear-gradient(135deg, #ff5252, #ff1744);
     color: #fff;
@@ -2174,6 +2234,9 @@ footer a:hover {
 
 
 @media screen and (min-width: 1024px) {
+    .expert-bubble {
+        display: none;
+    }
     .adaptation-timeline {
         justify-content: center;
     }
@@ -2551,14 +2614,67 @@ ol.colored-list li:nth-child(4) .icon {
     gap: 15px;
 }
 
+.order-expert__close {
+    display: none;
+}
+
 
 @media screen and (max-width: 1300px) {
+    /* фон */
+    .popup-overlay {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.5);
+        display: none; /* по умолчанию скрыт */
+        align-items: center;
+        justify-content: center;
+        z-index: 9;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* показываем */
+    .popup-overlay.show {
+        display: flex;
+    }
+
+    /* сам popup */
+    .order-expert {
+        background: #fff;
+        width: 50%; /* половина экрана */
+        max-width: 600px;
+        border-radius: 12px;
+        padding: 20px;
+        position: relative;
+        box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+        transform: translateY(-20px);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+    }
+
+    .popup-overlay.show .order-expert {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* крестик */
+    .order-expert .order-expert__close {
+        display: block;
+        position: absolute;
+        top: -45px;
+        right: 0;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+    }
     .order-doc {
         max-width: 260px;
     }
     .order-expert {
         width: 100%;
-        max-width: 100% ;
+        max-width: 470px ;
         align-content: center;
         justify-content: center;
     }

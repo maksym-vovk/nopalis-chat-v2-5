@@ -57,7 +57,7 @@ for (var i = 0; i < linkNav.length; i++) {
         e.preventDefault(); //отменяем стандартное поведение
         var w = window.pageYOffset,  // производим прокрутка прокрутка
         hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
-        t = document.querySelector(hash).getBoundingClientRect().top - 120,  // отступ от окна браузера до id
+        t = document.querySelector(hash).getBoundingClientRect().top + 3,  // отступ от окна браузера до id
         start = null;
         requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
         function step(time) {
@@ -341,22 +341,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
-var links = document.querySelectorAll('#order_form a');
-
-links.forEach(function (link) {
-    link.addEventListener('click', function (event) {
-        event.preventDefault();
-
-        var targetId = this.getAttribute('href'),
-            targetElement = document.querySelector(targetId),
-            scrollOptions = {
-                behavior: 'smooth',
-            };
-
-        targetElement.scrollIntoView(scrollOptions);
-    });
-});
+//
+// var links = document.querySelectorAll('#order_form a');
+//
+// links.forEach(function (link) {
+//     link.addEventListener('click', function (event) {
+//         event.preventDefault();
+//
+//         var targetId = this.getAttribute('href'),
+//             targetElement = document.querySelector(targetId),
+//             scrollOptions = {
+//                 behavior: 'smooth',
+//             };
+//
+//         targetElement.scrollIntoView(scrollOptions);
+//     });
+// });
 
 let time = 600;
 let intr;
@@ -382,5 +382,129 @@ function tick() {
 }
 
 window.onload = start_timer;
+
+
+function initExpertWidget(options = {}) {
+    const {
+        delay = 3000,
+        intervalTime = 10000,
+        showTime = 4000,
+        bubbleId = 'expertBubble',
+        maxWidth = 1023
+    } = options;
+
+    const bubble = document.getElementById(bubbleId);
+    if (!bubble) return;
+
+    let interval;
+    let timeout;
+    let active = false;
+    let paused = false;
+
+    function showBubble() {
+        if (paused) return;
+        bubble.classList.add('show');
+        setTimeout(() => {
+            bubble.classList.remove('show');
+        }, showTime);
+    }
+
+    function start() {
+        if (active) return;
+        active = true;
+        timeout = setTimeout(() => {
+            showBubble();
+            interval = setInterval(showBubble, intervalTime);
+        }, delay);
+    }
+
+    function stop() {
+        active = false;
+        clearTimeout(timeout);
+        clearInterval(interval);
+        bubble.classList.remove('show');
+    }
+
+    function pause() {
+        paused = true;
+        bubble.classList.remove('show');
+    }
+
+    function resume() {
+        paused = false;
+    }
+
+    function checkWidth() {
+        if (window.innerWidth <= maxWidth) {
+            start();
+        } else {
+            stop();
+        }
+    }
+
+    window.addEventListener('resize', checkWidth);
+    checkWidth();
+
+    return { pause, resume };
+}
+function initExpertPopup(options = {}, widgetControls) {
+    const {
+        maxWidth = 1300,
+        delay = 3000,
+        expertClass = 'order-expert',
+        overlayId = 'expertOverlay',
+        triggerId = 'order_form'
+    } = options;
+
+    const overlay = document.getElementById(overlayId);
+    const popup = overlay?.querySelector(`.${expertClass}`);
+    const trigger = document.getElementById(triggerId);
+    if (!overlay || !popup || !trigger) return;
+
+    let shown = false;
+    const closeBtn = popup.querySelector('.order-expert__close');
+    const chatBtns = popup.querySelectorAll('.chat-btn');
+
+    function showPopup() {
+        if (shown) return;
+        overlay.classList.add('show');
+        shown = true;
+        widgetControls?.pause();
+        console.log(widgetControls?.pause())
+    }
+
+    function hidePopup() {
+        overlay.classList.remove('show');
+        widgetControls?.resume();
+    }
+
+    function checkWidth() {
+        if (window.innerWidth > maxWidth) {
+            hidePopup();
+        }
+    }
+
+    function onScroll() {
+        if (window.innerWidth > maxWidth || shown) return;
+        const triggerTop = trigger.getBoundingClientRect().top;
+        if (triggerTop <= 0) {
+            setTimeout(showPopup, delay);
+        }
+    }
+
+    if (closeBtn) closeBtn.addEventListener('click', hidePopup);
+    chatBtns.forEach(btn => btn.addEventListener('click', hidePopup));
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) hidePopup();
+    });
+
+    window.addEventListener('scroll', onScroll);
+    window.addEventListener('resize', checkWidth);
+
+    checkWidth();
+}
+
+const widgetControls = initExpertWidget();
+initExpertPopup({}, widgetControls);
 
 // promo js
