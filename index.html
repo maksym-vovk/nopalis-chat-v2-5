@@ -851,13 +851,27 @@
         <div class="chat-messages" id="chatMessages"></div>
 
         <div class="offer__form form hidden">
-            <!--        <div class="offer__form form">-->
+<!--        <div class="offer__form form">-->
             <form action="/submit" method="post" class="order__form">
+                <!-- Новий блок: вибір județului -->
+                <div class="form__select-wrapper form__select--judet custom-select">
+                    <input
+                            name="judet"
+                            autocomplete="new-name"
+                            required
+                            class="form__select custom-select-input"
+                            placeholder="Județ"
+                    />
+                    <ul class="custom-select-list"></ul>
+                </div>
+
+                <!-- Існуючий блок міста — початково заблокований -->
                 <div class="form__select-wrapper form__select--city custom-select">
                     <input
                             name="city"
                             autocomplete="new-name"
                             required
+                            disabled
                             class="form__select custom-select-input"
                             placeholder="Localitate"
                     />

@@ -1,0 +1,2172 @@
+{
+  "cities": [
+    {
+      "name": "23 August",
+      "value": "23_august",
+      "postal_codes": [
+        "327436"
+      ]
+    },
+    {
+      "name": "Agadici",
+      "value": "agadici",
+      "postal_codes": [
+        "325601"
+      ]
+    },
+    {
+      "name": "Anina",
+      "value": "anina",
+      "postal_codes": [
+        "325100"
+      ]
+    },
+    {
+      "name": "Apadia",
+      "value": "apadia",
+      "postal_codes": [
+        "327046"
+      ]
+    },
+    {
+      "name": "Armenis",
+      "value": "armenis",
+      "postal_codes": [
+        "327005"
+      ]
+    },
+    {
+      "name": "Arsuri",
+      "value": "arsuri",
+      "postal_codes": [
+        "327111"
+      ]
+    },
+    {
+      "name": "Baile Herculane",
+      "value": "baile_herculane",
+      "postal_codes": [
+        "325200"
+      ]
+    },
+    {
+      "name": "Bania",
+      "value": "bania",
+      "postal_codes": [
+        "327010"
+      ]
+    },
+    {
+      "name": "Barbosu",
+      "value": "barbosu",
+      "postal_codes": [
+        "327311"
+      ]
+    },
+    {
+      "name": "Barz",
+      "value": "barz",
+      "postal_codes": [
+        "327166"
+      ]
+    },
+    {
+      "name": "Barza",
+      "value": "barza",
+      "postal_codes": [
+        "327401"
+      ]
+    },
+    {
+      "name": "Bautar",
+      "value": "bautar",
+      "postal_codes": [
+        "327015"
+      ]
+    },
+    {
+      "name": "Bazias",
+      "value": "bazias",
+      "postal_codes": [
+        "327366"
+      ]
+    },
+    {
+      "name": "Belobresca",
+      "value": "belobresca",
+      "postal_codes": [
+        "327301"
+      ]
+    },
+    {
+      "name": "Berliste",
+      "value": "berliste",
+      "postal_codes": [
+        "327020"
+      ]
+    },
+    {
+      "name": "Berzasca",
+      "value": "berzasca",
+      "postal_codes": [
+        "327025"
+      ]
+    },
+    {
+      "name": "Berzovia",
+      "value": "berzovia",
+      "postal_codes": [
+        "327030"
+      ]
+    },
+    {
+      "name": "Bigar",
+      "value": "bigar",
+      "postal_codes": [
+        "327026"
+      ]
+    },
+    {
+      "name": "Binis",
+      "value": "binis",
+      "postal_codes": [
+        "327176"
+      ]
+    },
+    {
+      "name": "Bocsa",
+      "value": "bocsa",
+      "postal_codes": [
+        "325300"
+      ]
+    },
+    {
+      "name": "Bogaltin",
+      "value": "bogaltin",
+      "postal_codes": [
+        "327112"
+      ]
+    },
+    {
+      "name": "Bogodint",
+      "value": "bogodint",
+      "postal_codes": [
+        "327331"
+      ]
+    },
+    {
+      "name": "Boina",
+      "value": "boina",
+      "postal_codes": [
+        "327167"
+      ]
+    },
+    {
+      "name": "Boinita",
+      "value": "boinita",
+      "postal_codes": [
+        "327168"
+      ]
+    },
+    {
+      "name": "Bojia",
+      "value": "bojia",
+      "postal_codes": [
+        "327113"
+      ]
+    },
+    {
+      "name": "Bolvasnita",
+      "value": "bolvasnita",
+      "postal_codes": [
+        "327035"
+      ]
+    },
+    {
+      "name": "Borlova",
+      "value": "borlova",
+      "postal_codes": [
+        "327406"
+      ]
+    },
+    {
+      "name": "Borlovenii Noi",
+      "value": "borlovenii_noi",
+      "postal_codes": [
+        "327306"
+      ]
+    },
+    {
+      "name": "Borlovenii Vechi",
+      "value": "borlovenii_vechi",
+      "postal_codes": [
+        "327307"
+      ]
+    },
+    {
+      "name": "Borugi",
+      "value": "borugi",
+      "postal_codes": [
+        "327114"
+      ]
+    },
+    {
+      "name": "Bozovici",
+      "value": "bozovici",
+      "postal_codes": [
+        "327040"
+      ]
+    },
+    {
+      "name": "Bradisoru de Jos",
+      "value": "bradisoru_de_jos",
+      "postal_codes": [
+        "325602"
+      ]
+    },
+    {
+      "name": "Bratova",
+      "value": "bratova",
+      "postal_codes": [
+        "327386"
+      ]
+    },
+    {
+      "name": "Brebu",
+      "value": "brebu",
+      "postal_codes": [
+        "327045"
+      ]
+    },
+    {
+      "name": "Brebu Nou",
+      "value": "brebu_nou",
+      "postal_codes": [
+        "327050"
+      ]
+    },
+    {
+      "name": "Brestelnic",
+      "value": "brestelnic",
+      "postal_codes": [
+        "327336"
+      ]
+    },
+    {
+      "name": "Brezon",
+      "value": "brezon",
+      "postal_codes": [
+        "327211"
+      ]
+    },
+    {
+      "name": "Brosteni",
+      "value": "brosteni",
+      "postal_codes": [
+        "325603"
+      ]
+    },
+    {
+      "name": "Buchin",
+      "value": "buchin",
+      "postal_codes": [
+        "327055"
+      ]
+    },
+    {
+      "name": "Bucosnita",
+      "value": "bucosnita",
+      "postal_codes": [
+        "327060"
+      ]
+    },
+    {
+      "name": "Bucova",
+      "value": "bucova",
+      "postal_codes": [
+        "327016"
+      ]
+    },
+    {
+      "name": "Calina",
+      "value": "calina",
+      "postal_codes": [
+        "327181"
+      ]
+    },
+    {
+      "name": "Calnic",
+      "value": "calnic",
+      "postal_codes": [
+        "320001"
+      ]
+    },
+    {
+      "name": "Camena",
+      "value": "camena",
+      "postal_codes": [
+        "327116"
+      ]
+    },
+    {
+      "name": "Camenita",
+      "value": "camenita",
+      "postal_codes": [
+        "327337"
+      ]
+    },
+    {
+      "name": "Campia",
+      "value": "campia",
+      "postal_codes": [
+        "327367"
+      ]
+    },
+    {
+      "name": "Canicea",
+      "value": "canicea",
+      "postal_codes": [
+        "327186"
+      ]
+    },
+    {
+      "name": "Caransebes",
+      "value": "caransebes",
+      "postal_codes": [
+        "325400"
+      ]
+    },
+    {
+      "name": "Carasova",
+      "value": "carasova",
+      "postal_codes": [
+        "327065"
+      ]
+    },
+    {
+      "name": "Carbunari",
+      "value": "carbunari",
+      "postal_codes": [
+        "327070"
+      ]
+    },
+    {
+      "name": "Carnecea",
+      "value": "carnecea",
+      "postal_codes": [
+        "327396"
+      ]
+    },
+    {
+      "name": "Carsa Rosie",
+      "value": "carsa_rosie",
+      "postal_codes": [
+        "327371"
+      ]
+    },
+    {
+      "name": "Carsie",
+      "value": "carsie",
+      "postal_codes": [
+        "327338"
+      ]
+    },
+    {
+      "name": "Cavaran",
+      "value": "cavaran",
+      "postal_codes": [
+        "327091"
+      ]
+    },
+    {
+      "name": "Cicleni",
+      "value": "cicleni",
+      "postal_codes": [
+        "327407"
+      ]
+    },
+    {
+      "name": "Ciclova Montana",
+      "value": "ciclova_montana",
+      "postal_codes": [
+        "325604"
+      ]
+    },
+    {
+      "name": "Ciclova Romana",
+      "value": "ciclova_romana",
+      "postal_codes": [
+        "327075"
+      ]
+    },
+    {
+      "name": "Ciortea",
+      "value": "ciortea",
+      "postal_codes": [
+        "327431"
+      ]
+    },
+    {
+      "name": "Ciresa",
+      "value": "ciresa",
+      "postal_codes": [
+        "325701"
+      ]
+    },
+    {
+      "name": "Ciresel",
+      "value": "ciresel",
+      "postal_codes": [
+        "327117"
+      ]
+    },
+    {
+      "name": "Ciuchici",
+      "value": "ciuchici",
+      "postal_codes": [
+        "327080"
+      ]
+    },
+    {
+      "name": "Ciudanovita",
+      "value": "ciudanovita",
+      "postal_codes": [
+        "327085"
+      ]
+    },
+    {
+      "name": "Ciuta",
+      "value": "ciuta",
+      "postal_codes": [
+        "327286"
+      ]
+    },
+    {
+      "name": "Clocotici",
+      "value": "clocotici",
+      "postal_codes": [
+        "327256"
+      ]
+    },
+    {
+      "name": "Comoraste",
+      "value": "comoraste",
+      "postal_codes": [
+        "327212"
+      ]
+    },
+    {
+      "name": "Constantin Daicoviciu",
+      "value": "constantin_daicoviciu",
+      "postal_codes": [
+        "327090"
+      ]
+    },
+    {
+      "name": "Copacele",
+      "value": "copacele",
+      "postal_codes": [
+        "327100"
+      ]
+    },
+    {
+      "name": "Cornea",
+      "value": "cornea",
+      "postal_codes": [
+        "327105"
+      ]
+    },
+    {
+      "name": "Cornereva",
+      "value": "cornereva",
+      "postal_codes": [
+        "327110"
+      ]
+    },
+    {
+      "name": "Cornisoru",
+      "value": "cornisoru",
+      "postal_codes": [
+        "327017"
+      ]
+    },
+    {
+      "name": "Cornutel",
+      "value": "cornutel",
+      "postal_codes": [
+        "327296"
+      ]
+    },
+    {
+      "name": "Coronini",
+      "value": "coronini",
+      "postal_codes": [
+        "327160"
+      ]
+    },
+    {
+      "name": "Costis",
+      "value": "costis",
+      "postal_codes": [
+        "327118"
+      ]
+    },
+    {
+      "name": "Cozia",
+      "value": "cozia",
+      "postal_codes": [
+        "327119"
+      ]
+    },
+    {
+      "name": "Cozla",
+      "value": "cozla",
+      "postal_codes": [
+        "327027"
+      ]
+    },
+    {
+      "name": "Cracu Almaj",
+      "value": "cracu_almaj",
+      "postal_codes": [
+        "327339"
+      ]
+    },
+    {
+      "name": "Cracu Mare",
+      "value": "cracu_mare",
+      "postal_codes": [
+        "327121"
+      ]
+    },
+    {
+      "name": "Cracu Teiului",
+      "value": "cracu_teiului",
+      "postal_codes": [
+        "327122"
+      ]
+    },
+    {
+      "name": "Crusovat",
+      "value": "crusovat",
+      "postal_codes": [
+        "327106"
+      ]
+    },
+    {
+      "name": "Crusovita",
+      "value": "crusovita",
+      "postal_codes": [
+        "327341"
+      ]
+    },
+    {
+      "name": "Cuptoare (Cornea)",
+      "value": "cuptoare_(cornea)",
+      "postal_codes": [
+        "327107"
+      ]
+    },
+    {
+      "name": "Cuptoare (Resita)",
+      "value": "cuptoare_(resita)",
+      "postal_codes": [
+        "320002"
+      ]
+    },
+    {
+      "name": "Curmatura",
+      "value": "curmatura",
+      "postal_codes": [
+        "327342"
+      ]
+    },
+    {
+      "name": "Dalboset",
+      "value": "dalboset",
+      "postal_codes": [
+        "327165"
+      ]
+    },
+    {
+      "name": "Dalci",
+      "value": "dalci",
+      "postal_codes": [
+        "327408"
+      ]
+    },
+    {
+      "name": "Delinesti",
+      "value": "delinesti",
+      "postal_codes": [
+        "327297"
+      ]
+    },
+    {
+      "name": "Dezesti",
+      "value": "dezesti",
+      "postal_codes": [
+        "327201"
+      ]
+    },
+    {
+      "name": "Divici",
+      "value": "divici",
+      "postal_codes": [
+        "327302"
+      ]
+    },
+    {
+      "name": "Dobraia",
+      "value": "dobraia",
+      "postal_codes": [
+        "327123"
+      ]
+    },
+    {
+      "name": "Doclin",
+      "value": "doclin",
+      "postal_codes": [
+        "327175"
+      ]
+    },
+    {
+      "name": "Dognecea",
+      "value": "dognecea",
+      "postal_codes": [
+        "327180"
+      ]
+    },
+    {
+      "name": "Dolina",
+      "value": "dolina",
+      "postal_codes": [
+        "327124"
+      ]
+    },
+    {
+      "name": "Doman",
+      "value": "doman",
+      "postal_codes": [
+        "320003"
+      ]
+    },
+    {
+      "name": "Domasnea",
+      "value": "domasnea",
+      "postal_codes": [
+        "327185"
+      ]
+    },
+    {
+      "name": "Drencova",
+      "value": "drencova",
+      "postal_codes": [
+        "327028"
+      ]
+    },
+    {
+      "name": "Dristie",
+      "value": "dristie",
+      "postal_codes": [
+        "327372"
+      ]
+    },
+    {
+      "name": "Duleu",
+      "value": "duleu",
+      "postal_codes": [
+        "327202"
+      ]
+    },
+    {
+      "name": "Eftimie Murgu",
+      "value": "eftimie_murgu",
+      "postal_codes": [
+        "327190"
+      ]
+    },
+    {
+      "name": "Ersig",
+      "value": "ersig",
+      "postal_codes": [
+        "327426"
+      ]
+    },
+    {
+      "name": "Ezeris",
+      "value": "ezeris",
+      "postal_codes": [
+        "327195"
+      ]
+    },
+    {
+      "name": "Farliug",
+      "value": "farliug",
+      "postal_codes": [
+        "327200"
+      ]
+    },
+    {
+      "name": "Fenes",
+      "value": "fenes",
+      "postal_codes": [
+        "327006"
+      ]
+    },
+    {
+      "name": "Fizes",
+      "value": "fizes",
+      "postal_codes": [
+        "327031"
+      ]
+    },
+    {
+      "name": "Forotic",
+      "value": "forotic",
+      "postal_codes": [
+        "327210"
+      ]
+    },
+    {
+      "name": "Frasinis",
+      "value": "frasinis",
+      "postal_codes": [
+        "327343"
+      ]
+    },
+    {
+      "name": "Garana",
+      "value": "garana",
+      "postal_codes": [
+        "327051"
+      ]
+    },
+    {
+      "name": "Garbovat",
+      "value": "garbovat",
+      "postal_codes": [
+        "327011"
+      ]
+    },
+    {
+      "name": "Garliste",
+      "value": "garliste",
+      "postal_codes": [
+        "327226"
+      ]
+    },
+    {
+      "name": "Garnic",
+      "value": "garnic",
+      "postal_codes": [
+        "327215"
+      ]
+    },
+    {
+      "name": "Ghertenis",
+      "value": "ghertenis",
+      "postal_codes": [
+        "327032"
+      ]
+    },
+    {
+      "name": "Giurgiova",
+      "value": "giurgiova",
+      "postal_codes": [
+        "327227"
+      ]
+    },
+    {
+      "name": "Glimboca",
+      "value": "glimboca",
+      "postal_codes": [
+        "327220"
+      ]
+    },
+    {
+      "name": "Globu Craiovei",
+      "value": "globu_craiovei",
+      "postal_codes": [
+        "327236"
+      ]
+    },
+    {
+      "name": "Globurau",
+      "value": "globurau",
+      "postal_codes": [
+        "327271"
+      ]
+    },
+    {
+      "name": "Golet",
+      "value": "golet",
+      "postal_codes": [
+        "327061"
+      ]
+    },
+    {
+      "name": "Gornea",
+      "value": "gornea",
+      "postal_codes": [
+        "327344"
+      ]
+    },
+    {
+      "name": "Goruia",
+      "value": "goruia",
+      "postal_codes": [
+        "327225"
+      ]
+    },
+    {
+      "name": "Gradinari",
+      "value": "gradinari",
+      "postal_codes": [
+        "327230"
+      ]
+    },
+    {
+      "name": "Greoni",
+      "value": "greoni",
+      "postal_codes": [
+        "327231"
+      ]
+    },
+    {
+      "name": "Gruni",
+      "value": "gruni",
+      "postal_codes": [
+        "327126"
+      ]
+    },
+    {
+      "name": "Hora Mare",
+      "value": "hora_mare",
+      "postal_codes": [
+        "327127"
+      ]
+    },
+    {
+      "name": "Hora Mica",
+      "value": "hora_mica",
+      "postal_codes": [
+        "327128"
+      ]
+    },
+    {
+      "name": "Iabalcea",
+      "value": "iabalcea",
+      "postal_codes": [
+        "327066"
+      ]
+    },
+    {
+      "name": "Iablanita",
+      "value": "iablanita",
+      "postal_codes": [
+        "327235"
+      ]
+    },
+    {
+      "name": "Iam",
+      "value": "iam",
+      "postal_codes": [
+        "327021"
+      ]
+    },
+    {
+      "name": "Iaz",
+      "value": "iaz",
+      "postal_codes": [
+        "327287"
+      ]
+    },
+    {
+      "name": "Iertof",
+      "value": "iertof",
+      "postal_codes": [
+        "327432"
+      ]
+    },
+    {
+      "name": "Ilidia",
+      "value": "ilidia",
+      "postal_codes": [
+        "327076"
+      ]
+    },
+    {
+      "name": "Ilova",
+      "value": "ilova",
+      "postal_codes": [
+        "327361"
+      ]
+    },
+    {
+      "name": "Inelet",
+      "value": "inelet",
+      "postal_codes": [
+        "327129"
+      ]
+    },
+    {
+      "name": "Izgar",
+      "value": "izgar",
+      "postal_codes": [
+        "327427"
+      ]
+    },
+    {
+      "name": "Izvor",
+      "value": "izvor",
+      "postal_codes": [
+        "327131"
+      ]
+    },
+    {
+      "name": "Jitin",
+      "value": "jitin",
+      "postal_codes": [
+        "327086"
+      ]
+    },
+    {
+      "name": "Jupa",
+      "value": "jupa",
+      "postal_codes": [
+        "325401"
+      ]
+    },
+    {
+      "name": "Lapusnicel",
+      "value": "lapusnicel",
+      "postal_codes": [
+        "327240"
+      ]
+    },
+    {
+      "name": "Lapusnicu Mare",
+      "value": "lapusnicu_mare",
+      "postal_codes": [
+        "327245"
+      ]
+    },
+    {
+      "name": "Lescovita",
+      "value": "lescovita",
+      "postal_codes": [
+        "327281"
+      ]
+    },
+    {
+      "name": "Liborajdea",
+      "value": "liborajdea",
+      "postal_codes": [
+        "327346"
+      ]
+    },
+    {
+      "name": "Lindenfeld",
+      "value": "lindenfeld",
+      "postal_codes": [
+        "327056"
+      ]
+    },
+    {
+      "name": "Liubcova",
+      "value": "liubcova",
+      "postal_codes": [
+        "327029"
+      ]
+    },
+    {
+      "name": "Lucacevat",
+      "value": "lucacevat",
+      "postal_codes": [
+        "327347"
+      ]
+    },
+    {
+      "name": "Lunca Florii",
+      "value": "lunca_florii",
+      "postal_codes": [
+        "327132"
+      ]
+    },
+    {
+      "name": "Luncavita",
+      "value": "luncavita",
+      "postal_codes": [
+        "327250"
+      ]
+    },
+    {
+      "name": "Lunca Zaicii",
+      "value": "lunca_zaicii",
+      "postal_codes": [
+        "327133"
+      ]
+    },
+    {
+      "name": "Lupac",
+      "value": "lupac",
+      "postal_codes": [
+        "327255"
+      ]
+    },
+    {
+      "name": "Macesti",
+      "value": "macesti",
+      "postal_codes": [
+        "325501"
+      ]
+    },
+    {
+      "name": "Maciova",
+      "value": "maciova",
+      "postal_codes": [
+        "327092"
+      ]
+    },
+    {
+      "name": "Macoviste (Ciuchici)",
+      "value": "macoviste_(ciuchici)",
+      "postal_codes": [
+        "327081"
+      ]
+    },
+    {
+      "name": "Macoviste (Cornea)",
+      "value": "macoviste_(cornea)",
+      "postal_codes": [
+        "327108"
+      ]
+    },
+    {
+      "name": "Magura",
+      "value": "magura",
+      "postal_codes": [
+        "327437"
+      ]
+    },
+    {
+      "name": "Mal",
+      "value": "mal",
+      "postal_codes": [
+        "325702"
+      ]
+    },
+    {
+      "name": "Marga",
+      "value": "marga",
+      "postal_codes": [
+        "327260"
+      ]
+    },
+    {
+      "name": "Marila",
+      "value": "marila",
+      "postal_codes": [
+        "325605"
+      ]
+    },
+    {
+      "name": "Martinovat",
+      "value": "martinovat",
+      "postal_codes": [
+        "327348"
+      ]
+    },
+    {
+      "name": "Maru",
+      "value": "maru",
+      "postal_codes": [
+        "327438"
+      ]
+    },
+    {
+      "name": "Matnicu Mare",
+      "value": "matnicu_mare",
+      "postal_codes": [
+        "327093"
+      ]
+    },
+    {
+      "name": "Maureni",
+      "value": "maureni",
+      "postal_codes": [
+        "327265"
+      ]
+    },
+    {
+      "name": "Mehadia",
+      "value": "mehadia",
+      "postal_codes": [
+        "327270"
+      ]
+    },
+    {
+      "name": "Mehadica",
+      "value": "mehadica",
+      "postal_codes": [
+        "327275"
+      ]
+    },
+    {
+      "name": "Mercina",
+      "value": "mercina",
+      "postal_codes": [
+        "327421"
+      ]
+    },
+    {
+      "name": "Mesteacan",
+      "value": "mesteacan",
+      "postal_codes": [
+        "327134"
+      ]
+    },
+    {
+      "name": "Milcoveni",
+      "value": "milcoveni",
+      "postal_codes": [
+        "327022"
+      ]
+    },
+    {
+      "name": "Moceris",
+      "value": "moceris",
+      "postal_codes": [
+        "327246"
+      ]
+    },
+    {
+      "name": "Moldova Noua",
+      "value": "moldova_noua",
+      "postal_codes": [
+        "325500"
+      ]
+    },
+    {
+      "name": "Moldova Veche",
+      "value": "moldova_veche",
+      "postal_codes": [
+        "325550"
+      ]
+    },
+    {
+      "name": "Moldovita",
+      "value": "moldovita",
+      "postal_codes": [
+        "325502"
+      ]
+    },
+    {
+      "name": "Moniom",
+      "value": "moniom",
+      "postal_codes": [
+        "320004"
+      ]
+    },
+    {
+      "name": "Naidas",
+      "value": "naidas",
+      "postal_codes": [
+        "327280"
+      ]
+    },
+    {
+      "name": "Negiudin",
+      "value": "negiudin",
+      "postal_codes": [
+        "327136"
+      ]
+    },
+    {
+      "name": "Nermed",
+      "value": "nermed",
+      "postal_codes": [
+        "327067"
+      ]
+    },
+    {
+      "name": "Nicolint",
+      "value": "nicolint",
+      "postal_codes": [
+        "327082"
+      ]
+    },
+    {
+      "name": "Obita",
+      "value": "obita",
+      "postal_codes": [
+        "327137"
+      ]
+    },
+    {
+      "name": "Obreja",
+      "value": "obreja",
+      "postal_codes": [
+        "327285"
+      ]
+    },
+    {
+      "name": "Ocna de Fier",
+      "value": "ocna_de_fier",
+      "postal_codes": [
+        "327290"
+      ]
+    },
+    {
+      "name": "Ogasu Podului",
+      "value": "ogasu_podului",
+      "postal_codes": [
+        "327349"
+      ]
+    },
+    {
+      "name": "Ohaba-Matnic",
+      "value": "ohaba-matnic",
+      "postal_codes": [
+        "327101"
+      ]
+    },
+    {
+      "name": "Ohabita",
+      "value": "ohabita",
+      "postal_codes": [
+        "327298"
+      ]
+    },
+    {
+      "name": "Oravita",
+      "value": "oravita",
+      "postal_codes": [
+        "325600"
+      ]
+    },
+    {
+      "name": "Otelu Rosu",
+      "value": "otelu_rosu",
+      "postal_codes": [
+        "325700"
+      ]
+    },
+    {
+      "name": "Padina Matei",
+      "value": "padina_matei",
+      "postal_codes": [
+        "327216"
+      ]
+    },
+    {
+      "name": "Paltinis",
+      "value": "paltinis",
+      "postal_codes": [
+        "327295"
+      ]
+    },
+    {
+      "name": "Parneaura",
+      "value": "parneaura",
+      "postal_codes": [
+        "327368"
+      ]
+    },
+    {
+      "name": "Parvova",
+      "value": "parvova",
+      "postal_codes": [
+        "327241"
+      ]
+    },
+    {
+      "name": "Patas",
+      "value": "patas",
+      "postal_codes": [
+        "327308"
+      ]
+    },
+    {
+      "name": "Pecinisca",
+      "value": "pecinisca",
+      "postal_codes": [
+        "325201"
+      ]
+    },
+    {
+      "name": "Pestere",
+      "value": "pestere",
+      "postal_codes": [
+        "327094"
+      ]
+    },
+    {
+      "name": "Petnic",
+      "value": "petnic",
+      "postal_codes": [
+        "327237"
+      ]
+    },
+    {
+      "name": "Petrilova",
+      "value": "petrilova",
+      "postal_codes": [
+        "327083"
+      ]
+    },
+    {
+      "name": "Petrosnita",
+      "value": "petrosnita",
+      "postal_codes": [
+        "327062"
+      ]
+    },
+    {
+      "name": "Plopu",
+      "value": "plopu",
+      "postal_codes": [
+        "327007"
+      ]
+    },
+    {
+      "name": "Plugova",
+      "value": "plugova",
+      "postal_codes": [
+        "327272"
+      ]
+    },
+    {
+      "name": "Pogara",
+      "value": "pogara",
+      "postal_codes": [
+        "327138"
+      ]
+    },
+    {
+      "name": "Pogara de Sus",
+      "value": "pogara_de_sus",
+      "postal_codes": [
+        "327139"
+      ]
+    },
+    {
+      "name": "Poiana",
+      "value": "poiana",
+      "postal_codes": [
+        "327057"
+      ]
+    },
+    {
+      "name": "Poiana Lunga",
+      "value": "poiana_lunga",
+      "postal_codes": [
+        "327141"
+      ]
+    },
+    {
+      "name": "Poiana Marului",
+      "value": "poiana_marului",
+      "postal_codes": [
+        "327439"
+      ]
+    },
+    {
+      "name": "Poienile Boinei",
+      "value": "poienile_boinei",
+      "postal_codes": [
+        "327373"
+      ]
+    },
+    {
+      "name": "Pojejena",
+      "value": "pojejena",
+      "postal_codes": [
+        "327300"
+      ]
+    },
+    {
+      "name": "Poneasca",
+      "value": "poneasca",
+      "postal_codes": [
+        "327041"
+      ]
+    },
+    {
+      "name": "Potoc",
+      "value": "potoc",
+      "postal_codes": [
+        "327332"
+      ]
+    },
+    {
+      "name": "Preveciori",
+      "value": "preveciori",
+      "postal_codes": [
+        "327018"
+      ]
+    },
+    {
+      "name": "Prigor",
+      "value": "prigor",
+      "postal_codes": [
+        "327305"
+      ]
+    },
+    {
+      "name": "Prilipet",
+      "value": "prilipet",
+      "postal_codes": [
+        "327042"
+      ]
+    },
+    {
+      "name": "Prisaca",
+      "value": "prisaca",
+      "postal_codes": [
+        "327096"
+      ]
+    },
+    {
+      "name": "Prisacina",
+      "value": "prisacina",
+      "postal_codes": [
+        "327142"
+      ]
+    },
+    {
+      "name": "Prisian",
+      "value": "prisian",
+      "postal_codes": [
+        "327058"
+      ]
+    },
+    {
+      "name": "Prislop (Cornereva)",
+      "value": "prislop_(cornereva)",
+      "postal_codes": [
+        "327143"
+      ]
+    },
+    {
+      "name": "Prislop (Dalboset)",
+      "value": "prislop_(dalboset)",
+      "postal_codes": [
+        "327169"
+      ]
+    },
+    {
+      "name": "Putna",
+      "value": "putna",
+      "postal_codes": [
+        "327309"
+      ]
+    },
+    {
+      "name": "Racasdia",
+      "value": "racasdia",
+      "postal_codes": [
+        "327315"
+      ]
+    },
+    {
+      "name": "Rachita",
+      "value": "rachita",
+      "postal_codes": [
+        "327376"
+      ]
+    },
+    {
+      "name": "Rachitova",
+      "value": "rachitova",
+      "postal_codes": [
+        "325606"
+      ]
+    },
+    {
+      "name": "Radimna",
+      "value": "radimna",
+      "postal_codes": [
+        "327303"
+      ]
+    },
+    {
+      "name": "Rafnic",
+      "value": "rafnic",
+      "postal_codes": [
+        "327257"
+      ]
+    },
+    {
+      "name": "Ramna",
+      "value": "ramna",
+      "postal_codes": [
+        "327310"
+      ]
+    },
+    {
+      "name": "Ravensca",
+      "value": "ravensca",
+      "postal_codes": [
+        "327374"
+      ]
+    },
+    {
+      "name": "Remetea-Poganici",
+      "value": "remetea-poganici",
+      "postal_codes": [
+        "327203"
+      ]
+    },
+    {
+      "name": "Resita",
+      "value": "resita",
+      "postal_codes": []
+    },
+    {
+      "name": "Resita Mica",
+      "value": "resita_mica",
+      "postal_codes": [
+        "327171"
+      ]
+    },
+    {
+      "name": "Rugi",
+      "value": "rugi",
+      "postal_codes": [
+        "327299"
+      ]
+    },
+    {
+      "name": "Ruginosu",
+      "value": "ruginosu",
+      "postal_codes": [
+        "327102"
+      ]
+    },
+    {
+      "name": "Rusca",
+      "value": "rusca",
+      "postal_codes": [
+        "327391"
+      ]
+    },
+    {
+      "name": "Rusca Montana",
+      "value": "rusca_montana",
+      "postal_codes": [
+        "327320"
+      ]
+    },
+    {
+      "name": "Ruschita",
+      "value": "ruschita",
+      "postal_codes": [
+        "327321"
+      ]
+    },
+    {
+      "name": "Rusova Noua",
+      "value": "rusova_noua",
+      "postal_codes": [
+        "327023"
+      ]
+    },
+    {
+      "name": "Rusova Veche",
+      "value": "rusova_veche",
+      "postal_codes": [
+        "327024"
+      ]
+    },
+    {
+      "name": "Rustin",
+      "value": "rustin",
+      "postal_codes": [
+        "327144"
+      ]
+    },
+    {
+      "name": "Sacu",
+      "value": "sacu",
+      "postal_codes": [
+        "327325"
+      ]
+    },
+    {
+      "name": "Sadova Noua",
+      "value": "sadova_noua",
+      "postal_codes": [
+        "327362"
+      ]
+    },
+    {
+      "name": "Sadova Veche",
+      "value": "sadova_veche",
+      "postal_codes": [
+        "327363"
+      ]
+    },
+    {
+      "name": "Salbagelu Nou",
+      "value": "salbagelu_nou",
+      "postal_codes": [
+        "327326"
+      ]
+    },
+    {
+      "name": "Sasca Montana",
+      "value": "sasca_montana",
+      "postal_codes": [
+        "327330"
+      ]
+    },
+    {
+      "name": "Sasca Romana",
+      "value": "sasca_romana",
+      "postal_codes": [
+        "327333"
+      ]
+    },
+    {
+      "name": "Sat Batran",
+      "value": "sat_batran",
+      "postal_codes": [
+        "327008"
+      ]
+    },
+    {
+      "name": "Scaius",
+      "value": "scaius",
+      "postal_codes": [
+        "327204"
+      ]
+    },
+    {
+      "name": "Scarisoara",
+      "value": "scarisoara",
+      "postal_codes": [
+        "327146"
+      ]
+    },
+    {
+      "name": "Secaseni",
+      "value": "secaseni",
+      "postal_codes": [
+        "327397"
+      ]
+    },
+    {
+      "name": "Secu",
+      "value": "secu",
+      "postal_codes": [
+        "320005"
+      ]
+    },
+    {
+      "name": "Sfanta Elena",
+      "value": "sfanta_elena",
+      "postal_codes": [
+        "327161"
+      ]
+    },
+    {
+      "name": "Sichevita",
+      "value": "sichevita",
+      "postal_codes": [
+        "327335"
+      ]
+    },
+    {
+      "name": "Slatina-Nera",
+      "value": "slatina-nera",
+      "postal_codes": [
+        "327334"
+      ]
+    },
+    {
+      "name": "Slatina-Timis",
+      "value": "slatina-timis",
+      "postal_codes": [
+        "327360"
+      ]
+    },
+    {
+      "name": "Soceni",
+      "value": "soceni",
+      "postal_codes": [
+        "327196"
+      ]
+    },
+    {
+      "name": "Socol",
+      "value": "socol",
+      "postal_codes": [
+        "327365"
+      ]
+    },
+    {
+      "name": "Socolari",
+      "value": "socolari",
+      "postal_codes": [
+        "327077"
+      ]
+    },
+    {
+      "name": "Sopotu Nou",
+      "value": "sopotu_nou",
+      "postal_codes": [
+        "327370"
+      ]
+    },
+    {
+      "name": "Sopotu Vechi",
+      "value": "sopotu_vechi",
+      "postal_codes": [
+        "327172"
+      ]
+    },
+    {
+      "name": "Sosdea",
+      "value": "sosdea",
+      "postal_codes": [
+        "327266"
+      ]
+    },
+    {
+      "name": "Stancilova",
+      "value": "stancilova",
+      "postal_codes": [
+        "327377"
+      ]
+    },
+    {
+      "name": "Steierdorf",
+      "value": "steierdorf",
+      "postal_codes": [
+        "325150"
+      ]
+    },
+    {
+      "name": "Stinapari",
+      "value": "stinapari",
+      "postal_codes": [
+        "327071"
+      ]
+    },
+    {
+      "name": "Streneac",
+      "value": "streneac",
+      "postal_codes": [
+        "327351"
+      ]
+    },
+    {
+      "name": "Strugasca",
+      "value": "strugasca",
+      "postal_codes": [
+        "327147"
+      ]
+    },
+    {
+      "name": "Studena",
+      "value": "studena",
+      "postal_codes": [
+        "327148"
+      ]
+    },
+    {
+      "name": "Sub Crang",
+      "value": "sub_crang",
+      "postal_codes": [
+        "327149"
+      ]
+    },
+    {
+      "name": "Sub Margine",
+      "value": "sub_margine",
+      "postal_codes": [
+        "327009"
+      ]
+    },
+    {
+      "name": "Sub Plai",
+      "value": "sub_plai",
+      "postal_codes": [
+        "327151"
+      ]
+    },
+    {
+      "name": "Sumita",
+      "value": "sumita",
+      "postal_codes": [
+        "327242"
+      ]
+    },
+    {
+      "name": "Surducu Mare",
+      "value": "surducu_mare",
+      "postal_codes": [
+        "327213"
+      ]
+    },
+    {
+      "name": "Susca",
+      "value": "susca",
+      "postal_codes": [
+        "327304"
+      ]
+    },
+    {
+      "name": "Tarnova",
+      "value": "tarnova",
+      "postal_codes": [
+        "327385"
+      ]
+    },
+    {
+      "name": "tatu",
+      "value": "tatu",
+      "postal_codes": [
+        "327153"
+      ]
+    },
+    {
+      "name": "Teregova",
+      "value": "teregova",
+      "postal_codes": [
+        "327390"
+      ]
+    },
+    {
+      "name": "terova",
+      "value": "terova",
+      "postal_codes": [
+        "320006"
+      ]
+    },
+    {
+      "name": "Ticvaniu Mare",
+      "value": "ticvaniu_mare",
+      "postal_codes": [
+        "327395"
+      ]
+    },
+    {
+      "name": "Ticvaniu Mic",
+      "value": "ticvaniu_mic",
+      "postal_codes": [
+        "327398"
+      ]
+    },
+    {
+      "name": "Tincova",
+      "value": "tincova",
+      "postal_codes": [
+        "327327"
+      ]
+    },
+    {
+      "name": "Tirol",
+      "value": "tirol",
+      "postal_codes": [
+        "327177"
+      ]
+    },
+    {
+      "name": "Topla",
+      "value": "topla",
+      "postal_codes": [
+        "327152"
+      ]
+    },
+    {
+      "name": "Toplet",
+      "value": "toplet",
+      "postal_codes": [
+        "327400"
+      ]
+    },
+    {
+      "name": "Turnu Ruieni",
+      "value": "turnu_ruieni",
+      "postal_codes": [
+        "327405"
+      ]
+    },
+    {
+      "name": "Urcu",
+      "value": "urcu",
+      "postal_codes": [
+        "327378"
+      ]
+    },
+    {
+      "name": "Valea Bistrei",
+      "value": "valea_bistrei",
+      "postal_codes": [
+        "327441"
+      ]
+    },
+    {
+      "name": "Valea Bolvasnita",
+      "value": "valea_bolvasnita",
+      "postal_codes": [
+        "327273"
+      ]
+    },
+    {
+      "name": "Valeadeni",
+      "value": "valeadeni",
+      "postal_codes": [
+        "327047"
+      ]
+    },
+    {
+      "name": "Valea Mare",
+      "value": "valea_mare",
+      "postal_codes": [
+        "327206"
+      ]
+    },
+    {
+      "name": "Valea Minisului",
+      "value": "valea_minisului",
+      "postal_codes": [
+        "327043"
+      ]
+    },
+    {
+      "name": "Valea Orevita",
+      "value": "valea_orevita",
+      "postal_codes": [
+        "327352"
+      ]
+    },
+    {
+      "name": "Valeapai",
+      "value": "valeapai",
+      "postal_codes": [
+        "327312"
+      ]
+    },
+    {
+      "name": "Valea Rachitei",
+      "value": "valea_rachitei",
+      "postal_codes": [
+        "327379"
+      ]
+    },
+    {
+      "name": "Valea Ravensca",
+      "value": "valea_ravensca",
+      "postal_codes": [
+        "327353"
+      ]
+    },
+    {
+      "name": "Valea Rosie",
+      "value": "valea_rosie",
+      "postal_codes": [
+        "327381"
+      ]
+    },
+    {
+      "name": "Valea Sichevitei",
+      "value": "valea_sichevitei",
+      "postal_codes": [
+        "327354"
+      ]
+    },
+    {
+      "name": "Valea Timisului",
+      "value": "valea_timisului",
+      "postal_codes": [
+        "327059"
+      ]
+    },
+    {
+      "name": "Valisoara",
+      "value": "valisoara",
+      "postal_codes": [
+        "327063"
+      ]
+    },
+    {
+      "name": "Valiug",
+      "value": "valiug",
+      "postal_codes": [
+        "327415"
+      ]
+    },
+    {
+      "name": "Vama Marga",
+      "value": "vama_marga",
+      "postal_codes": [
+        "327261"
+      ]
+    },
+    {
+      "name": "Var",
+      "value": "var",
+      "postal_codes": [
+        "327288"
+      ]
+    },
+    {
+      "name": "Varadia",
+      "value": "varadia",
+      "postal_codes": [
+        "327420"
+      ]
+    },
+    {
+      "name": "Varciorova",
+      "value": "varciorova",
+      "postal_codes": [
+        "327036"
+      ]
+    },
+    {
+      "name": "Verendin",
+      "value": "verendin",
+      "postal_codes": [
+        "327251"
+      ]
+    },
+    {
+      "name": "Vermes",
+      "value": "vermes",
+      "postal_codes": [
+        "327425"
+      ]
+    },
+    {
+      "name": "Vodnic",
+      "value": "vodnic",
+      "postal_codes": [
+        "327258"
+      ]
+    },
+    {
+      "name": "Voislova",
+      "value": "voislova",
+      "postal_codes": [
+        "327442"
+      ]
+    },
+    {
+      "name": "Vrani",
+      "value": "vrani",
+      "postal_codes": [
+        "327430"
+      ]
+    },
+    {
+      "name": "Vraniut",
+      "value": "vraniut",
+      "postal_codes": [
+        "327316"
+      ]
+    },
+    {
+      "name": "Zagujeni",
+      "value": "zagujeni",
+      "postal_codes": [
+        "327097"
+      ]
+    },
+    {
+      "name": "Zanogi",
+      "value": "zanogi",
+      "postal_codes": [
+        "327154"
+      ]
+    },
+    {
+      "name": "Zanou",
+      "value": "zanou",
+      "postal_codes": [
+        "327356"
+      ]
+    },
+    {
+      "name": "Zasloane",
+      "value": "zasloane",
+      "postal_codes": [
+        "327357"
+      ]
+    },
+    {
+      "name": "Zavoi",
+      "value": "zavoi",
+      "postal_codes": [
+        "327435"
+      ]
+    },
+    {
+      "name": "Zbegu",
+      "value": "zbegu",
+      "postal_codes": [
+        "327156"
+      ]
+    },
+    {
+      "name": "Zervesti",
+      "value": "zervesti",
+      "postal_codes": [
+        "327409"
+      ]
+    },
+    {
+      "name": "Zlagna",
+      "value": "zlagna",
+      "postal_codes": [
+        "327411"
+      ]
+    },
+    {
+      "name": "Zlatita",
+      "value": "zlatita",
+      "postal_codes": [
+        "327445"
+      ]
+    },
+    {
+      "name": "Zmogotin",
+      "value": "zmogotin",
+      "postal_codes": [
+        "327157"
+      ]
+    },
+    {
+      "name": "Zoina",
+      "value": "zoina",
+      "postal_codes": [
+        "327158"
+      ]
+    },
+    {
+      "name": "Zorile",
+      "value": "zorile",
+      "postal_codes": [
+        "327103"
+      ]
+    },
+    {
+      "name": "Zorlencior",
+      "value": "zorlencior",
+      "postal_codes": [
+        "327451"
+      ]
+    },
+    {
+      "name": "Zorlentu Mare",
+      "value": "zorlentu_mare",
+      "postal_codes": [
+        "327450"
+      ]
+    }
+  ]
+}

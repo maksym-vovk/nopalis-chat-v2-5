@@ -1,0 +1,172 @@
+{
+  "zhudets": [
+    {
+      "name": "Alba",
+      "value": "alba"
+    },
+    {
+      "name": "Arad",
+      "value": "arad"
+    },
+    {
+      "name": "Arges",
+      "value": "arges"
+    },
+    {
+      "name": "Bacau",
+      "value": "bacau"
+    },
+    {
+      "name": "Bihor",
+      "value": "bihor"
+    },
+    {
+      "name": "Bistrita-Nasaud",
+      "value": "bistrita-nasaud"
+    },
+    {
+      "name": "Botosani",
+      "value": "botosani"
+    },
+    {
+      "name": "Braila",
+      "value": "braila"
+    },
+    {
+      "name": "Brasov",
+      "value": "brasov"
+    },
+    {
+      "name": "Bucuresti",
+      "value": "bucuresti"
+    },
+    {
+      "name": "Buzau",
+      "value": "buzau"
+    },
+    {
+      "name": "Calarasi",
+      "value": "calarasi"
+    },
+    {
+      "name": "Caras-Severin",
+      "value": "caras-severin"
+    },
+    {
+      "name": "Cluj",
+      "value": "cluj"
+    },
+    {
+      "name": "Constanta",
+      "value": "constanta"
+    },
+    {
+      "name": "Covasna",
+      "value": "covasna"
+    },
+    {
+      "name": "Dambovita",
+      "value": "dambovita"
+    },
+    {
+      "name": "Dolj",
+      "value": "dolj"
+    },
+    {
+      "name": "Galati",
+      "value": "galati"
+    },
+    {
+      "name": "Giurgiu",
+      "value": "giurgiu"
+    },
+    {
+      "name": "Gorj",
+      "value": "gorj"
+    },
+    {
+      "name": "Harghita",
+      "value": "harghita"
+    },
+    {
+      "name": "Hunedoara",
+      "value": "hunedoara"
+    },
+    {
+      "name": "Ialomita",
+      "value": "ialomita"
+    },
+    {
+      "name": "Iasi",
+      "value": "iasi"
+    },
+    {
+      "name": "Ilfov",
+      "value": "ilfov"
+    },
+    {
+      "name": "Maramures",
+      "value": "maramures"
+    },
+    {
+      "name": "Mehedinti",
+      "value": "mehedinti"
+    },
+    {
+      "name": "Mures",
+      "value": "mures"
+    },
+    {
+      "name": "Neamt",
+      "value": "neamt"
+    },
+    {
+      "name": "Olt",
+      "value": "olt"
+    },
+    {
+      "name": "Prahova",
+      "value": "prahova"
+    },
+    {
+      "name": "Salaj",
+      "value": "salaj"
+    },
+    {
+      "name": "Satu-Mare",
+      "value": "satu-mare"
+    },
+    {
+      "name": "Sibiu",
+      "value": "sibiu"
+    },
+    {
+      "name": "Suceava",
+      "value": "suceava"
+    },
+    {
+      "name": "Teleorman",
+      "value": "teleorman"
+    },
+    {
+      "name": "Timis",
+      "value": "timis"
+    },
+    {
+      "name": "Tulcea",
+      "value": "tulcea"
+    },
+    {
+      "name": "Valcea",
+      "value": "valcea"
+    },
+    {
+      "name": "Vaslui",
+      "value": "vaslui"
+    },
+    {
+      "name": "Vrancea",
+      "value": "vrancea"
+    }
+  ]
+}

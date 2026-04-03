@@ -1,0 +1,1700 @@
+{
+  "cities": [
+    {
+      "name": "Albeni",
+      "value": "albeni",
+      "postal_codes": [
+        "147321"
+      ]
+    },
+    {
+      "name": "Albesti",
+      "value": "albesti",
+      "postal_codes": [
+        "147431"
+      ]
+    },
+    {
+      "name": "Alexandria",
+      "value": "alexandria",
+      "postal_codes": [
+        "140047",
+        "140111",
+        "140112"
+      ]
+    },
+    {
+      "name": "Antonesti",
+      "value": "antonesti",
+      "postal_codes": [
+        "147056"
+      ]
+    },
+    {
+      "name": "Babaita",
+      "value": "babaita",
+      "postal_codes": [
+        "147010"
+      ]
+    },
+    {
+      "name": "Bacalesti",
+      "value": "bacalesti",
+      "postal_codes": [
+        "147066"
+      ]
+    },
+    {
+      "name": "Baciu",
+      "value": "baciu",
+      "postal_codes": [
+        "147016"
+      ]
+    },
+    {
+      "name": "Baduleasa",
+      "value": "baduleasa",
+      "postal_codes": [
+        "147286"
+      ]
+    },
+    {
+      "name": "Balaci",
+      "value": "balaci",
+      "postal_codes": [
+        "147005"
+      ]
+    },
+    {
+      "name": "Baldovinesti",
+      "value": "baldovinesti",
+      "postal_codes": [
+        "147076"
+      ]
+    },
+    {
+      "name": "Balta Sarata",
+      "value": "balta_sarata",
+      "postal_codes": [
+        "147096"
+      ]
+    },
+    {
+      "name": "Baneasa",
+      "value": "baneasa",
+      "postal_codes": [
+        "147301"
+      ]
+    },
+    {
+      "name": "Banov",
+      "value": "banov",
+      "postal_codes": [
+        "147271"
+      ]
+    },
+    {
+      "name": "Barsestii de Jos",
+      "value": "barsestii_de_jos",
+      "postal_codes": [
+        "147256"
+      ]
+    },
+    {
+      "name": "Bascoveni",
+      "value": "bascoveni",
+      "postal_codes": [
+        "147151"
+      ]
+    },
+    {
+      "name": "Beciu",
+      "value": "beciu",
+      "postal_codes": [
+        "147257"
+      ]
+    },
+    {
+      "name": "Beiu",
+      "value": "beiu",
+      "postal_codes": [
+        "147376"
+      ]
+    },
+    {
+      "name": "Belciug",
+      "value": "belciug",
+      "postal_codes": [
+        "147226"
+      ]
+    },
+    {
+      "name": "Beuca",
+      "value": "beuca",
+      "postal_codes": [
+        "147121"
+      ]
+    },
+    {
+      "name": "Blejesti",
+      "value": "blejesti",
+      "postal_codes": [
+        "147015"
+      ]
+    },
+    {
+      "name": "Bogdana",
+      "value": "bogdana",
+      "postal_codes": [
+        "147020"
+      ]
+    },
+    {
+      "name": "Botoroaga",
+      "value": "botoroaga",
+      "postal_codes": [
+        "147025"
+      ]
+    },
+    {
+      "name": "Bragadiru",
+      "value": "bragadiru",
+      "postal_codes": [
+        "147030"
+      ]
+    },
+    {
+      "name": "Branceni",
+      "value": "branceni",
+      "postal_codes": [
+        "147035"
+      ]
+    },
+    {
+      "name": "Brancoveanca",
+      "value": "brancoveanca",
+      "postal_codes": [
+        "147258"
+      ]
+    },
+    {
+      "name": "Bratasani",
+      "value": "bratasani",
+      "postal_codes": [
+        "147411"
+      ]
+    },
+    {
+      "name": "Bratcovu",
+      "value": "bratcovu",
+      "postal_codes": [
+        "147366"
+      ]
+    },
+    {
+      "name": "Bratesti",
+      "value": "bratesti",
+      "postal_codes": [
+        "147272"
+      ]
+    },
+    {
+      "name": "Brebina",
+      "value": "brebina",
+      "postal_codes": [
+        "147316"
+      ]
+    },
+    {
+      "name": "Brosteanca",
+      "value": "brosteanca",
+      "postal_codes": [
+        "147021"
+      ]
+    },
+    {
+      "name": "Bujoreni",
+      "value": "bujoreni",
+      "postal_codes": [
+        "147040"
+      ]
+    },
+    {
+      "name": "Bujoru",
+      "value": "bujoru",
+      "postal_codes": [
+        "147045"
+      ]
+    },
+    {
+      "name": "Bujoru (Calmatuiu)",
+      "value": "bujoru_(calmatuiu)",
+      "postal_codes": [
+        "147061"
+      ]
+    },
+    {
+      "name": "Burdeni",
+      "value": "burdeni",
+      "postal_codes": [
+        "147006"
+      ]
+    },
+    {
+      "name": "Butculesti",
+      "value": "butculesti",
+      "postal_codes": [
+        "147306"
+      ]
+    },
+    {
+      "name": "Butesti",
+      "value": "butesti",
+      "postal_codes": [
+        "147346"
+      ]
+    },
+    {
+      "name": "Buzescu",
+      "value": "buzescu",
+      "postal_codes": [
+        "147050"
+      ]
+    },
+    {
+      "name": "Calinesti",
+      "value": "calinesti",
+      "postal_codes": [
+        "147055"
+      ]
+    },
+    {
+      "name": "Calmatuiu",
+      "value": "calmatuiu",
+      "postal_codes": [
+        "147060"
+      ]
+    },
+    {
+      "name": "Calmatuiu de Sus",
+      "value": "calmatuiu_de_sus",
+      "postal_codes": [
+        "147065"
+      ]
+    },
+    {
+      "name": "Calomfiresti",
+      "value": "calomfiresti",
+      "postal_codes": [
+        "147281"
+      ]
+    },
+    {
+      "name": "Calugaru",
+      "value": "calugaru",
+      "postal_codes": [
+        "147026"
+      ]
+    },
+    {
+      "name": "Caravaneti",
+      "value": "caravaneti",
+      "postal_codes": [
+        "147062"
+      ]
+    },
+    {
+      "name": "Carlomanu",
+      "value": "carlomanu",
+      "postal_codes": [
+        "147287"
+      ]
+    },
+    {
+      "name": "Catunu",
+      "value": "catunu",
+      "postal_codes": [
+        "147273"
+      ]
+    },
+    {
+      "name": "Cernetu",
+      "value": "cernetu",
+      "postal_codes": [
+        "147201"
+      ]
+    },
+    {
+      "name": "Cervenia",
+      "value": "cervenia",
+      "postal_codes": [
+        "147070"
+      ]
+    },
+    {
+      "name": "Cetatea",
+      "value": "cetatea",
+      "postal_codes": [
+        "147291"
+      ]
+    },
+    {
+      "name": "Ciolanesti",
+      "value": "ciolanesti",
+      "postal_codes": [
+        "147075"
+      ]
+    },
+    {
+      "name": "Ciolanestii din Deal",
+      "value": "ciolanestii_din_deal",
+      "postal_codes": [
+        "147077"
+      ]
+    },
+    {
+      "name": "Ciolanestii din Vale",
+      "value": "ciolanestii_din_vale",
+      "postal_codes": [
+        "147078"
+      ]
+    },
+    {
+      "name": "Ciuperceni",
+      "value": "ciuperceni",
+      "postal_codes": [
+        "147080"
+      ]
+    },
+    {
+      "name": "Ciuperceni (Cosmesti)",
+      "value": "ciuperceni_(cosmesti)",
+      "postal_codes": [
+        "147091"
+      ]
+    },
+    {
+      "name": "Ciurari",
+      "value": "ciurari",
+      "postal_codes": [
+        "147307"
+      ]
+    },
+    {
+      "name": "Ciurari-Deal",
+      "value": "ciurari-deal",
+      "postal_codes": [
+        "147156"
+      ]
+    },
+    {
+      "name": "Clanita",
+      "value": "clanita",
+      "postal_codes": [
+        "147011"
+      ]
+    },
+    {
+      "name": "Comoara",
+      "value": "comoara",
+      "postal_codes": [
+        "147136"
+      ]
+    },
+    {
+      "name": "Contesti",
+      "value": "contesti",
+      "postal_codes": [
+        "147085"
+      ]
+    },
+    {
+      "name": "Copaceanca",
+      "value": "copaceanca",
+      "postal_codes": [
+        "147057"
+      ]
+    },
+    {
+      "name": "Cosmesti",
+      "value": "cosmesti",
+      "postal_codes": [
+        "147090"
+      ]
+    },
+    {
+      "name": "Cosoaia",
+      "value": "cosoaia",
+      "postal_codes": [
+        "145301"
+      ]
+    },
+    {
+      "name": "Cosoteni",
+      "value": "cosoteni",
+      "postal_codes": [
+        "147432"
+      ]
+    },
+    {
+      "name": "Crangeni",
+      "value": "crangeni",
+      "postal_codes": [
+        "147095"
+      ]
+    },
+    {
+      "name": "Crangu",
+      "value": "crangu",
+      "postal_codes": [
+        "147100"
+      ]
+    },
+    {
+      "name": "Crevenicu",
+      "value": "crevenicu",
+      "postal_codes": [
+        "147105"
+      ]
+    },
+    {
+      "name": "Cucueti",
+      "value": "cucueti",
+      "postal_codes": [
+        "147317"
+      ]
+    },
+    {
+      "name": "Darvas",
+      "value": "darvas",
+      "postal_codes": [
+        "147041"
+      ]
+    },
+    {
+      "name": "Deparati",
+      "value": "deparati",
+      "postal_codes": [
+        "147412"
+      ]
+    },
+    {
+      "name": "Didesti",
+      "value": "didesti",
+      "postal_codes": [
+        "147110"
+      ]
+    },
+    {
+      "name": "Dobreni",
+      "value": "dobreni",
+      "postal_codes": [
+        "147401"
+      ]
+    },
+    {
+      "name": "Dobrotesti",
+      "value": "dobrotesti",
+      "postal_codes": [
+        "147115"
+      ]
+    },
+    {
+      "name": "Dorobantu",
+      "value": "dorobantu",
+      "postal_codes": [
+        "147097"
+      ]
+    },
+    {
+      "name": "Dracea",
+      "value": "dracea",
+      "postal_codes": [
+        "147101"
+      ]
+    },
+    {
+      "name": "Dracesti",
+      "value": "dracesti",
+      "postal_codes": [
+        "147322"
+      ]
+    },
+    {
+      "name": "Dracsani",
+      "value": "dracsani",
+      "postal_codes": [
+        "147122"
+      ]
+    },
+    {
+      "name": "Dracsenei",
+      "value": "dracsenei",
+      "postal_codes": [
+        "147120"
+      ]
+    },
+    {
+      "name": "Draganesti de Vede",
+      "value": "draganesti_de_vede",
+      "postal_codes": [
+        "147130"
+      ]
+    },
+    {
+      "name": "Draganesti-Vlasca",
+      "value": "draganesti-vlasca",
+      "postal_codes": [
+        "147135"
+      ]
+    },
+    {
+      "name": "Draghinesti",
+      "value": "draghinesti",
+      "postal_codes": [
+        "147157"
+      ]
+    },
+    {
+      "name": "Dudu",
+      "value": "dudu",
+      "postal_codes": [
+        "147259"
+      ]
+    },
+    {
+      "name": "Dulceanca",
+      "value": "dulceanca",
+      "postal_codes": [
+        "147433"
+      ]
+    },
+    {
+      "name": "Dulceni",
+      "value": "dulceni",
+      "postal_codes": [
+        "147416"
+      ]
+    },
+    {
+      "name": "Fantanele",
+      "value": "fantanele",
+      "postal_codes": [
+        "147371"
+      ]
+    },
+    {
+      "name": "Florica",
+      "value": "florica",
+      "postal_codes": [
+        "147102"
+      ]
+    },
+    {
+      "name": "Frasinet",
+      "value": "frasinet",
+      "postal_codes": [
+        "147012"
+      ]
+    },
+    {
+      "name": "Frumoasa",
+      "value": "frumoasa",
+      "postal_codes": [
+        "147140"
+      ]
+    },
+    {
+      "name": "Furculesti",
+      "value": "furculesti",
+      "postal_codes": [
+        "147145"
+      ]
+    },
+    {
+      "name": "Galateni",
+      "value": "galateni",
+      "postal_codes": [
+        "147150"
+      ]
+    },
+    {
+      "name": "Garagau",
+      "value": "garagau",
+      "postal_codes": [
+        "147426"
+      ]
+    },
+    {
+      "name": "Gardesti",
+      "value": "gardesti",
+      "postal_codes": [
+        "147227"
+      ]
+    },
+    {
+      "name": "Gradisteanca",
+      "value": "gradisteanca",
+      "postal_codes": [
+        "147152"
+      ]
+    },
+    {
+      "name": "Gratia",
+      "value": "gratia",
+      "postal_codes": [
+        "147155"
+      ]
+    },
+    {
+      "name": "Gresia",
+      "value": "gresia",
+      "postal_codes": [
+        "147367"
+      ]
+    },
+    {
+      "name": "Guruieni",
+      "value": "guruieni",
+      "postal_codes": [
+        "147191"
+      ]
+    },
+    {
+      "name": "Însuratei",
+      "value": "însuratei",
+      "postal_codes": [
+        "147111"
+      ]
+    },
+    {
+      "name": "Ionascu",
+      "value": "ionascu",
+      "postal_codes": [
+        "147067"
+      ]
+    },
+    {
+      "name": "Islaz",
+      "value": "islaz",
+      "postal_codes": [
+        "147160"
+      ]
+    },
+    {
+      "name": "Izvoarele",
+      "value": "izvoarele",
+      "postal_codes": [
+        "147165"
+      ]
+    },
+    {
+      "name": "Laceni",
+      "value": "laceni",
+      "postal_codes": [
+        "147236"
+      ]
+    },
+    {
+      "name": "Lada",
+      "value": "lada",
+      "postal_codes": [
+        "147391"
+      ]
+    },
+    {
+      "name": "Licuriciu",
+      "value": "licuriciu",
+      "postal_codes": [
+        "147058"
+      ]
+    },
+    {
+      "name": "Linia Costii",
+      "value": "linia_costii",
+      "postal_codes": [
+        "147381"
+      ]
+    },
+    {
+      "name": "Lisa",
+      "value": "lisa",
+      "postal_codes": [
+        "147170"
+      ]
+    },
+    {
+      "name": "Lita",
+      "value": "lita",
+      "postal_codes": [
+        "147175"
+      ]
+    },
+    {
+      "name": "Ludaneasca",
+      "value": "ludaneasca",
+      "postal_codes": [
+        "147296"
+      ]
+    },
+    {
+      "name": "Lunca",
+      "value": "lunca",
+      "postal_codes": [
+        "147180"
+      ]
+    },
+    {
+      "name": "Magura",
+      "value": "magura",
+      "postal_codes": [
+        "147190"
+      ]
+    },
+    {
+      "name": "Magura cu Liliac",
+      "value": "magura_cu_liliac",
+      "postal_codes": [
+        "147131"
+      ]
+    },
+    {
+      "name": "Maldaeni",
+      "value": "maldaeni",
+      "postal_codes": [
+        "147195"
+      ]
+    },
+    {
+      "name": "Marita",
+      "value": "marita",
+      "postal_codes": [
+        "147059"
+      ]
+    },
+    {
+      "name": "Marzanesti",
+      "value": "marzanesti",
+      "postal_codes": [
+        "147200"
+      ]
+    },
+    {
+      "name": "Mavrodin",
+      "value": "mavrodin",
+      "postal_codes": [
+        "147185"
+      ]
+    },
+    {
+      "name": "Mereni",
+      "value": "mereni",
+      "postal_codes": [
+        "147205"
+      ]
+    },
+    {
+      "name": "Merenii de Jos",
+      "value": "merenii_de_jos",
+      "postal_codes": [
+        "147206"
+      ]
+    },
+    {
+      "name": "Merenii de Sus",
+      "value": "merenii_de_sus",
+      "postal_codes": [
+        "147207"
+      ]
+    },
+    {
+      "name": "Meri",
+      "value": "meri",
+      "postal_codes": [
+        "147434"
+      ]
+    },
+    {
+      "name": "Merisani (Babaita)",
+      "value": "merisani_(babaita)",
+      "postal_codes": [
+        "147013"
+      ]
+    },
+    {
+      "name": "Merisani (Dobrotesti)",
+      "value": "merisani_(dobrotesti)",
+      "postal_codes": [
+        "147116"
+      ]
+    },
+    {
+      "name": "Moldoveni",
+      "value": "moldoveni",
+      "postal_codes": [
+        "147161"
+      ]
+    },
+    {
+      "name": "Mosteni",
+      "value": "mosteni",
+      "postal_codes": [
+        "147210"
+      ]
+    },
+    {
+      "name": "Mosteni (Furculesti)",
+      "value": "mosteni_(furculesti)",
+      "postal_codes": [
+        "147146"
+      ]
+    },
+    {
+      "name": "Nanov",
+      "value": "nanov",
+      "postal_codes": [
+        "147215"
+      ]
+    },
+    {
+      "name": "Nasturelu",
+      "value": "nasturelu",
+      "postal_codes": [
+        "147220"
+      ]
+    },
+    {
+      "name": "Navodari",
+      "value": "navodari",
+      "postal_codes": [
+        "147331"
+      ]
+    },
+    {
+      "name": "Necsesti",
+      "value": "necsesti",
+      "postal_codes": [
+        "147225"
+      ]
+    },
+    {
+      "name": "Negreni",
+      "value": "negreni",
+      "postal_codes": [
+        "147392"
+      ]
+    },
+    {
+      "name": "Negrenii de Sus",
+      "value": "negrenii_de_sus",
+      "postal_codes": [
+        "147393"
+      ]
+    },
+    {
+      "name": "Negrenii-Osebiti",
+      "value": "negrenii-osebiti",
+      "postal_codes": [
+        "147394"
+      ]
+    },
+    {
+      "name": "Negrilesti",
+      "value": "negrilesti",
+      "postal_codes": [
+        "147323"
+      ]
+    },
+    {
+      "name": "Nenciulesti",
+      "value": "nenciulesti",
+      "postal_codes": [
+        "147186"
+      ]
+    },
+    {
+      "name": "Nicolae Balcescu",
+      "value": "nicolae_balcescu",
+      "postal_codes": [
+        "147063"
+      ]
+    },
+    {
+      "name": "Obartu",
+      "value": "obartu",
+      "postal_codes": [
+        "147396"
+      ]
+    },
+    {
+      "name": "Odobeasca",
+      "value": "odobeasca",
+      "postal_codes": [
+        "147123"
+      ]
+    },
+    {
+      "name": "Olteanca",
+      "value": "olteanca",
+      "postal_codes": [
+        "147336"
+      ]
+    },
+    {
+      "name": "Olteni",
+      "value": "olteni",
+      "postal_codes": [
+        "147230"
+      ]
+    },
+    {
+      "name": "Orbeasca",
+      "value": "orbeasca",
+      "postal_codes": [
+        "147235"
+      ]
+    },
+    {
+      "name": "Orbeasca de Jos",
+      "value": "orbeasca_de_jos",
+      "postal_codes": [
+        "147237"
+      ]
+    },
+    {
+      "name": "Orbeasca de Sus",
+      "value": "orbeasca_de_sus",
+      "postal_codes": [
+        "147238"
+      ]
+    },
+    {
+      "name": "Paru Rotund",
+      "value": "paru_rotund",
+      "postal_codes": [
+        "147187"
+      ]
+    },
+    {
+      "name": "Pauleasca",
+      "value": "pauleasca",
+      "postal_codes": [
+        "147141"
+      ]
+    },
+    {
+      "name": "Peretu",
+      "value": "peretu",
+      "postal_codes": [
+        "147240"
+      ]
+    },
+    {
+      "name": "Perii Brosteni",
+      "value": "perii_brosteni",
+      "postal_codes": [
+        "147231"
+      ]
+    },
+    {
+      "name": "Piatra",
+      "value": "piatra",
+      "postal_codes": [
+        "147245"
+      ]
+    },
+    {
+      "name": "Pietrosani",
+      "value": "pietrosani",
+      "postal_codes": [
+        "147250"
+      ]
+    },
+    {
+      "name": "Pleasov",
+      "value": "pleasov",
+      "postal_codes": [
+        "147181"
+      ]
+    },
+    {
+      "name": "Plopi",
+      "value": "plopi",
+      "postal_codes": [
+        "147124"
+      ]
+    },
+    {
+      "name": "Plopii-Slavitesti",
+      "value": "plopii-slavitesti",
+      "postal_codes": [
+        "147255"
+      ]
+    },
+    {
+      "name": "Plosca",
+      "value": "plosca",
+      "postal_codes": [
+        "147265"
+      ]
+    },
+    {
+      "name": "Poeni",
+      "value": "poeni",
+      "postal_codes": [
+        "147270"
+      ]
+    },
+    {
+      "name": "Poiana",
+      "value": "poiana",
+      "postal_codes": [
+        "147081"
+      ]
+    },
+    {
+      "name": "Poroschia",
+      "value": "poroschia",
+      "postal_codes": [
+        "147280"
+      ]
+    },
+    {
+      "name": "Preajba",
+      "value": "preajba",
+      "postal_codes": [
+        "147274"
+      ]
+    },
+    {
+      "name": "Prunaru",
+      "value": "prunaru",
+      "postal_codes": [
+        "147042"
+      ]
+    },
+    {
+      "name": "Prundu",
+      "value": "prundu",
+      "postal_codes": [
+        "147182"
+      ]
+    },
+    {
+      "name": "Puranii de Sus",
+      "value": "puranii_de_sus",
+      "postal_codes": [
+        "147348"
+      ]
+    },
+    {
+      "name": "Purani (Silistea)",
+      "value": "purani_(silistea)",
+      "postal_codes": [
+        "147347"
+      ]
+    },
+    {
+      "name": "Purani (Vitanesti)",
+      "value": "purani_(vitanesti)",
+      "postal_codes": [
+        "147441"
+      ]
+    },
+    {
+      "name": "Putineiu",
+      "value": "putineiu",
+      "postal_codes": [
+        "147285"
+      ]
+    },
+    {
+      "name": "Radoiesti",
+      "value": "radoiesti",
+      "postal_codes": [
+        "147290"
+      ]
+    },
+    {
+      "name": "Radoiesti-Deal",
+      "value": "radoiesti-deal",
+      "postal_codes": [
+        "147292"
+      ]
+    },
+    {
+      "name": "Radoiesti-Vale",
+      "value": "radoiesti-vale",
+      "postal_codes": [
+        "147293"
+      ]
+    },
+    {
+      "name": "Radulesti",
+      "value": "radulesti",
+      "postal_codes": [
+        "147106"
+      ]
+    },
+    {
+      "name": "Rasmiresti",
+      "value": "rasmiresti",
+      "postal_codes": [
+        "147295"
+      ]
+    },
+    {
+      "name": "Rosiori de Vede",
+      "value": "rosiori_de_vede",
+      "postal_codes": [
+        "145100"
+      ]
+    },
+    {
+      "name": "Rotaresti",
+      "value": "rotaresti",
+      "postal_codes": [
+        "147382"
+      ]
+    },
+    {
+      "name": "Saceni",
+      "value": "saceni",
+      "postal_codes": [
+        "147305"
+      ]
+    },
+    {
+      "name": "Saelele",
+      "value": "saelele",
+      "postal_codes": [
+        "147183"
+      ]
+    },
+    {
+      "name": "Salcia",
+      "value": "salcia",
+      "postal_codes": [
+        "147300"
+      ]
+    },
+    {
+      "name": "Sarbeni",
+      "value": "sarbeni",
+      "postal_codes": [
+        "147310"
+      ]
+    },
+    {
+      "name": "Sarbenii de Jos",
+      "value": "sarbenii_de_jos",
+      "postal_codes": [
+        "147311"
+      ]
+    },
+    {
+      "name": "Satul Vechi",
+      "value": "satul_vechi",
+      "postal_codes": [
+        "147126"
+      ]
+    },
+    {
+      "name": "Satu Nou",
+      "value": "satu_nou",
+      "postal_codes": [
+        "147112"
+      ]
+    },
+    {
+      "name": "Schitu Poienari",
+      "value": "schitu_poienari",
+      "postal_codes": [
+        "147442"
+      ]
+    },
+    {
+      "name": "Scrioastea",
+      "value": "scrioastea",
+      "postal_codes": [
+        "147315"
+      ]
+    },
+    {
+      "name": "Scurtu Mare",
+      "value": "scurtu_mare",
+      "postal_codes": [
+        "147320"
+      ]
+    },
+    {
+      "name": "Scurtu-Slavesti",
+      "value": "scurtu-slavesti",
+      "postal_codes": [
+        "147324"
+      ]
+    },
+    {
+      "name": "Seaca",
+      "value": "seaca",
+      "postal_codes": [
+        "147330"
+      ]
+    },
+    {
+      "name": "Secara",
+      "value": "secara",
+      "postal_codes": [
+        "147103"
+      ]
+    },
+    {
+      "name": "Segarcea-Deal",
+      "value": "segarcea-deal",
+      "postal_codes": [
+        "147337"
+      ]
+    },
+    {
+      "name": "Segarcea-Vale",
+      "value": "segarcea-vale",
+      "postal_codes": [
+        "147335"
+      ]
+    },
+    {
+      "name": "Sericu",
+      "value": "sericu",
+      "postal_codes": [
+        "147017"
+      ]
+    },
+    {
+      "name": "Sfintesti",
+      "value": "sfintesti",
+      "postal_codes": [
+        "147340"
+      ]
+    },
+    {
+      "name": "Silistea",
+      "value": "silistea",
+      "postal_codes": [
+        "147345"
+      ]
+    },
+    {
+      "name": "Silistea Gumesti",
+      "value": "silistea_gumesti",
+      "postal_codes": [
+        "147350"
+      ]
+    },
+    {
+      "name": "Silistea Mica",
+      "value": "silistea_mica",
+      "postal_codes": [
+        "147349"
+      ]
+    },
+    {
+      "name": "Silistea (Vitanesti)",
+      "value": "silistea_(vitanesti)",
+      "postal_codes": [
+        "147443"
+      ]
+    },
+    {
+      "name": "Slavesti",
+      "value": "slavesti",
+      "postal_codes": [
+        "147397"
+      ]
+    },
+    {
+      "name": "Slobozia Mandra",
+      "value": "slobozia_mandra",
+      "postal_codes": [
+        "147355"
+      ]
+    },
+    {
+      "name": "Smardan",
+      "value": "smardan",
+      "postal_codes": [
+        "147261"
+      ]
+    },
+    {
+      "name": "Smardioasa",
+      "value": "smardioasa",
+      "postal_codes": [
+        "147360"
+      ]
+    },
+    {
+      "name": "Socetu",
+      "value": "socetu",
+      "postal_codes": [
+        "147368"
+      ]
+    },
+    {
+      "name": "Soimu",
+      "value": "soimu",
+      "postal_codes": [
+        "147361"
+      ]
+    },
+    {
+      "name": "Spatarei",
+      "value": "spatarei",
+      "postal_codes": [
+        "147147"
+      ]
+    },
+    {
+      "name": "Stefeni",
+      "value": "stefeni",
+      "postal_codes": [
+        "147208"
+      ]
+    },
+    {
+      "name": "Stejaru",
+      "value": "stejaru",
+      "postal_codes": [
+        "147365"
+      ]
+    },
+    {
+      "name": "Stejaru (Crangeni)",
+      "value": "stejaru_(crangeni)",
+      "postal_codes": [
+        "147098"
+      ]
+    },
+    {
+      "name": "Storobaneasa",
+      "value": "storobaneasa",
+      "postal_codes": [
+        "147375"
+      ]
+    },
+    {
+      "name": "Suhaia",
+      "value": "suhaia",
+      "postal_codes": [
+        "147370"
+      ]
+    },
+    {
+      "name": "Talpa",
+      "value": "talpa",
+      "postal_codes": [
+        "147380"
+      ]
+    },
+    {
+      "name": "Talpa-Bascoveni",
+      "value": "talpa-bascoveni",
+      "postal_codes": [
+        "147384"
+      ]
+    },
+    {
+      "name": "Talpa-Ograzile",
+      "value": "talpa-ograzile",
+      "postal_codes": [
+        "147386"
+      ]
+    },
+    {
+      "name": "Talpa Postei",
+      "value": "talpa_postei",
+      "postal_codes": [
+        "147383"
+      ]
+    },
+    {
+      "name": "Tarnava",
+      "value": "tarnava",
+      "postal_codes": [
+        "147027"
+      ]
+    },
+    {
+      "name": "Tatarastii de Jos",
+      "value": "tatarastii_de_jos",
+      "postal_codes": [
+        "147390"
+      ]
+    },
+    {
+      "name": "Tatarastii de Sus",
+      "value": "tatarastii_de_sus",
+      "postal_codes": [
+        "147400"
+      ]
+    },
+    {
+      "name": "tavarlau",
+      "value": "tavarlau",
+      "postal_codes": [
+        "147276"
+      ]
+    },
+    {
+      "name": "Tecuci",
+      "value": "tecuci",
+      "postal_codes": [
+        "147007"
+      ]
+    },
+    {
+      "name": "Teleormanu",
+      "value": "teleormanu",
+      "postal_codes": [
+        "147202"
+      ]
+    },
+    {
+      "name": "tiganesti",
+      "value": "tiganesti",
+      "postal_codes": [
+        "147420"
+      ]
+    },
+    {
+      "name": "Traian",
+      "value": "traian",
+      "postal_codes": [
+        "147405"
+      ]
+    },
+    {
+      "name": "Trivalea-Mosteni",
+      "value": "trivalea-mosteni",
+      "postal_codes": [
+        "147410"
+      ]
+    },
+    {
+      "name": "Troianul",
+      "value": "troianul",
+      "postal_codes": [
+        "147415"
+      ]
+    },
+    {
+      "name": "Tudor Vladimirescu",
+      "value": "tudor_vladimirescu",
+      "postal_codes": [
+        "147302"
+      ]
+    },
+    {
+      "name": "Tunari",
+      "value": "tunari",
+      "postal_codes": [
+        "147028"
+      ]
+    },
+    {
+      "name": "Turnu Magurele",
+      "value": "turnu_magurele",
+      "postal_codes": [
+        "145200"
+      ]
+    },
+    {
+      "name": "Uda-Clocociov",
+      "value": "uda-clocociov",
+      "postal_codes": [
+        "147356"
+      ]
+    },
+    {
+      "name": "Uda-Paciurea",
+      "value": "uda-paciurea",
+      "postal_codes": [
+        "147357"
+      ]
+    },
+    {
+      "name": "Udeni",
+      "value": "udeni",
+      "postal_codes": [
+        "147312"
+      ]
+    },
+    {
+      "name": "Udupu",
+      "value": "udupu",
+      "postal_codes": [
+        "147402"
+      ]
+    },
+    {
+      "name": "Ulmeni",
+      "value": "ulmeni",
+      "postal_codes": [
+        "147022"
+      ]
+    },
+    {
+      "name": "Urluiu",
+      "value": "urluiu",
+      "postal_codes": [
+        "147023"
+      ]
+    },
+    {
+      "name": "Vacaresti",
+      "value": "vacaresti",
+      "postal_codes": [
+        "147132"
+      ]
+    },
+    {
+      "name": "Vaceni",
+      "value": "vaceni",
+      "postal_codes": [
+        "147137"
+      ]
+    },
+    {
+      "name": "Valea Ciresului",
+      "value": "valea_ciresului",
+      "postal_codes": [
+        "147029"
+      ]
+    },
+    {
+      "name": "Valea Parului",
+      "value": "valea_parului",
+      "postal_codes": [
+        "147203"
+      ]
+    },
+    {
+      "name": "Valea Postei",
+      "value": "valea_postei",
+      "postal_codes": [
+        "147326"
+      ]
+    },
+    {
+      "name": "Vanatori",
+      "value": "vanatori",
+      "postal_codes": [
+        "147171"
+      ]
+    },
+    {
+      "name": "Vartoape",
+      "value": "vartoape",
+      "postal_codes": [
+        "147425"
+      ]
+    },
+    {
+      "name": "Vartoapele de Jos",
+      "value": "vartoapele_de_jos",
+      "postal_codes": [
+        "147427"
+      ]
+    },
+    {
+      "name": "Vartoapele de Sus",
+      "value": "vartoapele_de_sus",
+      "postal_codes": [
+        "147428"
+      ]
+    },
+    {
+      "name": "Vatasi",
+      "value": "vatasi",
+      "postal_codes": [
+        "147277"
+      ]
+    },
+    {
+      "name": "Vatra",
+      "value": "vatra",
+      "postal_codes": [
+        "147417"
+      ]
+    },
+    {
+      "name": "Vedea",
+      "value": "vedea",
+      "postal_codes": [
+        "147430"
+      ]
+    },
+    {
+      "name": "Videle",
+      "value": "videle",
+      "postal_codes": [
+        "145300"
+      ]
+    },
+    {
+      "name": "Viile",
+      "value": "viile",
+      "postal_codes": [
+        "147318"
+      ]
+    },
+    {
+      "name": "Viisoara",
+      "value": "viisoara",
+      "postal_codes": [
+        "147435"
+      ]
+    },
+    {
+      "name": "Vitanesti",
+      "value": "vitanesti",
+      "postal_codes": [
+        "147440"
+      ]
+    },
+    {
+      "name": "Voievoda",
+      "value": "voievoda",
+      "postal_codes": [
+        "147148"
+      ]
+    },
+    {
+      "name": "Zambreasca",
+      "value": "zambreasca",
+      "postal_codes": [
+        "147445"
+      ]
+    },
+    {
+      "name": "Zimnicea",
+      "value": "zimnicea",
+      "postal_codes": [
+        "145400"
+      ]
+    },
+    {
+      "name": "Zimnicele",
+      "value": "zimnicele",
+      "postal_codes": [
+        "147221"
+      ]
+    },
+    {
+      "name": "Zlata",
+      "value": "zlata",
+      "postal_codes": [
+        "147104"
+      ]
+    }
+  ]
+}
