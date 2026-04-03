@@ -1291,7 +1291,7 @@ body {
         bottom: 25px;
         right: 100px;
 
-        background: #f6f6f6;
+        background: #f9f9f9;
         color: #000;
         padding: 9px;
         border-radius: 12px;
@@ -1411,7 +1411,7 @@ body {
     background-color: #84c5dc;
     color: #fff;
     font-size: 20px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
@@ -1428,7 +1428,7 @@ body {
 
 
 .aside .submit-roulette {
-    font-size: 14px;
+    font-size: 12px;
 }
 /*.submit-roulette:hover {*/
 /*    background: #5d5dc2;*/
@@ -1942,6 +1942,9 @@ body {
 }
 
 @media screen and (max-width: 639px) {
+    table.compare-table th, table.compare-table td {
+        padding: 10px 10px!important;
+    }
     .discount-banner {
         padding: 10px 15px!important;
         top: -20px!important;
@@ -2008,10 +2011,10 @@ body {
         width: 100%;
     }
     .submit-roulette {
-        font-size: 15px;
+        font-size: 14px;
     }
     .order-expert .submit-roulette {
-        font-size: 13px;
+        font-size: 11px;
     }
     .discount-banner {
         padding: 10px 15px !important;
