@@ -2990,8 +2990,7 @@ button.action-popup__btn--send:hover {
     border-radius: 6px;
     padding: 8px 15px;
     transition: all 0.3s ease;
-    max-width: 400px;
-    width: 100%;
+    width: 440px;
 }
 
 .course.active {
@@ -3023,7 +3022,7 @@ button.action-popup__btn--send:hover {
 
 .inline-products {
     display: inline-flex;
-    display: contents;
+    /*display: contents;*/
     justify-content: flex-end;
     /*gap: 4px;*/
     /*margin-left: 8px;*/
