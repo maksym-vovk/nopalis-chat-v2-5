@@ -1304,6 +1304,7 @@ body {
         transform: translateY(10px) scale(0.95);
         pointer-events: none;
         transition: all 0.3s ease;
+        z-index: 9;
     }
 
     .expert-bubble::before {
@@ -1321,6 +1322,7 @@ body {
 
     /* показ */
     .expert-bubble.show {
+        pointer-events: auto;
         opacity: 1;
         transform: translateY(0) scale(1);
     }
@@ -2013,9 +2015,9 @@ body {
     .submit-roulette {
         font-size: 14px;
     }
-    .order-expert .submit-roulette {
-        font-size: 11px;
-    }
+    /*.order-expert .submit-roulette {*/
+    /*    font-size: 11px;*/
+    /*}*/
     .discount-banner {
         padding: 10px 15px !important;
         top: -20px !important;
