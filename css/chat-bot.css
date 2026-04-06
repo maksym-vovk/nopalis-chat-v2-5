@@ -2991,7 +2991,7 @@ button.action-popup__btn--send:hover {
     border-radius: 6px;
     padding: 8px 15px;
     transition: all 0.3s ease;
-    width: 440px;
+    width: 100%;
 }
 
 .course.active {
