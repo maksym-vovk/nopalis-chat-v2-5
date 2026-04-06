@@ -220,16 +220,16 @@
     background: url(../images/chat/city.svg) center/contain no-repeat;
 }
 
-.form__select-wrapper::after {
-    position: absolute;
-    content: "";
-    right: 17px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 10px;
-    height: 10px;
-    background: url(../images/chat/arrow.svg) center/contain no-repeat;
-}
+/*.form__select-wrapper::after {*/
+/*    position: absolute;*/
+/*    content: "";*/
+/*    right: 17px;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*    background: url(../images/chat/arrow.svg) center/contain no-repeat;*/
+/*}*/
 
 .form__select--colony::before {
     background: url(../images/chat/house.svg) center/contain no-repeat;
@@ -366,8 +366,47 @@
 
 .custom-select.open .custom-select-list {
     display: block;
-    z-index: 1;
+    z-index: 3;
 }
+
+/* Кнопка-стрілка кастом-селекту */
+.custom-select-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.custom-select-arrow::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform 0.2s;
+}
+
+.custom-select.open .custom-select-arrow::after {
+    transform: rotate(-135deg) translateY(-1px) translateX(-1px);
+}
+
+/* Щоб текст в інпуті не перекривав стрілку */
+.custom-select-input {
+    padding-right: 36px;
+}
+
 
 @media (max-width: 639px) {
     .form__btn {

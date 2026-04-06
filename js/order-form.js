@@ -474,8 +474,43 @@ class CustomSelect {
         });
     }
 
+    // addEventListeners() {
+    //     this.input.addEventListener('click', () => this.openSelect());
+    //     document.addEventListener('click', (e) => this.closeSelect(e));
+    //
+    //     this.input.addEventListener('input', () => {
+    //         clearTimeout(this.inputDebounce);
+    //         this.inputDebounce = setTimeout(() => {
+    //             if (this.type === 'city' || this.type === 'judet') {
+    //                 this.input.dataset.value = '';
+    //             }
+    //             this.filterItems();
+    //             this.validate();
+    //         }, 80);
+    //     });
+    //
+    //     document.querySelectorAll('input:not([name="landmark"])').forEach(input => {
+    //         input.addEventListener('input', () => this.checkFormValidity());
+    //     });
+    // }
+
     addEventListeners() {
-        this.input.addEventListener('click', () => this.openSelect());
+        // Інпут — стара логіка (фільтр за поточним значенням)
+        this.input.addEventListener('click', () => this.openSelect(false));
+
+        // Стрілка — показати весь список
+        const arrow = this.selectWrapper.querySelector('.custom-select-arrow');
+        if (arrow) {
+            arrow.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (this.selectWrapper.classList.contains('open')) {
+                    this.selectWrapper.classList.remove('open');
+                } else {
+                    this.openSelect(true);
+                }
+            });
+        }
+
         document.addEventListener('click', (e) => this.closeSelect(e));
 
         this.input.addEventListener('input', () => {
@@ -494,9 +529,20 @@ class CustomSelect {
         });
     }
 
-    openSelect() {
+    // openSelect() {
+    //     this.selectWrapper.classList.add('open');
+    //     this.filterItems();
+    // }
+
+    openSelect(showAll = false) {
         this.selectWrapper.classList.add('open');
-        this.filterItems();
+        if (showAll) {
+            // Стрілка: завжди повний список
+            this.renderItems(this.sourceItems);
+        } else {
+            // Інпут: фільтр за поточним текстом (стара логіка)
+            this.filterItems();
+        }
     }
 
     closeSelect(e) {
