@@ -136,8 +136,8 @@ class ChatBot {
         this.userID = localStorage.getItem('userID') || this._generateUserId();
         localStorage.setItem('userID', this.userID);
 
-        this.accessKey = '1ce1a4041466d1775c7b6c04bbe90cae-test';
-        this.secretKey = 'b29cf96857345234354b8c78476bf636-test';
+        this.accessKey = '5ca52aa439738e8b912d83150333c1fc';
+        this.secretKey = '129686143e268ff73d6001a8734d3beb';
 
         this.messagesContainer = this._resolveElement(
             this.config.messagesContainer,
@@ -168,7 +168,7 @@ class ChatBot {
                 userID: this.userID,
                 'chat_version': '2.5',
                 FirstVisitUA: this._formatKyivDate(now),
-                FirstVisitMX: this._formatLocalDate(now),
+                FirstVisitLocalCountry: this._formatLocalDate(now),
                 LastAction: this._formatKyivDate(now),
             }).catch(() => {});
         }
@@ -1669,9 +1669,9 @@ class ChatBot {
     }
 
     async _sendDataToSheet(data) {
-        const url = 'https://api.apispreadsheets.com/data/7juvGn3tVOzKKT3N/';
+        const url = 'https://api.apispreadsheets.com/data/vD5znZz86KWucWkQ/';
         const query = `select *
-                       from 7juvGn3tVOzKKT3N
+                       from vD5znZz86KWucWkQ
                        where userID = '${this.userID}'`;
 
         // merge with locally stored analytics to avoid wiping columns

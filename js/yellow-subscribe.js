@@ -41,8 +41,8 @@ function getSavedAnalytics(userID) {
 }
 
 async function sendDataToSheet(id, data) {
-    const url = 'https://api.apispreadsheets.com/data/7juvGn3tVOzKKT3N/';
-    const query = `select * from 7juvGn3tVOzKKT3N where userID = '${id}'`;
+    const url = 'https://api.apispreadsheets.com/data/vD5znZz86KWucWkQ/';
+    const query = `select * from vD5znZz86KWucWkQ where userID = '${id}'`;
 
     // merge with locally stored analytics to avoid wiping columns
     const saved = getSavedAnalytics(id) || {};
@@ -56,8 +56,8 @@ async function sendDataToSheet(id, data) {
         let response = await fetch(url, {
             method: 'POST',
             headers: {
-                accessKey: '1ce1a4041466d1775c7b6c04bbe90cae-test',
-                secretKey: 'b29cf96857345234354b8c78476bf636-test',
+                accessKey: '5ca52aa439738e8b912d83150333c1fc',
+                secretKey: '129686143e268ff73d6001a8734d3beb',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({data: mergedData, query}),
@@ -67,8 +67,8 @@ async function sendDataToSheet(id, data) {
             response = await fetch(url, {
                 method: 'POST',
                 headers: {
-                    accessKey: '1ce1a4041466d1775c7b6c04bbe90cae-test',
-                    secretKey: 'b29cf96857345234354b8c78476bf636-test',
+                    accessKey: '5ca52aa439738e8b912d83150333c1fc',
+                    secretKey: '129686143e268ff73d6001a8734d3beb',
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({data: mergedData}),
