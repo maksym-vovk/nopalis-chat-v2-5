@@ -1297,6 +1297,7 @@ body {
         border-radius: 12px;
         font-size: 14px;
         max-width: 185px;
+        max-width: 210px;
         width: 100%;
         min-height: 55px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.2);
