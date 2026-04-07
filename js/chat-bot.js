@@ -2477,9 +2477,9 @@ const chatSteps = [
                                 <div class="package-sub">за пачку <b>184 лей</b></div>
                             </div>
                             <div class="package-note package-note--red">
-                                Запускают ускорение обмена веществ;
+                                Запускают ускорение обмена веществ
                                 <br>
-                                Подготовка организма к жиросжиганию;
+                                Подготовка организма к жиросжиганию
                             </div>
                         </div>
         
@@ -2496,9 +2496,9 @@ const chatSteps = [
                             </div>
         
                             <div class="package-note package-note--green">
-                                Полноценный процесс жиросжигания;
+                                Полноценный процесс жиросжигания
                                 <br>
-                                Перестройка организма для закрепление результатов;
+                                Перестройка организма для закрепление результатов
                             </div>
                         </div>
         
@@ -2518,7 +2518,7 @@ const chatSteps = [
         ],
         options: [
             {label: 'Перейти на 4 упаковки', value: 4, color: 'green'},
-            {label: 'Оставить 2 упаковки', value: 2},
+            {label: 'Оставить 2 упаковки', value: 2, color: '#9ca3af'},
         ],
         shouldSkip: ({state}) => state.answers.course_packs !== 2,
         nextStep: ({option, state, bot}) => {
@@ -2610,7 +2610,7 @@ const chatSteps = [
         ],
         options: [
             {label: 'Взять 5 упаковок', value: 5, color: 'green'},
-            {label: 'Оставить 2 упаковки', value: 2},
+            {label: 'Оставить 2 упаковки', value: 2, color: '#9ca3af'},
         ],
         nextStep: ({option, state, bot}) => {
             state.answers.course_packs = option.value;
