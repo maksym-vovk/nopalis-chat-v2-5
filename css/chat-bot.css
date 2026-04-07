@@ -526,7 +526,8 @@ p {
     flex: 1;
     padding: 20px 10px;
     overflow-y: auto;
-    background: url("../images/chat/chat-bg.png");
+    background-image: url("../images/chat/chat-bg.png");
+    background-color: #e4ddd4;
     background-size: cover;
     display: flex;
     flex-direction: column;
