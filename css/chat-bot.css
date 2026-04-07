@@ -3374,7 +3374,7 @@ button.action-popup__btn--send:hover {
 }
 
 .package-card {
-    flex: 1 1 152px;
+    flex: 1 1 140px;
     background: #f3f3f3;
     border-radius: 14px;
     padding: 12px;
@@ -3557,7 +3557,8 @@ button.action-popup__btn--send:hover {
 }
 
 
-@media (max-width: 639px) {
+@media (max-width: 767px) {
+
 
     .package-card--vip .package-sub {
         margin: 0;
@@ -3586,6 +3587,12 @@ button.action-popup__btn--send:hover {
 
 }
 
+@media (max-width: 639px) {
+    .package-card {
+        flex: 1 1 135px;
+    }
+
+}
 @media (max-width: 479px) {
     /*.course-box {*/
     /*    width: 100px;*/
@@ -3593,9 +3600,27 @@ button.action-popup__btn--send:hover {
     .course-delivery {
         text-align: center;
     }
+
+    .package-wrapper,
+    .package-info {
+        display: flex;
+    }
+
+    .package-info {
+        flex-direction: column;
+    }
+
+    .package-title {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .package-sub {
+        margin: 0;
+    }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 479px) {
     .course-box {
         width: auto;
     }
@@ -3621,24 +3646,6 @@ button.action-popup__btn--send:hover {
         justify-content: space-between;
         align-items: center;
         gap: 30px;
-    }
-
-    .package-wrapper,
-    .package-info {
-        display: flex;
-    }
-
-    .package-info {
-        flex-direction: column;
-    }
-
-    .package-title {
-        text-align: left;
-        margin-bottom: 0;
-    }
-
-    .package-sub {
-        margin: 0;
     }
 
 }
