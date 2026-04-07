@@ -1015,7 +1015,8 @@ p {
 /* Extra small screens */
 @media (max-width: 480px) {
     .chat-bot {
-        background: url(../images/chat/chat-bg.png);
+        background-image: url(../images/chat/chat-bg.png);
+        background-color: #e4ddd4;
         background-size: cover;
         padding: 0;
     }
