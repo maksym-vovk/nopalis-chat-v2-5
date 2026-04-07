@@ -152,35 +152,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--                    <div class="col-xs-12 col-sm-12 col-md-12 yt-mob" style="">-->
-                    <!--                        <div class="row" id="yt-container" style="background: inherit; height: auto;">-->
-                    <!--                            <div class="col-xs-12 col-sm-12 col-md-12 video col-lg-12" id="hauto" style="">-->
-                    <!--                                <div id="video-container" style="margin: 20px 20px 20px 0px;">-->
-                    <!--                                    <iframe class="playerwrap" id="player" allowfullscreen=""-->
-                    <!--                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
-                    <!--                                            title="Ozenmic Soft română" width="380" height="680"-->
-                    <!--                                            src="https://www.youtube.com/embed/dffIzGTbf-I?si=lkstQfRQIDgPCAc0&autoplay=0&controls=0&modestbranding=0&rel=0&showinfo=0&playsinline=1&fs=0&disablekb=1&enablejsapi=1&widgetid=1"></iframe>-->
-                    <!--                                    <div class="player-overlay2"-->
-                    <!--                                         style="position: absolute; bottom: 0px; border: 0px; right: 0px; height: 100px; z-index: 300000000; width: 200px;"></div>-->
-                    <!--                                    <div style="position: absolute; top: 0px; border: 0px; left: 0px; height: 70px; z-index: 300000000; max-width: 700px;"></div>-->
-                    <!--                                    <div class="player-overlay3"-->
-                    <!--                                         style="position: absolute; top: 0px; border: 0px; right: 0px; height: 70px; z-index: 3; width: 30%;"></div>-->
-                    <!--                                    <div class="player-overlay"-->
-                    <!--                                         style="box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 150px 50px inset; display: none; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;"></div>-->
-                    <!--                                    <div id="main-player-overlay"-->
-                    <!--                                         style="box-shadow: rgba(0, 0, 0, 0) 0px 0px 150px 50px inset; display: block; position: absolute; width: 100%; height: 100%; top: 0px; pointer-events: none; left: 0px;"></div>-->
-                    <!--                                    <div class="player-block" style="display: none;"></div>-->
-                    <!--                                    <div class="d-none" id="controls" style="">-->
-                    <!--                                        <button class="on controls-btt" id="volume" type="button" style=""></button>-->
-                    <!--                                        <button class="controls-btt" id="backward" type="button" style=""></button>-->
-                    <!--                                        <button class="controls-btt" id="forward" type="button" style=""></button>-->
-                    <!--                                    </div>-->
-                    <!--                                </div>-->
-                    <!--                                <button class="pause-video" style="display: none;" aria-label="button video"-->
-                    <!--                                        type="button"></button>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
                 </div>
                 <hr>
                 <h2 class="main__title form__main-title" id="promo__title-2">Cum funcționează
@@ -457,7 +428,7 @@
                                        placeholder="Numele">
                                 <input class="form-input ym-record-keys" type="tel" name="phone" required=""
                                        placeholder="Telefon">
-                                <button type="submit" class="submit-roulette">Comandați</button>
+                                <button id="order-form-submit" type="submit" class="submit-roulette">Comandați</button>
                                 <div class="footnote"> * Funcționează asupra mărfurilor în limitele unui canal
                                     de distribuţie
                                 </div>
@@ -477,11 +448,9 @@
                                 <img class="order-doc" src="images/order-doc.jpg" alt="expert">
                             </picture>
 
-                            <div class="chat-btn" id="chat-btn">
-                                <button type="button" class="chat-btn submit-roulette">
-                                    Contactează expertul
-                                </button>
-                            </div>
+                            <button type="button" class="chat-btn submit-roulette" id="expert-overlay-btn">
+                                Contactează expertul
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -702,7 +671,7 @@
                             </h4>
                             <hr class="doc__hr">
 
-                            <button type="button" class="chat-btn submit-roulette">Contactează expertul</button>
+                            <button id="sidebar-to-chat-btn" type="button" class="chat-btn submit-roulette">Contactează expertul</button>
                         </div>
                     </div>
                 </div>
@@ -710,7 +679,7 @@
         </div>
     </div>
     <div class="container-btn" style="">
-        <button type="button" class="chat-btn submit-roulette">Contactează expertul</button>
+        <button id="footer-to-chat-btn" type="button" class="chat-btn submit-roulette">Contactează expertul</button>
     </div>
 </main>
 <footer class="footer-area bg-dark">
@@ -732,8 +701,8 @@
 </footer>
 
 
-<div class="expert-widget">
-    <button class="whatsapp-float chat-btn">
+<div class="expert-widget" >
+    <button class="whatsapp-float chat-btn events-none" id="expert-widget-btn">
         <picture>
             <source srcset="images/chat/cb-ava.webp" type="image/webp">
             <img src="images/chat/cb-ava.png" alt="Doctor name" width="80" height="80" loading="lazy">
@@ -974,7 +943,7 @@
                     </label>
                 </div>
 
-                <button type="submit" class="btn form__btn form-btn form-button">Plasează comanda</button>
+                <button id="delivery-form-submit" type="submit" class="btn form__btn form-btn form-button">Plasează comanda</button>
             </form>
         </div>
     </div>

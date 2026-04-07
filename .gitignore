@@ -1,5 +1,7 @@
 .idea/
 *.zip
+*.md
+*.txt
 .DS_Store
 
 critical.css

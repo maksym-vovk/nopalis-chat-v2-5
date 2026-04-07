@@ -618,6 +618,11 @@ body {
     line-height: 1.3;
 }
 
+.events-none * {
+    pointer-events: none;
+    cursor: pointer;
+}
+
 .button,
 button {
     background-color: #d33c43;
