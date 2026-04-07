@@ -2076,85 +2076,76 @@ const chatSteps = [
             (state) => {
                 const packs = state.answers.recommended_packs;
 
-                const courseInitiation = '<div class="course">' +
-                    '<b class="course-title">Стартовый курс (2&nbsp;pachete)' +
-                    // '<b class="course-title">Program de start (2&nbsp;pachete)' +
-                    '<span class="inline-products">' +
-                    '<span class="inline-product-item"></span>' +
-                    '<span class="inline-product-item"></span>' +
-                    '</span>' +
-                    '</b>' +
-                    '<p class="course-text">• Запуск процессов очищения и пищеварения\n• Снижение вздутия и тяжести\n • Адаптация организма\n</p>' +
-                    '<span class="course-separator"></span>' +
-                    '<p class="course-text"><b>Изменения веса на этом этапе минимальны</b></p>' +
-                    '<p class="course-text">368 лей</p>' +
-                    '</div>';
+                const courseMedium = `
+                    <div class="course">
+                        <b class="course-title">⭐ Курс минимального результата (4&nbsp;pachete)
+                            <span class="inline-products">
+                                <span class="inline-product-item"></span>
+                                <span class="inline-product-item"></span>
+                                <span class="inline-product-item"></span>
+                                <span class="inline-product-item"></span>
+                            </span>
+                        </b>
+                        <p class="course-text">
+                            • Длительность 6–8 недель — оптимальный период для запуска жиросжигания
+                            <br>
+                            • Стабильный запуск сжигания жира
+                            <br>
+                            • Первые заметные изменения в весе и объёмах
+                        </p>
+    
+                        <div class="course-price">
+                            <p class="course-subtitle">
+                                ✅ <b>Рекомендованный старт для реального результата</b>
+                            </p>
+    
+                            <div class="course-box">
+                                <div class="course-cost">
+                                    <span class="course-value">646</span>
+                                    <span class="course-currency">лей</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="course-delivery course-delivery--full">
+                            🚚 Доставка включена в стоимость заказа
+                        </div>
+                    </div>
+                `.trim().replace(/\s+/g, ' ')
 
-                const courseMedium = '<div class="course">' +
-                    '<b class="course-title">⭐ Курс минимального результата (4&nbsp;pachete)' +
-                    // '<b class="course-title">Program minim eficient (4&nbsp;pachete)' +
-                    '<span class="inline-products">' +
-                    '<span class="inline-product-item"></span>' +
-                    '<span class="inline-product-item"></span>' +
-                    '<span class="inline-product-item"></span>' +
-                    '<span class="inline-product-item"></span>' +
-                    '</span>' +
-                    '</b>' +
-                    '<p class="course-text">• Длительность 6–8 недель — оптимальный период для запуска жиросжигания\n• Стабильный запуск сжигания жира\n• Первые заметные изменения в весе и объёмах</p>' +
-                    '<span class="course-separator"></span>' +
-                    '<p class="course-text">✅&nbsp;<b>Рекомендованный старт для реального результата</b></p>' +
-                    '<p class="course-text">646 лей</p>' +
-                    '</div>';
-
-                // const courseMinimum = '<div class="course">' +
-                //     '<b class="course-title">Program minim eficient (3&nbsp;pachete)' +
-                //     '<span class="inline-products">' +
-                //     '<span class="inline-product-item"></span>' +
-                //     '<span class="inline-product-item"></span>' +
-                //     '<span class="inline-product-item"></span>' +
-                //     '</span>' +
-                //     '</b>' +
-                //     '<p class="course-text">• 3–4 săptămâni — perioada optimă\n• Începutul arderii grăsimilor\n• Primele rezultate vizibile</p>' +
-                //     '<span class="course-separator"></span>' +
-                //     '<p class="course-text">✅&nbsp;<b>Recomandat pentru rezultate reale</b></p>' +
-                //     '</div>';
-
-                // const courseComplete = '<div class="course">' +
-                //     '<b class="course-title">Program complet (5&nbsp;pachete)' +
-                //     '<span class="inline-products">' +
-                //     '<span class="inline-product-item"></span>' +
-                //     '<span class="inline-product-item"></span>' +
-                //     '<span class="inline-product-item"></span>' +
-                //     '<span class="inline-product-item"></span>' +
-                //     '<span class="inline-product-item"></span>' +
-                //     '</span>' +
-                //     '</b>' +
-                //     '<p class="course-text">• Ciclu complet de slăbire\n• Ardere activă a grăsimilor\n• Stabilizarea rezultatului\n• Cea mai populară alegere</p>' +
-                //     '<span class="course-separator"></span>' +
-                //     '<p class="course-text">💚&nbsp;<b>Cea mai populară alegere în rândul clienților</b></p>' +
-                //     '</div>';
-
-                // const courseMaximum = '<div class="course">' +
-                //     '<b class="course-title">Program maxim (6&nbsp;pachete)' +
-                //     '<span class="inline-products">' +
-                //     '<span class="inline-product-item"></span>' +
-                //     '<span class="inline-product-item"></span>' +
-                //     '<span class="inline-product-item"></span>' +
-                //     '<span class="inline-product-item"></span>' +
-                //     '<span class="inline-product-item"></span>' +
-                //     '<span class="inline-product-item"></span>' +
-                //     '</span>' +
-                //     '</b>' +
-                //     '<p class="course-text">• Ardere maximă a grăsimilor\n• Reducere vizibilă a greutății și a volumelor\n• Curățare profundă a organismului\n• Cel mai stabil și de lungă durată rezultat</p>' +
-                //     '<span class="course-separator"></span>' +
-                //     '<p class="course-text">🔥&nbsp;<b>Pentru efect maxim și transformare completă</b></p>' +
-                //     '</div>';
+                const courseInitiation = `
+                    <div class="course">
+                        <b class="course-title">Стартовый курс (2&nbsp;pachete)
+                            <span class="inline-products">
+                                <span class="inline-product-item"></span>
+                                <span class="inline-product-item"></span>
+                            </span>
+                        </b>
+                        <p class="course-text">• Запуск процессов очищения и пищеварения<br>• Снижение вздутия и тяжести<br>
+                            • Адаптация организма<br></p>
+    
+                        <div class="course-price">
+                            <p class="course-subtitle">
+                                ✅ <b>Изменения веса на этом этапе минимальны</b>
+                            </p>
+    
+                            <div class="course-box">
+                                <div class="course-cost">
+                                    <span class="course-value">368</span>
+                                    <span class="course-currency">лей</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="course-delivery course-delivery--full">
+                            🚚 Доставка включена в стоимость заказа
+                        </div>
+                    </div>
+                `.trim().replace(/\s+/g, ' ')
 
                 const allCourses = [
                     { packs: 2, html: courseInitiation },
                     { packs: 4, html: courseMedium },
-                    // { packs: 5, html: courseComplete },
-                    // { packs: 6, html: courseMaximum }
                 ];
 
                 const sortedCourses = allCourses.sort((a, b) => {
@@ -2473,72 +2464,58 @@ const chatSteps = [
     {
         id: 'two_packs_price',
         messages: [
-            'Хорошо, зафиксировала 2 упаковки',
-            'Вижу, что ты у нас впервые — хочу чтобы ты сразу почувствовала результат, поэтому скажу честно',
-            '2 упаковки только запускают процессы в организме. Вес на этом этапе ещё практически не уходит — продукт работает мягко и постепенно.',
-            'Именно поэтому большинство клиентов берут сразу 4 — и видят результат уже в первый месяц. За это время запустится процесс жиросжигания и организм перестроится для закрепление результатов.',
-            'Советую не рисковать и взять полный курс с первого раза'
+            () => {
+                const warningIcon = `<span class="warning-icon">⚠️</span>`
+                const comparison = `
+                    <div class="packages">
+                        <div class="package-card">
+                            <div class="package-wrapper">
+                                <div class="package-info">
+                                    <div class="package-title">2 пачки</div>
+                                    <div class="package-price">368 <span>лей</span></div>
+                                </div>
+                                <div class="package-sub">за пачку <b>184 лей</b></div>
+                            </div>
+                            <div class="package-note package-note--red">
+                                Запускают ускорение обмена веществ;
+                                <br>
+                                Подготовка организма к жиросжиганию;
+                            </div>
+                        </div>
+        
+                        <div class="package-card package-card--active">
+                            <div class="package-wrapper">
+                                <div class="package-info">
+                                    <div class="package-title">4 пачки ⭐</div>
+                                    <div class="package-price">646 <span>лей</span></div>
+                                </div>
+        
+                                <div class="package-sub package-sub--green">
+                                    за пачку <b>161 лей</b>
+                                </div>
+                            </div>
+        
+                            <div class="package-note package-note--green">
+                                Полноценный процесс жиросжигания;
+                                <br>
+                                Перестройка организма для закрепление результатов;
+                            </div>
+                        </div>
+        
+                        <div class="package-text">
+                            Советую не рисковать и взять полный курс с первого раза
+                        </div>
+                    </div>
+                `.trim().replace(/\s+/g, ' ');
+
+                return [
+                    'Хорошо, зафиксировала 2 упаковки',
+                    'Вижу, что ты у нас впервые — хочу чтобы ты сразу почувствовала результат, поэтому скажу честно',
+                    `<span class="accent-text">${warningIcon} 2 упаковки только запускают процессы в организме. Вес на этом этапе ещё практически не уходит — продукт работает мягко и постепенно.</span>`,
+                    `Именно поэтому большинство клиентов берут сразу 4 — и видят результат уже в первый месяц. ${comparison}`,
+                ]
+            }
         ],
-        // messages: [
-        //     'Mulțumim! Ați ales „Programul de start” – 2 pachete Ozenmic Soft.',
-        //     'După 55 de ani, metabolismul se schimbă. Două pachete pot doar să inițieze procesele din organism. De regulă, greutatea nu începe încă să scadă vizibil, deoarece Ozenmic Soft acționează treptat și în siguranță.',
-        //     'În prezent este disponibilă o ofertă foarte avantajoasă pentru <b>programul minim eficient – 3&nbsp;pachete</b>' +
-        //     '\<b>Al 3-lea pachet costă doar 300&nbsp;лей.</b>',
-        //     '2 pachete:\n' +
-        //     '590&nbsp;лей (−50% din 1180)\n' +
-        //     '590&nbsp;лей (−50% din 1180)\n' +
-        //     '+ Livrare 200&nbsp;лей\n' +
-        //     'Total: 1380&nbsp;лей',
-        //     {
-        //         text: `
-        //                   <div class="pricing-card">
-        //                     <div class="header">
-        //                         <span class="star">⭐</span>
-        //                         <h2>3&nbsp;pachete:<br> Program minim eficient</h2>
-        //                     </div>
-        //                     <div class="calculation-header">
-        //                         <h3>Calcul:</h3>
-        //                     </div>
-        //                     <div class="pricing-row">
-        //                         <span class="package">1&nbsp;pach.</span>
-        //                         <span class="old-price">1180</span>
-        //                         <span class="arrow blue">➜</span>
-        //                         <span class="new-price sale blue">590&nbsp;лей</span>
-        //                     </div>
-        //                     <div class="pricing-row">
-        //                         <span class="package">2&nbsp;pach.</span>
-        //                         <span class="old-price">1180</span>
-        //                         <span class="arrow blue">➜</span>
-        //                         <span class="new-price sale blue">590&nbsp;лей</span>
-        //                     </div>
-        //                     <div class="pricing-row">
-        //                         <span class="package">3&nbsp;pach.</span>
-        //                         <span class="old-price">1180</span>
-        //                         <span class="arrow green">➜</span>
-        //                         <span class="new-price green">300&nbsp;лей</span>
-        //                     </div>
-        //                     <div class="savings-section">
-        //                         <span class="savings-text">Economii: <span class=""><span class="">3540</span> - 1480 =</span> <span class="">2060&nbsp;лей</span></span>
-        //                     </div>
-        //                     <div class="total-section">
-        //                         <span class="total-label green-text">TOTAL:</span>
-        //                         <span class="total-price green-text">1480&nbsp;лей</span>
-        //                     </div>
-        //                     <div class="delivery-section">
-        //                         <span class="savings-text">Livrare gratuită!</span>
-        //                     </div>
-        //                     <div class="promo-banner">
-        //                         <span class="promo-text">Diferența este de doar <strong class="yellow-text">+100 лей</strong>, dar primiți un program complet pentru rezultate vizibile!</span>
-        //                     </div>
-        //                 </div>
-        //                 `.trim().replace(/\s+/g, ' '),
-        //         typingDelay: 1000
-        //     }
-        // ],
-        // options: [
-        //     {label: 'Comandă 3 pachete', value: 3, color: 'green'},
-        //     {label: 'Comandă 2 pachete', value: 2},
-        // ],
         options: [
             {label: 'Перейти на 4 упаковки', value: 4, color: 'green'},
             {label: 'Оставить 2 упаковки', value: 2},
@@ -2555,10 +2532,81 @@ const chatSteps = [
     {
         id: 'two_packs_upsell',
         messages: [
-            'Хорошо, зафиксировала',
-            'Так как ты у нас впервые — мы подготовили для тебя специальное предложение, чтобы ты почувствовала максимальный результат. Это VIP пакет, для одного из 100 наших первых клиентов.',
-            '4 упаковки = 646 лей\n<b>5 упаковок = 558 лей (VIP пакет)</b>',
-            'За 5 платишь меньше чем за 4 — и получаешь полный курс с результатом который остаётся.'
+            () => {
+                const comparison = `
+                    <div class="packages">
+        
+                        <!-- 2 пачки -->
+                        <div class="package-card">
+                            <div class="package-wrapper">
+                                <div class="package-info">
+                                    <div class="package-title">2 пачки</div>
+                                    <div class="package-price">
+                                        368
+                                        <span>лей</span>
+                                    </div>
+                                </div>
+        
+                                <div class="package-sub">
+                                    за пачку <b>184 лей</b>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                        <!-- 4 пачки -->
+                        <div class="package-card">
+                            <div class="package-wrapper">
+                                <div class="package-info">
+                                    <div class="package-title">4 пачки</div>
+                                    <div class="package-price">
+                                        646
+                                        <span>лей</span>
+                                    </div>
+                                </div>
+        
+                                <div class="package-sub">
+                                    за пачку <b>161 лей</b>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- 5 пачек VIP -->
+                        <div class="package-card package-card--vip">
+                            <div class="package-badge">VIP</div>
+        
+                            <div class="package-wrapper">
+                                <div class="package-info">
+                                    <div class="package-title">5 пачек</div>
+                                    <div class="package-price">
+                                        558
+                                        <span>лей</span>
+                                    </div>
+                                </div>
+        
+                                <div class="package-sub package-sub--green">
+                                    за пачку <b>111 лей</b>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                        <div class="package-text">
+                            <div class="course-delivery course-delivery--inner">
+                                🚚 Доставка включена в стоимость заказа
+                            </div>
+        
+                            За 5 платишь меньше чем за 4 — и получаешь полный курс с результатом который остаётся
+                        </div>
+                    </div>    
+                `.trim().replace(/\s+/g, ' ');
+
+                return [
+                    'Хорошо, зафиксировала',
+                    'Так как ты у нас впервые — мы подготовили для тебя специальное предложение, чтобы ты почувствовала максимальный результат. Это VIP пакет, для одного из 100 наших первых клиентов.',
+                    `⭐ <b>Сравни варианты</b> ${comparison}`,
+                ]
+            }
         ],
         options: [
             {label: 'Взять 5 упаковок', value: 5, color: 'green'},

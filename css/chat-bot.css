@@ -908,6 +908,11 @@ p {
     animation: messageSlideIn 0.4s ease-out;
 }
 
+.warning-icon {
+    position: relative;
+    top: -2px;
+}
+
 @keyframes buttonAppear {
     from {
         opacity: 0;
