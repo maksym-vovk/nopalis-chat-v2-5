@@ -3625,14 +3625,7 @@ button.action-popup__btn--send:hover {
         width: auto;
     }
 
-    .course-price {
-        flex-direction: column;
-        row-gap: 5px;
-    }
 
-    .course-subtitle {
-        text-align: center;
-    }
 
     .package-card {
         flex: auto;
@@ -3648,4 +3641,16 @@ button.action-popup__btn--send:hover {
         gap: 30px;
     }
 
+    @media (max-width: 374px) {
+        .course-price {
+            flex-direction: column;
+            row-gap: 5px;
+        }
+
+
+
+        .course-subtitle {
+            text-align: center;
+        }
+    }
 }
