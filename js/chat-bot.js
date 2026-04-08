@@ -1954,7 +1954,7 @@ const chatSteps = [
             {
                 text: `<div class="audio"><img src="${basePath}images/chat/cb-ava.png" alt="Avatar" class="message-avatar"><div class="audio-player"><div class="controls"><button class="play-pause-button play" id="audioControlButton"></button></div><audio><source src="${basePath}media/1.mp3" type="audio/mpeg"></audio><div class="progress-wrapper"><div class="progress"><div class="progress-bar"></div></div></div><div class="audio-time"><span class="audio-current__time">0:00</span></div></div></div>`,
                 typingIndicator: 'mic',
-                typingDelay: 1000 //12000
+                typingDelay: 12000 //12000
             }
         ],
         options: [
@@ -2466,12 +2466,12 @@ document.addEventListener('DOMContentLoaded', () => {
         root: '.chat-bot',
         steps: chatSteps,
         typingDelayPerChar: 50,  // ms per character (default: 15) human style: 50
-        typingDelayMin: 500,     // minimum delay in ms (default: 2000)
-        typingDelayMax: 500,    // maximum delay in ms (default: 4000)
+        typingDelayMin: 2000,     // minimum delay in ms (default: 2000)
+        typingDelayMax: 4000,    // maximum delay in ms (default: 4000)
         startQueue: {
             enabled: true,
-            // delay: () => 10000 + Math.floor(Math.random() * 5001), // 10–15 sec
-            delay: () => 1000,
+            delay: () => 10000 + Math.floor(Math.random() * 5001), // 10–15 sec
+            // delay: () => 1000,
             text: `
                 <h3 class="chat-queue-card__title">Sunteți primul pe listă 🥇</h3>
                 <p class="chat-queue-card__text">Specialiștii se vor conecta în curând la chat. Vă rugăm să așteptați puțin.</p>
