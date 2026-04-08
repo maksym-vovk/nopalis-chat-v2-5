@@ -2699,6 +2699,8 @@ function handleFormSubmit(form) {
     let allFilled = true;
 
     inputs.forEach(input => {
+        if (input.type === 'hidden') return;
+
         const value = input.value.trim();
 
         // Проверка на пустое значение
