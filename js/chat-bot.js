@@ -1867,7 +1867,7 @@ const chatSteps = [
                         'Pentru a vă recomanda programul potrivit și a vă rezerva reducerea, vă rugăm să <b>lăsați datele dvs. de contact</b>.';
                 }
                 return '👋 Bună! Vă mulțumim pentru comanda Ozenmic Soft.\n\n' +
-                    'Aveți deja o <b>reducere de 35%</b>.\n' +
+                    'Aveți deja o <b>reducere de 50%</b>.\n' +
                     'Plasând comanda aici, în chat, veți <b>primi reduceri suplimentare pentru produsul ales</b> și <b> nu va mai fi nevoie să așteptați apelul operatorului</b>.\n\n' +
                     'Doriți să finalizați rapid comanda și să beneficiați de <b>o reducere suplimentară</b>?';
             }
